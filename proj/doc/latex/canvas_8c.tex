@@ -1,0 +1,70 @@
+\hypertarget{canvas_8c}{}\doxysection{src/game/canvas.c File Reference}
+\label{canvas_8c}\index{src/game/canvas.c@{src/game/canvas.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}canvas.\+h\char`\"{}}\newline
+Include dependency graph for canvas.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__canvas_ga80055034f5f9ceae3b737cc3cdc2ef47}{canvas\+\_\+load}} ()
+\begin{DoxyCompactList}\small\item\em Loads canvas information and allocates the necessary memory. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_gab8aca11a163aa9c456d966da7e3004e5}{canvas\+\_\+draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the canvas to the back buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga638de35fdbe6db429ae8b24c98b9cc13}{canvas\+\_\+fill}} (uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Fills the entire screen with the given color and updates the \char`\"{}canvas\+\_\+background\+\_\+color\char`\"{} variable. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{canvas_8c_a654b1a28b128143b1e490b1a79d73327}{canvas\+\_\+draw\+\_\+line\+\_\+low}} (\mbox{\hyperlink{structposition}{position}} from\+\_\+pos, \mbox{\hyperlink{structposition}{position}} to\+\_\+pos, int16\+\_\+t dx, int16\+\_\+t dy)
+\item 
+int() \mbox{\hyperlink{canvas_8c_a00fc737a073d8cd4d2ba07485f881a53}{canvas\+\_\+draw\+\_\+line\+\_\+high}} (\mbox{\hyperlink{structposition}{position}} from\+\_\+pos, \mbox{\hyperlink{structposition}{position}} to\+\_\+pos, int16\+\_\+t dx, int16\+\_\+t dy)
+\item 
+int() \mbox{\hyperlink{canvas_8c_a81e915729ce5cc907dd3d08d790b3cb9}{canvas\+\_\+draw\+\_\+line}} (\mbox{\hyperlink{structposition}{position}} from\+\_\+pos, \mbox{\hyperlink{structposition}{position}} to\+\_\+pos)
+\item 
+int() \mbox{\hyperlink{group__canvas_gaa4b92ad51f39f4432397dcd16c3a3625}{canvas\+\_\+draw\+\_\+pencil\+\_\+circle}} ()
+\begin{DoxyCompactList}\small\item\em Draws a circle on screen at the given cursor position. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__canvas_ga6b1d3293521f7ea36a4e7bf970304057}{canvas\+\_\+draw\+\_\+pencil\+\_\+square}} ()
+\begin{DoxyCompactList}\small\item\em Draws a square on screen at the given cursor position. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga7a40fac29d1d2399c46be35360319841}{canvas\+\_\+handle\+\_\+line}} ()
+\begin{DoxyCompactList}\small\item\em Handles the drawing of straight lines made by clicking on an initial and final positions. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_gab6d35de38e60c1031a8bc9d70c529f28}{canvas\+\_\+handle\+\_\+bucket}} ()
+\begin{DoxyCompactList}\small\item\em Handles the filling of the canvas with the cursor color. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga325ed9223a8ace1fb14418c4d9a00795}{canvas\+\_\+clear}} ()
+\begin{DoxyCompactList}\small\item\em Fills the canvas with a white color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$() \mbox{\hyperlink{group__canvas_ga6e396a9fe595370839ca1f2e3cc98acb}{get\+\_\+canvas\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Returns the canvas buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga2a8f55e20f4a68fa050db0fffced2bb3}{canvas\+\_\+handle\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Handles how clicks on the canvas while the cursor is in text state should behave. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga33567ef82c11af5b0b894616851cc03b}{canvas\+\_\+mouse\+\_\+handler}} (uint8\+\_\+t \+\_\+)
+\begin{DoxyCompactList}\small\item\em Handles mouse events that happen within the canvas section of the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{canvas_8c_a81e915729ce5cc907dd3d08d790b3cb9}\label{canvas_8c_a81e915729ce5cc907dd3d08d790b3cb9}} 
+\index{canvas.c@{canvas.c}!canvas\_draw\_line@{canvas\_draw\_line}}
+\index{canvas\_draw\_line@{canvas\_draw\_line}!canvas.c@{canvas.c}}
+\doxysubsubsection{\texorpdfstring{canvas\_draw\_line()}{canvas\_draw\_line()}}
+{\footnotesize\ttfamily int() canvas\+\_\+draw\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structposition}{position}}}]{from\+\_\+pos,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{to\+\_\+pos }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{canvas_8c_a00fc737a073d8cd4d2ba07485f881a53}\label{canvas_8c_a00fc737a073d8cd4d2ba07485f881a53}} 
+\index{canvas.c@{canvas.c}!canvas\_draw\_line\_high@{canvas\_draw\_line\_high}}
+\index{canvas\_draw\_line\_high@{canvas\_draw\_line\_high}!canvas.c@{canvas.c}}
+\doxysubsubsection{\texorpdfstring{canvas\_draw\_line\_high()}{canvas\_draw\_line\_high()}}
+{\footnotesize\ttfamily int() canvas\+\_\+draw\+\_\+line\+\_\+high (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structposition}{position}}}]{from\+\_\+pos,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{to\+\_\+pos,  }\item[{int16\+\_\+t}]{dx,  }\item[{int16\+\_\+t}]{dy }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{canvas_8c_a654b1a28b128143b1e490b1a79d73327}\label{canvas_8c_a654b1a28b128143b1e490b1a79d73327}} 
+\index{canvas.c@{canvas.c}!canvas\_draw\_line\_low@{canvas\_draw\_line\_low}}
+\index{canvas\_draw\_line\_low@{canvas\_draw\_line\_low}!canvas.c@{canvas.c}}
+\doxysubsubsection{\texorpdfstring{canvas\_draw\_line\_low()}{canvas\_draw\_line\_low()}}
+{\footnotesize\ttfamily int() canvas\+\_\+draw\+\_\+line\+\_\+low (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structposition}{position}}}]{from\+\_\+pos,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{to\+\_\+pos,  }\item[{int16\+\_\+t}]{dx,  }\item[{int16\+\_\+t}]{dy }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6

@@ -1,0 +1,111 @@
+\hypertarget{rtc_8c}{}\doxysection{src/devices/rtc/rtc.c File Reference}
+\label{rtc_8c}\index{src/devices/rtc/rtc.c@{src/devices/rtc/rtc.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__rtc_ga6bbe679f115cec90d36d50eb2aac1b89}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes to RTC interrupts and puts the given bit in bit\+\_\+no \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__rtc_ga9d4850bb2a488644672d43287f160622}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes RTC interrupts \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__rtc_ga401ff1a42d649d1b925b573f7032d94f}{read\+\_\+from\+\_\+reg}} (uint8\+\_\+t reg\+\_\+no)
+\begin{DoxyCompactList}\small\item\em reads the value present in the given RTC register \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__rtc_gaf4b0c75f2edcc135a569ebb37f1a7e41}{write\+\_\+to\+\_\+reg}} (uint8\+\_\+t reg\+\_\+no, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em writes the given value to the given RTC register \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__rtc_ga430c89f38c7cfff176948c443c57560f}{setup\+\_\+update\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em sets up the RTC with some default operation values \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8c_a9f92f313c3714cb364715862d8737cd4}{handle\+\_\+update\+\_\+int}} ()
+\item 
+void() \mbox{\hyperlink{group__rtc_gab4aa45a2195a25a1c74c377654347870}{rtc\+\_\+int\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em interrupt handler for the RTC \end{DoxyCompactList}\item 
+unsigned short() \mbox{\hyperlink{group__rtc_gada2df48da87f50fd7142f861a714a34d}{rtc\+\_\+get\+\_\+seconds}} ()
+\begin{DoxyCompactList}\small\item\em get current seconds \end{DoxyCompactList}\item 
+unsigned short() \mbox{\hyperlink{group__rtc_ga311e93f37194c8885e38c16a2125cdb5}{rtc\+\_\+get\+\_\+minutes}} ()
+\begin{DoxyCompactList}\small\item\em get current minutes \end{DoxyCompactList}\item 
+unsigned short() \mbox{\hyperlink{group__rtc_ga5cacd466f3283cd7d2bbf02c413a253d}{rtc\+\_\+get\+\_\+hours}} ()
+\begin{DoxyCompactList}\small\item\em get current hours \end{DoxyCompactList}\item 
+char $\ast$() \mbox{\hyperlink{group__rtc_ga7a4171e6ddacc8510ea7c2644e26c01a}{rtc\+\_\+get\+\_\+formatted\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em get a formatted representation of the current time \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned short \mbox{\hyperlink{rtc_8c_ab2d852c3dee3700228a83a32cc1784a9}{seconds}}
+\begin{DoxyCompactList}\small\item\em the current time\textquotesingle{}s seconds \end{DoxyCompactList}\item 
+unsigned short \mbox{\hyperlink{rtc_8c_a0f55e12714c1470c72aee0558a44b7dc}{minutes}}
+\begin{DoxyCompactList}\small\item\em the current time\textquotesingle{}s minutes \end{DoxyCompactList}\item 
+unsigned short \mbox{\hyperlink{rtc_8c_a197a7c6c24be18f4d156491b03e69e7a}{hours}}
+\begin{DoxyCompactList}\small\item\em the current time\textquotesingle{}s hours \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{rtc_8c_a5c6f5d21ae93d312481634f690b7c8d0}{formatted\+\_\+time}} \mbox{[}9\mbox{]}
+\begin{DoxyCompactList}\small\item\em character string containing a formatted representation of the current time \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{rtc_8c_a2104cddd894d8128a3d2658ee6f5342b}{rtc\+\_\+global\+\_\+hook\+\_\+id}}
+\begin{DoxyCompactList}\small\item\em hook id used to unsubscribe interrupts from the RTC \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8c_a9f92f313c3714cb364715862d8737cd4}\label{rtc_8c_a9f92f313c3714cb364715862d8737cd4}} 
+\index{rtc.c@{rtc.c}!handle\_update\_int@{handle\_update\_int}}
+\index{handle\_update\_int@{handle\_update\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{handle\_update\_int()}{handle\_update\_int()}}
+{\footnotesize\ttfamily void() handle\+\_\+update\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{rtc_8c_a5c6f5d21ae93d312481634f690b7c8d0}\label{rtc_8c_a5c6f5d21ae93d312481634f690b7c8d0}} 
+\index{rtc.c@{rtc.c}!formatted\_time@{formatted\_time}}
+\index{formatted\_time@{formatted\_time}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{formatted\_time}{formatted\_time}}
+{\footnotesize\ttfamily char formatted\+\_\+time\mbox{[}9\mbox{]}}
+
+
+
+character string containing a formatted representation of the current time 
+
+\mbox{\Hypertarget{rtc_8c_a197a7c6c24be18f4d156491b03e69e7a}\label{rtc_8c_a197a7c6c24be18f4d156491b03e69e7a}} 
+\index{rtc.c@{rtc.c}!hours@{hours}}
+\index{hours@{hours}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{hours}{hours}}
+{\footnotesize\ttfamily unsigned short hours}
+
+
+
+the current time\textquotesingle{}s hours 
+
+\mbox{\Hypertarget{rtc_8c_a0f55e12714c1470c72aee0558a44b7dc}\label{rtc_8c_a0f55e12714c1470c72aee0558a44b7dc}} 
+\index{rtc.c@{rtc.c}!minutes@{minutes}}
+\index{minutes@{minutes}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{minutes}{minutes}}
+{\footnotesize\ttfamily unsigned short minutes}
+
+
+
+the current time\textquotesingle{}s minutes 
+
+\mbox{\Hypertarget{rtc_8c_a2104cddd894d8128a3d2658ee6f5342b}\label{rtc_8c_a2104cddd894d8128a3d2658ee6f5342b}} 
+\index{rtc.c@{rtc.c}!rtc\_global\_hook\_id@{rtc\_global\_hook\_id}}
+\index{rtc\_global\_hook\_id@{rtc\_global\_hook\_id}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_global\_hook\_id}{rtc\_global\_hook\_id}}
+{\footnotesize\ttfamily int32\+\_\+t rtc\+\_\+global\+\_\+hook\+\_\+id}
+
+
+
+hook id used to unsubscribe interrupts from the RTC 
+
+\mbox{\Hypertarget{rtc_8c_ab2d852c3dee3700228a83a32cc1784a9}\label{rtc_8c_ab2d852c3dee3700228a83a32cc1784a9}} 
+\index{rtc.c@{rtc.c}!seconds@{seconds}}
+\index{seconds@{seconds}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{seconds}{seconds}}
+{\footnotesize\ttfamily unsigned short seconds}
+
+
+
+the current time\textquotesingle{}s seconds 
+

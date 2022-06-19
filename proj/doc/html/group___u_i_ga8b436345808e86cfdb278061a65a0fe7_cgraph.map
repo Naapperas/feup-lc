@@ -1,0 +1,22 @@
+<map id="draw_menu" name="draw_menu">
+<area shape="rect" id="node1" title="Draws the menu (background) and calls the function responsible for drawing the buttons." alt="" coords="5,288,104,314"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga12e0a019382481d6af4dfb730d2468c7" title="Draws a rectangle on a pixel buffer." alt="" coords="553,60,704,86"/>
+<area shape="rect" id="node3" href="$group__draw__buttons.html#ga8d46b5bb0547f68fd65d40c6782054e8" title="Draws the buttons on screen." alt="" coords="152,288,263,314"/>
+<area shape="rect" id="node20" href="$group__graphics.html#gab3432881d182a4c6455e0cfbaafece78" title="Returns the back buffer." alt="" coords="345,541,471,568"/>
+<area shape="rect" id="node4" href="$group__draw__buttons.html#gae0bc54b9eec329ced28428d60c2e0865" title="Draws the button that allows the user to clear the canvas to a pixel buffer." alt="" coords="311,490,505,517"/>
+<area shape="rect" id="node7" href="$group__draw__buttons.html#ga8a09809fd380fc02ab5992ad80cc350b" title="Draws a color button on a pixel buffer." alt="" coords="337,34,479,61"/>
+<area shape="rect" id="node11" href="$group__draw__buttons.html#gaa6435009e8ddd5baa6240bb3d81b19fd" title="Draws the button to decrease the thickness of the cursor on a pixel buffer." alt="" coords="333,288,483,314"/>
+<area shape="rect" id="node12" href="$group__draw__buttons.html#ga71307477d443a89392611816abdd709d" title="Draws the button to increase the thickness of the cursor on a pixel buffer." alt="" coords="339,338,477,365"/>
+<area shape="rect" id="node13" href="$draw__buttons_8c.html#a4ceb04b45bd391b844175580d97bfccb" title=" " alt="" coords="319,389,497,416"/>
+<area shape="rect" id="node14" href="$group__draw__buttons.html#gafdb30e468c5cd1e9c233b4c97362793f" title="Draws the button to draw a circle on a pixel buffer." alt="" coords="323,186,493,213"/>
+<area shape="rect" id="node16" href="$group__draw__buttons.html#ga6154e9081a9c711dd0c2fd0a892d6945" title="Draws the button that allows the user to use an eraser on the canvas to a pixel buffer." alt="" coords="319,237,497,264"/>
+<area shape="rect" id="node17" href="$group__draw__buttons.html#ga14673af5638efb032dac6c0df453489d" title="Draws the button to draw a straight line on a pixel buffer." alt="" coords="328,85,488,112"/>
+<area shape="rect" id="node18" href="$group__draw__buttons.html#ga62f6170bf1049dc4eb22778cd53df23b" title="Draws the button to draw a square on a pixel buffer." alt="" coords="318,136,498,162"/>
+<area shape="rect" id="node19" href="$group__draw__buttons.html#ga11c349438dd852c7d0432983bc0cb02d" title="Draws the button that allows the user to input text into the canvas to a pixel buffer." alt="" coords="327,440,489,466"/>
+<area shape="rect" id="node5" href="$group__graphics.html#ga34c7bdd63f72bd3f735f7bec8738ddd6" title="Draws a XPM to the given pixel buffer." alt="" coords="569,338,688,365"/>
+<area shape="rect" id="node6" href="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="924,224,1045,250"/>
+<area shape="rect" id="node8" href="$group__draw__buttons.html#gaa6af89646cd7d59141040cb6d1b907f9" title="Draws a button frame on a pixel buffer." alt="" coords="554,136,703,162"/>
+<area shape="rect" id="node9" href="$group__graphics.html#ga46c7629f4db6494a40730b69b99d482f" title="Draws an horizontal line on a pixel buffer." alt="" coords="753,122,875,149"/>
+<area shape="rect" id="node10" href="$group__graphics.html#ga217f0eee3bf0366f3ceda240ca6a9e7f" title="Draws a vertical line on a pixel buffer." alt="" coords="753,173,875,200"/>
+<area shape="rect" id="node15" href="$group__graphics.html#ga3f2490703f76d68ee31a7e93671633da" title="Draws a circle on a pixel buffer." alt="" coords="752,224,876,250"/>
+</map>

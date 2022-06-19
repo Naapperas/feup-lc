@@ -1,0 +1,104 @@
+\hypertarget{mouse_8c}{}\doxysection{src/devices/kbc/mouse.c File Reference}
+\label{mouse_8c}\index{src/devices/kbc/mouse.c@{src/devices/kbc/mouse.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lab4.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/utils.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+Include dependency graph for mouse.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct packet() \mbox{\hyperlink{group__mouse_ga0cc322061bf385b4396d89e93b2974b4}{get\+\_\+mouse\+\_\+packet}} ()
+\begin{DoxyCompactList}\small\item\em Get the current mouse packet. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes to mouse interrupts and puts the given bit in bit\+\_\+no \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes mouse interrupts \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_gaa15e334757e4523c4ee9906b8afe110e}{kbc\+\_\+mouse\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Check if mouse output buffer is full. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga692625f0ff4d0490d38137d19be5811e}{lb\+\_\+is\+\_\+pressed}} ()
+\begin{DoxyCompactList}\small\item\em Check if mouse left button is pressed. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{mouse_8c_a210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\item 
+void() \mbox{\hyperlink{group__mouse_gaf049d2ae2b13d6904e9225383152bbf2}{kbc\+\_\+enable\+\_\+data\+\_\+report}} ()
+\begin{DoxyCompactList}\small\item\em Enables KBC Mouse data reporting. \end{DoxyCompactList}\item 
+int16\+\_\+t() \mbox{\hyperlink{group__mouse_ga25f8882df15e15d7c7e619348b82fceb}{uint8\+\_\+to\+\_\+int16}} (uint8\+\_\+t uint8\+\_\+val, bool sign)
+\begin{DoxyCompactList}\small\item\em Convert an unsigned 8-\/bit value into a signed 16-\/bit value. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga0d78bea3540ef23412704f4dd2721fce}{reset\+\_\+kbc}} ()
+\begin{DoxyCompactList}\small\item\em Resets the KBC to the default Minix state. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga36c05f7ca3ccc807afddd659252d77e8}{wait\+\_\+for\+\_\+inbuff\+\_\+empty}} ()
+\begin{DoxyCompactList}\small\item\em waits for the KBC input buffer to be empty \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__mouse_ga783d0f32c217e4857504c449b4a89793}{mouse\+\_\+command\+\_\+feedback}} ()
+\begin{DoxyCompactList}\small\item\em Get mouse command feedback. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga19a82faff0e40829b26501342b08bb81}{write\+\_\+command\+\_\+to\+\_\+mouse}} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Writes the given command to the mouse. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga27312d3b687eb2d30d1e30bfd7b22599}{mouse\+\_\+packet\+\_\+ready}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the mouse packet has been fully processed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int32\+\_\+t \mbox{\hyperlink{mouse_8c_a0ba5a1d7b0ec247d4a93147b4c02cd8e}{mouse\+\_\+global\+\_\+hook\+\_\+id}}
+\begin{DoxyCompactList}\small\item\em the hook id that is used to unsubscribe interrupts from the mouse \end{DoxyCompactList}\item 
+struct packet \mbox{\hyperlink{mouse_8c_a3b2e64ffb96c650d6525c99be01c7331}{mouse\+\_\+packet}}
+\begin{DoxyCompactList}\small\item\em the packet that contains information about the last movement and the state of the various buttons of the mouse \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{mouse_8c_a052736b69c140cd8dad251f100046dd3}{packet\+\_\+counter}} = 0
+\begin{DoxyCompactList}\small\item\em the amount of bytes that have been read so far for the current packet \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{mouse_8c_ab3ae786aee1f20eff4f6d9ff85e41299}{mouse\+\_\+ready}} = false
+\begin{DoxyCompactList}\small\item\em indicates whether the mouse\+\_\+packet contains all the necessary information or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mouse_8c_a210374b50462acdedab00df64d5cea3c}\label{mouse_8c_a210374b50462acdedab00df64d5cea3c}} 
+\index{mouse.c@{mouse.c}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{mouse_8c_a0ba5a1d7b0ec247d4a93147b4c02cd8e}\label{mouse_8c_a0ba5a1d7b0ec247d4a93147b4c02cd8e}} 
+\index{mouse.c@{mouse.c}!mouse\_global\_hook\_id@{mouse\_global\_hook\_id}}
+\index{mouse\_global\_hook\_id@{mouse\_global\_hook\_id}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_global\_hook\_id}{mouse\_global\_hook\_id}}
+{\footnotesize\ttfamily int32\+\_\+t mouse\+\_\+global\+\_\+hook\+\_\+id}
+
+
+
+the hook id that is used to unsubscribe interrupts from the mouse 
+
+\mbox{\Hypertarget{mouse_8c_a3b2e64ffb96c650d6525c99be01c7331}\label{mouse_8c_a3b2e64ffb96c650d6525c99be01c7331}} 
+\index{mouse.c@{mouse.c}!mouse\_packet@{mouse\_packet}}
+\index{mouse\_packet@{mouse\_packet}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_packet}{mouse\_packet}}
+{\footnotesize\ttfamily struct packet mouse\+\_\+packet}
+
+
+
+the packet that contains information about the last movement and the state of the various buttons of the mouse 
+
+\mbox{\Hypertarget{mouse_8c_ab3ae786aee1f20eff4f6d9ff85e41299}\label{mouse_8c_ab3ae786aee1f20eff4f6d9ff85e41299}} 
+\index{mouse.c@{mouse.c}!mouse\_ready@{mouse\_ready}}
+\index{mouse\_ready@{mouse\_ready}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_ready}{mouse\_ready}}
+{\footnotesize\ttfamily bool mouse\+\_\+ready = false}
+
+
+
+indicates whether the mouse\+\_\+packet contains all the necessary information or not 
+
+\mbox{\Hypertarget{mouse_8c_a052736b69c140cd8dad251f100046dd3}\label{mouse_8c_a052736b69c140cd8dad251f100046dd3}} 
+\index{mouse.c@{mouse.c}!packet\_counter@{packet\_counter}}
+\index{packet\_counter@{packet\_counter}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{packet\_counter}{packet\_counter}}
+{\footnotesize\ttfamily uint8\+\_\+t packet\+\_\+counter = 0}
+
+
+
+the amount of bytes that have been read so far for the current packet 
+

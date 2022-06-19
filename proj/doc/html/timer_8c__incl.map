@@ -1,0 +1,9 @@
+<map id="src/devices/timer/timer.c" name="src/devices/timer/timer.c">
+<area shape="rect" id="node1" title=" " alt="" coords="96,5,280,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="179,229,264,256"/>
+<area shape="rect" id="node3" title=" " alt="" coords="24,80,129,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="153,80,224,107"/>
+<area shape="rect" id="node5" href="$i8254_8h.html" title=" " alt="" coords="248,80,318,107"/>
+<area shape="rect" id="node7" href="$timer_8h.html" title=" " alt="" coords="355,155,424,181"/>
+<area shape="rect" id="node6" href="$utils_8h.html" title=" " alt="" coords="212,155,330,181"/>
+</map>

@@ -1,0 +1,229 @@
+\hypertarget{group__mouse}{}\doxysection{mouse}
+\label{group__mouse}\index{mouse@{mouse}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__mouse_gafdd08f62e591c36b8bd14ebd40743ef7}{mouse\+\_\+packet\+\_\+t}}~struct packet
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes to mouse interrupts and puts the given bit in bit\+\_\+no \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes mouse interrupts \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_gaa15e334757e4523c4ee9906b8afe110e}{kbc\+\_\+mouse\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Check if mouse output buffer is full. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga692625f0ff4d0490d38137d19be5811e}{lb\+\_\+is\+\_\+pressed}} ()
+\begin{DoxyCompactList}\small\item\em Check if mouse left button is pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__mouse_gafdd08f62e591c36b8bd14ebd40743ef7}{mouse\+\_\+packet\+\_\+t}}() \mbox{\hyperlink{group__mouse_ga0cc322061bf385b4396d89e93b2974b4}{get\+\_\+mouse\+\_\+packet}} ()
+\begin{DoxyCompactList}\small\item\em Get the current mouse packet. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga0d78bea3540ef23412704f4dd2721fce}{reset\+\_\+kbc}} ()
+\begin{DoxyCompactList}\small\item\em Resets the KBC to the default Minix state. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga36c05f7ca3ccc807afddd659252d77e8}{wait\+\_\+for\+\_\+inbuff\+\_\+empty}} ()
+\begin{DoxyCompactList}\small\item\em waits for the KBC input buffer to be empty \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga19a82faff0e40829b26501342b08bb81}{write\+\_\+command\+\_\+to\+\_\+mouse}} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Writes the given command to the mouse. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_gaf049d2ae2b13d6904e9225383152bbf2}{kbc\+\_\+enable\+\_\+data\+\_\+report}} ()
+\begin{DoxyCompactList}\small\item\em Enables KBC Mouse data reporting. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__mouse_ga783d0f32c217e4857504c449b4a89793}{mouse\+\_\+command\+\_\+feedback}} ()
+\begin{DoxyCompactList}\small\item\em Get mouse command feedback. \end{DoxyCompactList}\item 
+int16\+\_\+t() \mbox{\hyperlink{group__mouse_ga25f8882df15e15d7c7e619348b82fceb}{uint8\+\_\+to\+\_\+int16}} (uint8\+\_\+t uint8\+\_\+val, bool sign)
+\begin{DoxyCompactList}\small\item\em Convert an unsigned 8-\/bit value into a signed 16-\/bit value. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga27312d3b687eb2d30d1e30bfd7b22599}{mouse\+\_\+packet\+\_\+ready}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the mouse packet has been fully processed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions used for the programming of the mouse 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__mouse_gafdd08f62e591c36b8bd14ebd40743ef7}\label{group__mouse_gafdd08f62e591c36b8bd14ebd40743ef7}} 
+\index{mouse@{mouse}!mouse\_packet\_t@{mouse\_packet\_t}}
+\index{mouse\_packet\_t@{mouse\_packet\_t}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_packet\_t}{mouse\_packet\_t}}
+{\footnotesize\ttfamily \#define mouse\+\_\+packet\+\_\+t~struct packet}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__mouse_ga0cc322061bf385b4396d89e93b2974b4}\label{group__mouse_ga0cc322061bf385b4396d89e93b2974b4}} 
+\index{mouse@{mouse}!get\_mouse\_packet@{get\_mouse\_packet}}
+\index{get\_mouse\_packet@{get\_mouse\_packet}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{get\_mouse\_packet()}{get\_mouse\_packet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__mouse_gafdd08f62e591c36b8bd14ebd40743ef7}{mouse\+\_\+packet\+\_\+t}}() get\+\_\+mouse\+\_\+packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current mouse packet. 
+
+\begin{DoxyReturn}{Returns}
+the current mouse packet 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{group__mouse_gaf049d2ae2b13d6904e9225383152bbf2}\label{group__mouse_gaf049d2ae2b13d6904e9225383152bbf2}} 
+\index{mouse@{mouse}!kbc\_enable\_data\_report@{kbc\_enable\_data\_report}}
+\index{kbc\_enable\_data\_report@{kbc\_enable\_data\_report}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{kbc\_enable\_data\_report()}{kbc\_enable\_data\_report()}}
+{\footnotesize\ttfamily void() kbc\+\_\+enable\+\_\+data\+\_\+report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables KBC Mouse data reporting. 
+
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{group__mouse_gaa15e334757e4523c4ee9906b8afe110e}\label{group__mouse_gaa15e334757e4523c4ee9906b8afe110e}} 
+\index{mouse@{mouse}!kbc\_mouse\_data@{kbc\_mouse\_data}}
+\index{kbc\_mouse\_data@{kbc\_mouse\_data}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{kbc\_mouse\_data()}{kbc\_mouse\_data()}}
+{\footnotesize\ttfamily bool() kbc\+\_\+mouse\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if mouse output buffer is full. 
+
+\begin{DoxyReturn}{Returns}
+true if mouse output buffer is full, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{group__mouse_ga692625f0ff4d0490d38137d19be5811e}\label{group__mouse_ga692625f0ff4d0490d38137d19be5811e}} 
+\index{mouse@{mouse}!lb\_is\_pressed@{lb\_is\_pressed}}
+\index{lb\_is\_pressed@{lb\_is\_pressed}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{lb\_is\_pressed()}{lb\_is\_pressed()}}
+{\footnotesize\ttfamily bool() lb\+\_\+is\+\_\+pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if mouse left button is pressed. 
+
+\begin{DoxyReturn}{Returns}
+true if left button is pressed, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_ga783d0f32c217e4857504c449b4a89793}\label{group__mouse_ga783d0f32c217e4857504c449b4a89793}} 
+\index{mouse@{mouse}!mouse\_command\_feedback@{mouse\_command\_feedback}}
+\index{mouse\_command\_feedback@{mouse\_command\_feedback}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_command\_feedback()}{mouse\_command\_feedback()}}
+{\footnotesize\ttfamily uint8\+\_\+t() mouse\+\_\+command\+\_\+feedback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get mouse command feedback. 
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{group__mouse_ga27312d3b687eb2d30d1e30bfd7b22599}\label{group__mouse_ga27312d3b687eb2d30d1e30bfd7b22599}} 
+\index{mouse@{mouse}!mouse\_packet\_ready@{mouse\_packet\_ready}}
+\index{mouse\_packet\_ready@{mouse\_packet\_ready}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_packet\_ready()}{mouse\_packet\_ready()}}
+{\footnotesize\ttfamily bool() mouse\+\_\+packet\+\_\+ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the mouse packet has been fully processed. 
+
+\begin{DoxyReturn}{Returns}
+true if the packet has been fully processed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_ga20285aed4b3ef45812cd967532dd09db}\label{group__mouse_ga20285aed4b3ef45812cd967532dd09db}} 
+\index{mouse@{mouse}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes to mouse interrupts and puts the given bit in bit\+\_\+no 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bit\+\_\+no} & Bit number of the mouse interrupt messages \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}\label{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}} 
+\index{mouse@{mouse}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes mouse interrupts 
+
+\mbox{\Hypertarget{group__mouse_ga0d78bea3540ef23412704f4dd2721fce}\label{group__mouse_ga0d78bea3540ef23412704f4dd2721fce}} 
+\index{mouse@{mouse}!reset\_kbc@{reset\_kbc}}
+\index{reset\_kbc@{reset\_kbc}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{reset\_kbc()}{reset\_kbc()}}
+{\footnotesize\ttfamily void() reset\+\_\+kbc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the KBC to the default Minix state. 
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{group__mouse_ga25f8882df15e15d7c7e619348b82fceb}\label{group__mouse_ga25f8882df15e15d7c7e619348b82fceb}} 
+\index{mouse@{mouse}!uint8\_to\_int16@{uint8\_to\_int16}}
+\index{uint8\_to\_int16@{uint8\_to\_int16}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{uint8\_to\_int16()}{uint8\_to\_int16()}}
+{\footnotesize\ttfamily int16\+\_\+t() uint8\+\_\+to\+\_\+int16 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{uint8\+\_\+val,  }\item[{bool}]{sign }\end{DoxyParamCaption})}
+
+
+
+Convert an unsigned 8-\/bit value into a signed 16-\/bit value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The unsigned 8-\/bit value \\
+\hline
+{\em sign} & the sign of the resulting number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 2s-\/complement signed 16-\/bit equivalent of the 8-\/bit value passed in 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{group__mouse_ga36c05f7ca3ccc807afddd659252d77e8}\label{group__mouse_ga36c05f7ca3ccc807afddd659252d77e8}} 
+\index{mouse@{mouse}!wait\_for\_inbuff\_empty@{wait\_for\_inbuff\_empty}}
+\index{wait\_for\_inbuff\_empty@{wait\_for\_inbuff\_empty}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{wait\_for\_inbuff\_empty()}{wait\_for\_inbuff\_empty()}}
+{\footnotesize\ttfamily void() wait\+\_\+for\+\_\+inbuff\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+waits for the KBC input buffer to be empty 
+
+Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{group__mouse_ga19a82faff0e40829b26501342b08bb81}\label{group__mouse_ga19a82faff0e40829b26501342b08bb81}} 
+\index{mouse@{mouse}!write\_command\_to\_mouse@{write\_command\_to\_mouse}}
+\index{write\_command\_to\_mouse@{write\_command\_to\_mouse}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{write\_command\_to\_mouse()}{write\_command\_to\_mouse()}}
+{\footnotesize\ttfamily void() write\+\_\+command\+\_\+to\+\_\+mouse (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+
+
+Writes the given command to the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command to write \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 12
+Here is the caller graph for this function\+:
+% FIG 13

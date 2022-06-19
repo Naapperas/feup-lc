@@ -1,0 +1,22 @@
+digraph "canvas_handle_text"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="canvas_handle_text",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Handles how clicks on the canvas while the cursor is in text state should behave."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="buf_draw_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#gaf1ece22510b6c3de2d3a5d4559028fb9",tooltip="draws the given string to the given buffer on the given position."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="buf_draw_rectangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga12e0a019382481d6af4dfb730d2468c7",tooltip="Draws a rectangle on a pixel buffer."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="cursor_get_color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga5f8c8d3eed096c6d94a911f9bfa72df4",tooltip="Returns the current color of the cursor."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="cursor_get_thickness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b",tooltip="Get cursor thickness."];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="get_font_xpm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__text.html#gade215bd9889bb8b69de584385ca0c557",tooltip="Returns the xpm image of the font."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="cursor_lb_was_pressed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga565cbdb0a5f7b4f6ecc1fc2ab09011d7",tooltip="Indicates whether the left button was pressed or not."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="get_is_typing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#gaf77450d0441ac50608634a16cbf4ec1e",tooltip="Getter for the \"typing\" variable."];
+}

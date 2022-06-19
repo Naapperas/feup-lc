@@ -1,0 +1,8 @@
+<map id="vg_draw_pixel" name="vg_draw_pixel">
+<area shape="rect" id="node1" title="Draws a pixel on a given position." alt="" coords="360,81,476,108"/>
+<area shape="rect" id="node2" href="$video__gr_8c.html#a9ad89c479170f8c6f615097dc48c5947" title=" " alt="" coords="161,5,312,32"/>
+<area shape="rect" id="node4" href="$video__gr_8c.html#a81132604c5b9c517b266a9c20cba3763" title=" " alt="" coords="164,56,309,83"/>
+<area shape="rect" id="node5" href="$group__video__gr.html#ga437c7acd65b322492a34429afea7fa94" title="Draws a circle on a given position." alt="" coords="177,107,296,133"/>
+<area shape="rect" id="node6" href="$group__video__gr.html#gae3ef37a6eb8d4e6407903ee08fefb3c0" title="Draws an xpm image on a given position." alt="" coords="180,157,293,184"/>
+<area shape="rect" id="node3" href="$group__video__gr.html#ga6c2fe3a68fb18bca54d7d8b06efe01c0" title="Draws a line on a given position." alt="" coords="5,31,113,57"/>
+</map>

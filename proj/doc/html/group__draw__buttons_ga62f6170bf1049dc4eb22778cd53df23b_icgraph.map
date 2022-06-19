@@ -1,0 +1,6 @@
+<map id="draw_sel_square_button" name="draw_sel_square_button">
+<area shape="rect" id="node1" title="Draws the button to draw a square on a pixel buffer." alt="" coords="461,5,641,32"/>
+<area shape="rect" id="node2" href="$group__draw__buttons.html#ga8d46b5bb0547f68fd65d40c6782054e8" title="Draws the buttons on screen." alt="" coords="303,5,413,32"/>
+<area shape="rect" id="node3" href="$group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7" title="Draws the menu (background) and calls the function responsible for drawing the buttons." alt="" coords="156,5,255,32"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54" title="Draws the program assets on screen." alt="" coords="5,5,108,32"/>
+</map>

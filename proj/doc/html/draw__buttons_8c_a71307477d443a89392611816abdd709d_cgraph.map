@@ -1,0 +1,5 @@
+<map id="draw_plus_button" name="draw_plus_button">
+<area shape="rect" id="node1" title="Draws the button to increase the thickness of the cursor on a pixel buffer." alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a34c7bdd63f72bd3f735f7bec8738ddd6" title="Draws a XPM to the given pixel buffer." alt="" coords="191,5,309,32"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="357,5,479,32"/>
+</map>

@@ -1,0 +1,30 @@
+\hypertarget{vbe_8h}{}\doxysection{src/devices/video/vbe.h File Reference}
+\label{vbe_8h}\index{src/devices/video/vbe.h@{src/devices/video/vbe.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../utils/utils.\+h\char`\"{}}\newline
+Include dependency graph for vbe.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__vbe_gace04f6ae9a1b70f0b4d1c19bbb9b91d7}{VBE\+\_\+\+INTERFACE}}~0x10
+\begin{DoxyCompactList}\small\item\em interrupt number of the vbe call \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_ga02477c4996ff058aee590b54f2146eb5}{VBE\+\_\+\+SET\+\_\+\+MODE}}~0x4\+F02
+\begin{DoxyCompactList}\small\item\em set vbe mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_ga50a1643aa09a3502459f1c06657600e1}{LINEAR\+\_\+\+MODE}}~BIT(14)
+\begin{DoxyCompactList}\small\item\em linear mode bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_gabc2e3886ab8cd536e868aa899d9f01be}{VBE\+\_\+\+MODE\+\_\+800x600\+\_\+\+INDEXED}}~0x103
+\begin{DoxyCompactList}\small\item\em masked used to set the VBE to a 800x600 indexed mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_ga72256554e9551b4c9a5b3dd6fe4bf094}{VBE\+\_\+\+MODE\+\_\+1024x768\+\_\+\+INDEXED}}~0x105
+\begin{DoxyCompactList}\small\item\em masked used to set the VBE to a 1024x768 indexed mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_gaf8daefce2d37460f509371a30ced85a6}{VBE\+\_\+\+MODE\+\_\+1280x1024\+\_\+\+FULL\+\_\+\+COLOR}}~0x11B
+\begin{DoxyCompactList}\small\item\em masked used to set the VBE to a 1280x1024 full color mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__vbe_ga8ae818bfffe265cbf70ff64273234b26}{get\+RGB}} (uint32\+\_\+t color, uint8\+\_\+t $\ast$r, uint8\+\_\+t $\ast$g, uint8\+\_\+t $\ast$b)
+\begin{DoxyCompactList}\small\item\em Separates a color into their red, green and blue components. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__vbe_ga636b97374e16752de60def2b1d4853a3}{make\+RGB}} (uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em Given red, green and blue components, return the result color. \end{DoxyCompactList}\end{DoxyCompactItemize}

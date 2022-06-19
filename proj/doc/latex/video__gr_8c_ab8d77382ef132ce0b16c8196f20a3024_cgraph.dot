@@ -1,0 +1,12 @@
+digraph "vg_init"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="vg_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="_get_mode_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$video__gr_8c.html#aa3cd469be57dcc519fa45f8ddeb5986d",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="_map_memory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$video__gr_8c.html#adfd6e0008157e0fa7bca8566f43b4181",tooltip=" "];
+}

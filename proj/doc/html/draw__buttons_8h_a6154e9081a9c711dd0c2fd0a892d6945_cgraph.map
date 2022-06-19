@@ -1,0 +1,8 @@
+<map id="draw_sel_eraser_button" name="draw_sel_eraser_button">
+<area shape="rect" id="node1" title="Draws the button that allows the user to use an eraser on the canvas to a pixel buffer." alt="" coords="5,31,183,57"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a34c7bdd63f72bd3f735f7bec8738ddd6" title="Draws a XPM to the given pixel buffer." alt="" coords="246,5,365,32"/>
+<area shape="rect" id="node4" href="$draw__buttons_8c.html#aa6af89646cd7d59141040cb6d1b907f9" title="Draws a button frame on a pixel buffer." alt="" coords="231,56,380,83"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="597,56,719,83"/>
+<area shape="rect" id="node5" href="$graphics_8c.html#a46c7629f4db6494a40730b69b99d482f" title="Draws an horizontal line on a pixel buffer." alt="" coords="428,56,549,83"/>
+<area shape="rect" id="node6" href="$graphics_8c.html#a217f0eee3bf0366f3ceda240ca6a9e7f" title="Draws a vertical line on a pixel buffer." alt="" coords="428,107,549,133"/>
+</map>

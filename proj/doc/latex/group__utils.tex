@@ -1,0 +1,157 @@
+\hypertarget{group__utils}{}\doxysection{utils}
+\label{group__utils}\index{utils@{utils}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__utils_ga2e72a56d8afa7c1749c44c220edecbbf}{LSB\+\_\+\+MASK16}}~0x00\+FF
+\begin{DoxyCompactList}\small\item\em a mask used to get the least significant byte of a 16 bit variable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__utils_ga88cb717ce68d842573088b025d3d6729}{LSB\+\_\+\+MASK32}}~0x000000\+FF
+\begin{DoxyCompactList}\small\item\em a mask used to get the least significant byte of a 32 bit variable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__utils_ga34d3f0d271fdbdb433766b4baf095218}{MSB\+\_\+\+MASK16}}~0x\+FF00
+\begin{DoxyCompactList}\small\item\em a mask used to get the most significant byte of a 16 bit variable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__utils_ga4f5bd8f9a40f83d5489183d14f884fcf}{MSB\+\_\+\+MASK32}}~0\+XFF000000
+\begin{DoxyCompactList}\small\item\em a mask used to get the most significant byte of a 32 bit variable \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__utils_ga81621440b3d65680979425e39aa8c789}{util\+\_\+get\+\_\+\+LSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$lsb)
+\begin{DoxyCompactList}\small\item\em Gets the least significant byte of a 16 bit variable. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__utils_ga6a880076cd2ec468834438b6e0c58836}{util\+\_\+get\+\_\+\+MSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$msb)
+\begin{DoxyCompactList}\small\item\em Gets the most significant byte of a 16 bit variable. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}{util\+\_\+sys\+\_\+inb}} (int port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Performs sys\+\_\+inb on a temporary 32 bit variable and returns it in on an 8 bit format. \end{DoxyCompactList}\item 
+uint16\+\_\+t() \mbox{\hyperlink{group__utils_gaa97f95e37675f07532b4353ace708671}{to\+\_\+bcd}} (uint16\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Represents a 16 bit value in a BCD format. Should be handled with care so as to not occur overflow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility functions and constants used throughout our program 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__utils_ga2e72a56d8afa7c1749c44c220edecbbf}\label{group__utils_ga2e72a56d8afa7c1749c44c220edecbbf}} 
+\index{utils@{utils}!LSB\_MASK16@{LSB\_MASK16}}
+\index{LSB\_MASK16@{LSB\_MASK16}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{LSB\_MASK16}{LSB\_MASK16}}
+{\footnotesize\ttfamily \#define LSB\+\_\+\+MASK16~0x00\+FF}
+
+
+
+a mask used to get the least significant byte of a 16 bit variable 
+
+\mbox{\Hypertarget{group__utils_ga88cb717ce68d842573088b025d3d6729}\label{group__utils_ga88cb717ce68d842573088b025d3d6729}} 
+\index{utils@{utils}!LSB\_MASK32@{LSB\_MASK32}}
+\index{LSB\_MASK32@{LSB\_MASK32}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{LSB\_MASK32}{LSB\_MASK32}}
+{\footnotesize\ttfamily \#define LSB\+\_\+\+MASK32~0x000000\+FF}
+
+
+
+a mask used to get the least significant byte of a 32 bit variable 
+
+\mbox{\Hypertarget{group__utils_ga34d3f0d271fdbdb433766b4baf095218}\label{group__utils_ga34d3f0d271fdbdb433766b4baf095218}} 
+\index{utils@{utils}!MSB\_MASK16@{MSB\_MASK16}}
+\index{MSB\_MASK16@{MSB\_MASK16}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{MSB\_MASK16}{MSB\_MASK16}}
+{\footnotesize\ttfamily \#define MSB\+\_\+\+MASK16~0x\+FF00}
+
+
+
+a mask used to get the most significant byte of a 16 bit variable 
+
+\mbox{\Hypertarget{group__utils_ga4f5bd8f9a40f83d5489183d14f884fcf}\label{group__utils_ga4f5bd8f9a40f83d5489183d14f884fcf}} 
+\index{utils@{utils}!MSB\_MASK32@{MSB\_MASK32}}
+\index{MSB\_MASK32@{MSB\_MASK32}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{MSB\_MASK32}{MSB\_MASK32}}
+{\footnotesize\ttfamily \#define MSB\+\_\+\+MASK32~0\+XFF000000}
+
+
+
+a mask used to get the most significant byte of a 32 bit variable 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__utils_gaa97f95e37675f07532b4353ace708671}\label{group__utils_gaa97f95e37675f07532b4353ace708671}} 
+\index{utils@{utils}!to\_bcd@{to\_bcd}}
+\index{to\_bcd@{to\_bcd}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{to\_bcd()}{to\_bcd()}}
+{\footnotesize\ttfamily uint16\+\_\+t() to\+\_\+bcd (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+Represents a 16 bit value in a BCD format. Should be handled with care so as to not occur overflow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the value that will be converted to BCD\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the BCD representation of val
+\end{DoxyReturn}
+Represents a 16 bit value in a BCD format. Should be handled with care so as to not occur overflow. \mbox{\Hypertarget{group__utils_ga81621440b3d65680979425e39aa8c789}\label{group__utils_ga81621440b3d65680979425e39aa8c789}} 
+\index{utils@{utils}!util\_get\_LSB@{util\_get\_LSB}}
+\index{util\_get\_LSB@{util\_get\_LSB}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{util\_get\_LSB()}{util\_get\_LSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+LSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{lsb }\end{DoxyParamCaption})}
+
+
+
+Gets the least significant byte of a 16 bit variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the 16 bit variable whose LSB will be returned\\
+\hline
+{\em lsb} & pointer to the variable where the LSB will be stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{group__utils_ga6a880076cd2ec468834438b6e0c58836}\label{group__utils_ga6a880076cd2ec468834438b6e0c58836}} 
+\index{utils@{utils}!util\_get\_MSB@{util\_get\_MSB}}
+\index{util\_get\_MSB@{util\_get\_MSB}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{util\_get\_MSB()}{util\_get\_MSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+MSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{msb }\end{DoxyParamCaption})}
+
+
+
+Gets the most significant byte of a 16 bit variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the 16 bit variable whose MSB will be returned\\
+\hline
+{\em msb} & pointer to the variable where the MSB will be stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}\label{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}} 
+\index{utils@{utils}!util\_sys\_inb@{util\_sys\_inb}}
+\index{util\_sys\_inb@{util\_sys\_inb}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{util\_sys\_inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily int() util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Performs sys\+\_\+inb on a temporary 32 bit variable and returns it in on an 8 bit format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & the port that should be used in sys\+\_\+inb\\
+\hline
+{\em value} & pointer to the 8 bit variable where the result of sys\+\_\+inb will be stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2

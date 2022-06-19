@@ -1,0 +1,6 @@
+<map id="write_command_to_mouse" name="write_command_to_mouse">
+<area shape="rect" id="node1" title="Writes the given command to the mouse." alt="" coords="403,31,601,57"/>
+<area shape="rect" id="node2" href="$group__mouse.html#gaf049d2ae2b13d6904e9225383152bbf2" title="Enables KBC Mouse data reporting." alt="" coords="176,5,355,32"/>
+<area shape="rect" id="node4" href="$group__mouse.html#ga0d78bea3540ef23412704f4dd2721fce" title="Resets the KBC to the default Minix state." alt="" coords="223,56,308,83"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+</map>

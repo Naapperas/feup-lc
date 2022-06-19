@@ -1,0 +1,15 @@
+digraph "write_command_to_mouse"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="write_command_to_mouse",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Writes the given command to the mouse."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="mouse_command_feedback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mouse_8c.html#a783d0f32c217e4857504c449b4a89793",tooltip="Get mouse command feedback."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="util_sys_inb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4",tooltip="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="wait_for_inbuff_empty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mouse_8c.html#a36c05f7ca3ccc807afddd659252d77e8",tooltip="waits for the KBC input buffer to be empty"];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+}

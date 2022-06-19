@@ -1,0 +1,7 @@
+<map id="buf_draw_text" name="buf_draw_text">
+<area shape="rect" id="node1" title="draws the given string to the given buffer on the given position." alt="" coords="5,81,120,108"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a12e0a019382481d6af4dfb730d2468c7" title="Draws a rectangle on a pixel buffer." alt="" coords="172,5,323,32"/>
+<area shape="rect" id="node3" href="$group__cursor.html#ga5f8c8d3eed096c6d94a911f9bfa72df4" title="Returns the current color of the cursor." alt="" coords="183,56,312,83"/>
+<area shape="rect" id="node4" href="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b" title="Get cursor thickness." alt="" coords="168,107,327,133"/>
+<area shape="rect" id="node5" href="$text_8c.html#ade215bd9889bb8b69de584385ca0c557" title="Returns the xpm image of the font." alt="" coords="191,157,303,184"/>
+</map>

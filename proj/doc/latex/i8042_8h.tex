@@ -1,0 +1,67 @@
+\hypertarget{i8042_8h}{}\doxysection{src/devices/kbc/i8042.h File Reference}
+\label{i8042_8h}\index{src/devices/kbc/i8042.h@{src/devices/kbc/i8042.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../utils/utils.\+h\char`\"{}}\newline
+Include dependency graph for i8042.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaefc1b7a81b128e9722a6d61a5b9d3e58}{KBC\+\_\+\+IN\+\_\+\+BUF\+\_\+\+ARG}}~0x60
+\begin{DoxyCompactList}\small\item\em command byte arguments port \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga19b698bdf2e0783e04e17153b49128bd}{KBC\+\_\+\+IN\+\_\+\+BUF\+\_\+\+CMD}}~0x64
+\begin{DoxyCompactList}\small\item\em command byte port \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga1ccde68b2b6d4e45b50eef1403e10bb7}{KBC\+\_\+\+OUT\+\_\+\+BUF}}~0x60
+\begin{DoxyCompactList}\small\item\em output buffer port \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga6c1c91dbe8b27f1d803698e27e4e9a08}{KBC\+\_\+\+OUT\+\_\+\+BUF\+\_\+\+ST}}~0x64
+\begin{DoxyCompactList}\small\item\em output buffer status port \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gae0eb4a4ad81458d29d8c17dd4acb69ad}{KBC\+\_\+\+ST\+\_\+\+PARITY}}~BIT(7)
+\begin{DoxyCompactList}\small\item\em status register parity error mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga4a4ee554382980f90871986459b60dd8}{KBC\+\_\+\+ST\+\_\+\+TIMEOUT}}~BIT(6)
+\begin{DoxyCompactList}\small\item\em status register timeout error mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga5a01c98e394aedacd058f4dc3b953bb0}{KBC\+\_\+\+ST\+\_\+\+AUX}}~BIT(5)
+\begin{DoxyCompactList}\small\item\em status register aux mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gaadde2ef3c9f5f2e49b8c83900dda7776}{KBC\+\_\+\+ST\+\_\+\+INH}}~BIT(4)
+\begin{DoxyCompactList}\small\item\em status register inh mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga141ccbc1ab10dfcdd1d450414dba13d4}{KBC\+\_\+\+ST\+\_\+\+IBF}}~BIT(1)
+\begin{DoxyCompactList}\small\item\em status register input buffer full mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga38010ed603a29beee559b2c20de50dcd}{KBC\+\_\+\+ST\+\_\+\+OBF}}~BIT(0)
+\begin{DoxyCompactList}\small\item\em status register output buffer full mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga43a8c52761b7ae2c8d67562519b734af}{KBC\+\_\+\+INT}}~BIT(0)
+\begin{DoxyCompactList}\small\item\em command byte enable interrupt on OBF from keyboard mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gad0c59bfa0e9250d4863516848740cae6}{KBC\+\_\+\+INT2}}~BIT(1)
+\begin{DoxyCompactList}\small\item\em command byte enable interrupt on OBF from mouse mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga9bdab8e245cb5e5a8217cd4465abd5e6}{KBC\+\_\+\+DIS}}~BIT(4)
+\begin{DoxyCompactList}\small\item\em command byte disable keyboard interface mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gaa7b58a9223dfb3c191dbd77c0a0881f2}{KBC\+\_\+\+DIS2}}~BIT(5)
+\begin{DoxyCompactList}\small\item\em command byte disable mouse interface mask \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gac1d860292cf53cc94fbe668bb09e3a97}{KBC\+\_\+\+RD\+\_\+\+CMD}}~0x20
+\begin{DoxyCompactList}\small\item\em read command byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga566639e881d299121efb8a1b4e95b606}{KBC\+\_\+\+WR\+\_\+\+CMD}}~0x60
+\begin{DoxyCompactList}\small\item\em write command byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga1feec59f57ba28933fbe3516f30b1d14}{KBC\+\_\+\+DISABLE\+\_\+\+MOUSE}}~0x\+A7
+\begin{DoxyCompactList}\small\item\em disable mouse command byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga2c0f7ed5ff3b86d06f0e95600a5f736f}{KBC\+\_\+\+ENABLE\+\_\+\+MOUSE}}~0x\+A8
+\begin{DoxyCompactList}\small\item\em enable mouse command byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga19f3f409be0e3cfa750c56408ef50f92}{KBC\+\_\+\+CHECK\+\_\+\+MOUSE\+\_\+\+INTERFACE}}~0x\+A9
+\begin{DoxyCompactList}\small\item\em check mouse interface command byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga527c13adcc82cd1a3877962892486eec}{KBC\+\_\+\+WR\+\_\+\+BYTE\+\_\+\+TO\+\_\+\+MOUSE}}~0x\+D4
+\begin{DoxyCompactList}\small\item\em write byte to mouse command byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga377990e5a4306fcce569aefebc3992fb}{KBC\+\_\+\+KEYBOARD\+\_\+\+IRQ}}~1
+\begin{DoxyCompactList}\small\item\em KBC keyboard IRQ line. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga5e8cf2aa467170689f668a0031d1c6e8}{KBC\+\_\+\+MOUSE\+\_\+\+IRQ}}~12
+\begin{DoxyCompactList}\small\item\em KBC PS/2 mouse IRQ line. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga306040b1943940f08a252a49d3462c26}{KBC\+\_\+\+SCANCODE\+\_\+\+DOUBLE\+\_\+\+BYTE}}~0x\+E0
+\begin{DoxyCompactList}\small\item\em two-\/byte long scancode indicator \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga07169518764252d7396586ed21583e45}{KBC\+\_\+\+SCANCODE\+\_\+\+TRIPLE\+\_\+\+BYTE}}~0x\+E1
+\begin{DoxyCompactList}\small\item\em three-\/byte long scancode indicator \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gac9216a46fe2225fe329422c4a2f80c54}{KBC\+\_\+\+SCANCODE\+\_\+\+BREAK}}~0
+\begin{DoxyCompactList}\small\item\em indicates the scancode is a break code \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gacc58db5cbce9a8ff48727f7b62368453}{KBC\+\_\+\+SCANCODE\+\_\+\+MAKE}}~1
+\begin{DoxyCompactList}\small\item\em indicates the scancode is a make code \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga4b099e7ada02224fe25c1bc1f36b74e8}{ESC\+\_\+\+KEY\+\_\+\+MAKE}}~0x01
+\begin{DoxyCompactList}\small\item\em ESC key make code. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga28b4e549678bf54a6b05777211685d67}{ESC\+\_\+\+KEY\+\_\+\+BREAK}}~0x81
+\begin{DoxyCompactList}\small\item\em ESC key break code. \end{DoxyCompactList}\end{DoxyCompactItemize}

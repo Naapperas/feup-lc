@@ -1,0 +1,27 @@
+var modules =
+[
+    [ "i8042", "group__i8042.html", "group__i8042" ],
+    [ "kbc", "group__kbc.html", "group__kbc" ],
+    [ "mouse", "group__mouse.html", "group__mouse" ],
+    [ "PS2", "group___p_s2.html", "group___p_s2" ],
+    [ "rtc", "group__rtc.html", "group__rtc" ],
+    [ "i8254", "group__i8254.html", "group__i8254" ],
+    [ "timer", "group__timer.html", "group__timer" ],
+    [ "graphics", "group__graphics.html", "group__graphics" ],
+    [ "vbe", "group__vbe.html", "group__vbe" ],
+    [ "video_gr", "group__video__gr.html", "group__video__gr" ],
+    [ "canvas", "group__canvas.html", "group__canvas" ],
+    [ "charset", "group__charset.html", "group__charset" ],
+    [ "cursor", "group__cursor.html", "group__cursor" ],
+    [ "draw_buttons", "group__draw__buttons.html", "group__draw__buttons" ],
+    [ "draw_clock", "group__draw__clock.html", "group__draw__clock" ],
+    [ "draw_chat", "group__draw__chat.html", "group__draw__chat" ],
+    [ "element", "group__element.html", "group__element" ],
+    [ "pixel_buffer", "group__pixel__buffer.html", "group__pixel__buffer" ],
+    [ "text", "group__text.html", "group__text" ],
+    [ "UI", "group___u_i.html", "group___u_i" ],
+    [ "color", "group__color.html", "group__color" ],
+    [ "const", "group__const.html", "group__const" ],
+    [ "position", "group__position.html", "group__position" ],
+    [ "utils", "group__utils.html", "group__utils" ]
+];

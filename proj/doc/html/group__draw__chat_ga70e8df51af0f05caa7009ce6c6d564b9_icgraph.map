@@ -1,0 +1,5 @@
+<map id="remove_char_from_current_text" name="remove_char_from_current_text">
+<area shape="rect" id="node1" title="Removes the last character to be added to the current text." alt="" coords="381,31,612,57"/>
+<area shape="rect" id="node2" href="$group__draw__chat.html#ga2f3400d74eb3c1e9f287cf24a58d7145" title="Removes characters from the current text until it&#39;s empty." alt="" coords="193,5,333,32"/>
+<area shape="rect" id="node3" href="$group__charset.html#ga5cf34e49e0ee978293deca0bd7097852" title=" " alt="" coords="5,31,145,57"/>
+</map>

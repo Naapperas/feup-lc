@@ -1,0 +1,21 @@
+\hypertarget{vbe_8h_source}{}\doxysection{vbe.\+h}
+\label{vbe_8h_source}\index{src/devices/video/vbe.h@{src/devices/video/vbe.h}}
+\mbox{\hyperlink{vbe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// IMPORTANT: you must include the following line in all your C files}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}../../utils/utils.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define VBE\_INTERFACE 0x10 }}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define VBE\_SET\_MODE 0x4F02 }}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define LINEAR\_MODE BIT(14) }}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define VBE\_MODE\_800x600\_INDEXED 0x103  }}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define VBE\_MODE\_1024x768\_INDEXED 0x105 }}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define VBE\_MODE\_1280x1024\_FULL\_COLOR 0x11B }}
+\DoxyCodeLine{31 \textcolor{keywordtype}{void} \mbox{\hyperlink{group__vbe_ga8ae818bfffe265cbf70ff64273234b26}{getRGB}}(uint32\_t color, uint8\_t *r, uint8\_t *g, uint8\_t *b);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{41 uint32\_t \mbox{\hyperlink{group__vbe_ga636b97374e16752de60def2b1d4853a3}{makeRGB}}(uint8\_t r, uint8\_t g, uint8\_t b);}
+\DoxyCodeLine{42 }
+
+\end{DoxyCode}

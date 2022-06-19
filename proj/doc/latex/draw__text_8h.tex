@@ -1,0 +1,27 @@
+\hypertarget{draw__text_8h}{}\doxysection{src/game/draw\+\_\+text.h File Reference}
+\label{draw__text_8h}\index{src/game/draw\_text.h@{src/game/draw\_text.h}}
+{\ttfamily \#include \char`\"{}../utils/position.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}element.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pixel\+\_\+buffer.\+h\char`\"{}}\newline
+Include dependency graph for draw\+\_\+text.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__draw__chat_ga9d620541ac06997e47c8486aed3640b0}{CHAR\+\_\+\+SCALE}}~2
+\begin{DoxyCompactList}\small\item\em the size scale of a character relative to the font used \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__draw__chat_ga77157daf10d4e4a26a4a2a2cb062202f}{INPUT\+\_\+\+CHAR\+\_\+\+SIZE}}~80
+\begin{DoxyCompactList}\small\item\em size of the text buffer when writing strings to the canvas \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__draw__chat_gac2461a1f880fb30adc88490ea47debc2}{add\+\_\+char\+\_\+to\+\_\+current\+\_\+text}} (char c)
+\begin{DoxyCompactList}\small\item\em Adds a character to the current text. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__chat_ga2f3400d74eb3c1e9f287cf24a58d7145}{clear\+\_\+current\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Removes characters from the current text until it\textquotesingle{}s empty. \end{DoxyCompactList}\item 
+char $\ast$() \mbox{\hyperlink{group__draw__chat_ga57634330ce5d2468a25996bbacfd0ab3}{get\+\_\+current\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current text. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__chat_ga70e8df51af0f05caa7009ce6c6d564b9}{remove\+\_\+char\+\_\+from\+\_\+current\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Removes the last character to be added to the current text. \end{DoxyCompactList}\end{DoxyCompactItemize}

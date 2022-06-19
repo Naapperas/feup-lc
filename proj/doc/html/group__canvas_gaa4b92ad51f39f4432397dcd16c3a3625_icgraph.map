@@ -1,0 +1,7 @@
+<map id="canvas_draw_pencil_circle" name="canvas_draw_pencil_circle">
+<area shape="rect" id="node1" title="Draws a circle on screen at the given cursor position." alt="" coords="721,5,875,47"/>
+<area shape="rect" id="node2" href="$group__canvas.html#ga33567ef82c11af5b0b894616851cc03b" title="Handles mouse events that happen within the canvas section of the screen." alt="" coords="499,13,673,39"/>
+<area shape="rect" id="node3" href="$group__element.html#ga75aa8cfcbee4af0933a79d05e6707679" title="Loads and creates every interactive element present on screen." alt="" coords="323,13,451,39"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a621db57ab86ebe569aa26e70d11c9688" title="Loads the necessary assets." alt="" coords="176,13,275,39"/>
+<area shape="rect" id="node5" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,13,128,39"/>
+</map>

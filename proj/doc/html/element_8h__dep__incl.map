@@ -1,0 +1,19 @@
+<map id="src/game/element.h" name="src/game/element.h">
+<area shape="rect" id="node1" title=" " alt="" coords="335,5,487,32"/>
+<area shape="rect" id="node2" href="$cursor_8h.html" title=" " alt="" coords="283,80,421,107"/>
+<area shape="rect" id="node10" href="$proj_8c.html" title=" " alt="" coords="125,379,206,405"/>
+<area shape="rect" id="node14" href="$draw__buttons_8h.html" title=" " alt="" coords="591,155,777,181"/>
+<area shape="rect" id="node15" href="$draw__text_8h.html" title=" " alt="" coords="703,80,865,107"/>
+<area shape="rect" id="node17" href="$element_8c.html" title=" " alt="" coords="890,80,1041,107"/>
+<area shape="rect" id="node3" href="$graphics_8h.html" title=" " alt="" coords="359,155,566,181"/>
+<area shape="rect" id="node5" href="$canvas_8h.html" title=" " alt="" coords="93,229,237,256"/>
+<area shape="rect" id="node13" href="$cursor_8c.html" title=" " alt="" coords="146,155,283,181"/>
+<area shape="rect" id="node4" href="$graphics_8c.html" title=" " alt="" coords="312,229,517,256"/>
+<area shape="rect" id="node7" href="$draw__clock_8c.html" title=" " alt="" coords="312,304,483,331"/>
+<area shape="rect" id="node8" href="$ui_8h.html" title=" " alt="" coords="507,304,618,331"/>
+<area shape="rect" id="node11" href="$draw__buttons_8c.html" title=" " alt="" coords="593,229,778,256"/>
+<area shape="rect" id="node12" href="$draw__text_8c.html" title=" " alt="" coords="853,229,1016,256"/>
+<area shape="rect" id="node6" href="$canvas_8c.html" title=" " alt="" coords="94,304,237,331"/>
+<area shape="rect" id="node9" href="$ui_8c.html" title=" " alt="" coords="508,379,617,405"/>
+<area shape="rect" id="node16" href="$charset_8c.html" title=" " alt="" coords="853,155,998,181"/>
+</map>

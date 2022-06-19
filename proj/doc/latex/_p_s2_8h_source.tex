@@ -1,0 +1,51 @@
+\hypertarget{_p_s2_8h_source}{}\doxysection{PS2.\+h}
+\label{_p_s2_8h_source}\index{src/devices/kbc/PS2.h@{src/devices/kbc/PS2.h}}
+\mbox{\hyperlink{_p_s2_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PS2\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PS2\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{12 \textcolor{comment}{/* mouse first packet byte structure */}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define MOUSE\_LB BIT(0)    }}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define MOUSE\_RB BIT(1)    }}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define MOUSE\_MB BIT(2)    }}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define MOUSE\_FBYTE BIT(3) }}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define MOUSE\_XSIGN BIT(4) }}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define MOUSE\_YSIGN BIT(5) }}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define MOUSE\_XOVFL BIT(6) }}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define MOUSE\_YOVFL BIT(7) }}
+\DoxyCodeLine{23 \textcolor{comment}{/* mouse controller acknowledgment bytes */}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define MOUSE\_ACK 0xFA   }}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define MOUSE\_NACK 0xFE  }}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define MOUSE\_ERROR 0xFC }}
+\DoxyCodeLine{29 \textcolor{comment}{/* ps/2 mouse related commands */}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define MOUSE\_RESET 0xFF                  }}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define MOUSE\_RESEND 0xFE                 }}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define MOUSE\_SET\_DEFAULTS 0xF6           }}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define MOUSE\_DISABLE\_DATA\_REPORTING 0xF5 }}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define MOUSE\_ENABLE\_DATA\_REPORTING 0xF4  }}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define MOUSE\_SET\_SAMPLE\_RATE 0xF3        }}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define MOUSE\_SET\_REMOTE\_MODE 0xF0        }}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#define MOUSE\_READ\_DATA 0xEB              }}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define MOUSE\_SET\_STREAM\_MODE 0xEA        }}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define MOUSE\_STATUS\_REQUEST 0xE8         }}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#define MOUSE\_SET\_RESOLUTION 0xE8         }}
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define MOUSE\_SET\_SCALING2 0xE7           }}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define MOUSE\_SET\_SCALING1 0xE6           }}
+\DoxyCodeLine{45 \textcolor{comment}{/* mouse hook id */}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#define MOUSE\_HOOK\_ID 16 }}
+\DoxyCodeLine{49 \textcolor{comment}{/* shift amount */}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#define MOUSE\_XSIGN\_SHIFT 4 }}
+\DoxyCodeLine{53 \textcolor{comment}{/* negative number mask */}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#define NEG BIT(7) }}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

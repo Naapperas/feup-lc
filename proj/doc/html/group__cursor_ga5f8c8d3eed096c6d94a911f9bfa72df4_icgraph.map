@@ -1,0 +1,12 @@
+<map id="cursor_get_color" name="cursor_get_color">
+<area shape="rect" id="node1" title="Returns the current color of the cursor." alt="" coords="1139,107,1268,133"/>
+<area shape="rect" id="node2" href="$group__graphics.html#gaf1ece22510b6c3de2d3a5d4559028fb9" title="draws the given string to the given buffer on the given position." alt="" coords="949,69,1063,96"/>
+<area shape="rect" id="node10" href="$group__canvas.html#gab6d35de38e60c1031a8bc9d70c529f28" title="Handles the filling of the canvas with the cursor color." alt="" coords="921,132,1091,159"/>
+<area shape="rect" id="node3" href="$group__canvas.html#ga2a8f55e20f4a68fa050db0fffced2bb3" title="Handles how clicks on the canvas while the cursor is in text state should behave." alt="" coords="721,5,873,32"/>
+<area shape="rect" id="node8" href="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54" title="Draws the program assets on screen." alt="" coords="746,56,849,83"/>
+<area shape="rect" id="node9" href="$group__charset.html#ga5cf34e49e0ee978293deca0bd7097852" title=" " alt="" coords="727,107,867,133"/>
+<area shape="rect" id="node4" href="$group__canvas.html#ga33567ef82c11af5b0b894616851cc03b" title="Handles mouse events that happen within the canvas section of the screen." alt="" coords="499,81,673,108"/>
+<area shape="rect" id="node5" href="$group__element.html#ga75aa8cfcbee4af0933a79d05e6707679" title="Loads and creates every interactive element present on screen." alt="" coords="323,81,451,108"/>
+<area shape="rect" id="node6" href="$proj_8c.html#a621db57ab86ebe569aa26e70d11c9688" title="Loads the necessary assets." alt="" coords="176,81,275,108"/>
+<area shape="rect" id="node7" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,81,128,108"/>
+</map>

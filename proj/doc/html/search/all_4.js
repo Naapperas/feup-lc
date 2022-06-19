@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['default_5fcharset_0',['default_charset',['../charset_8c.html#ac2e4db5390e23d0c85ed20726b2dea8d',1,'charset.c']]],
+  ['delay_5fus_1',['DELAY_US',['../group__kbc.html#ga1a522aa19bcb695a9df30032a893bee3',1,'kbc.h']]],
+  ['draw_5fassets_2',['draw_assets',['../proj_8c.html#a850e4280fdbac0d3b47a94e871905e54',1,'proj.c']]],
+  ['draw_5fbutton_5fframe_3',['draw_button_frame',['../group__draw__buttons.html#gaa6af89646cd7d59141040cb6d1b907f9',1,'draw_button_frame(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c'],['../group__draw__buttons.html#gaa6af89646cd7d59141040cb6d1b907f9',1,'draw_button_frame(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c']]],
+  ['draw_5fbuttons_4',['draw_buttons',['../group__draw__buttons.html',1,'']]],
+  ['draw_5fbuttons_2ec_5',['draw_buttons.c',['../draw__buttons_8c.html',1,'']]],
+  ['draw_5fbuttons_2eh_6',['draw_buttons.h',['../draw__buttons_8h.html',1,'']]],
+  ['draw_5fchat_7',['draw_chat',['../group__draw__chat.html',1,'']]],
+  ['draw_5fclear_5fcanvas_5fbutton_8',['draw_clear_canvas_button',['../group__draw__buttons.html#gae0bc54b9eec329ced28428d60c2e0865',1,'draw_clear_canvas_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c'],['../group__draw__buttons.html#gae0bc54b9eec329ced28428d60c2e0865',1,'draw_clear_canvas_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c']]],
+  ['draw_5fclock_9',['draw_clock',['../group__draw__clock.html',1,'']]],
+  ['draw_5fclock_2ec_10',['draw_clock.c',['../draw__clock_8c.html',1,'']]],
+  ['draw_5fclock_2eh_11',['draw_clock.h',['../draw__clock_8h.html',1,'']]],
+  ['draw_5fcolor_5fbutton_12',['draw_color_button',['../group__draw__buttons.html#ga8a09809fd380fc02ab5992ad80cc350b',1,'draw_color_button(pixel_buffer const *const buf, position topleft_pos, uint8_t color):&#160;draw_buttons.c'],['../group__draw__buttons.html#ga8a09809fd380fc02ab5992ad80cc350b',1,'draw_color_button(pixel_buffer const *const buf, position topleft_pos, uint8_t color):&#160;draw_buttons.c']]],
+  ['draw_5fmenu_13',['draw_menu',['../group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7',1,'draw_menu():&#160;ui.c'],['../group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7',1,'draw_menu():&#160;ui.c']]],
+  ['draw_5fminus_5fbutton_14',['draw_minus_button',['../group__draw__buttons.html#gaa6435009e8ddd5baa6240bb3d81b19fd',1,'draw_minus_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c'],['../group__draw__buttons.html#gaa6435009e8ddd5baa6240bb3d81b19fd',1,'draw_minus_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c']]],
+  ['draw_5fplus_5fbutton_15',['draw_plus_button',['../group__draw__buttons.html#ga71307477d443a89392611816abdd709d',1,'draw_plus_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c'],['../group__draw__buttons.html#ga71307477d443a89392611816abdd709d',1,'draw_plus_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c']]],
+  ['draw_5fsel_5fbucket_5fbutton_16',['draw_sel_bucket_button',['../draw__buttons_8c.html#a4ceb04b45bd391b844175580d97bfccb',1,'draw_buttons.c']]],
+  ['draw_5fsel_5fcircle_5fbutton_17',['draw_sel_circle_button',['../group__draw__buttons.html#gafdb30e468c5cd1e9c233b4c97362793f',1,'draw_sel_circle_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c'],['../group__draw__buttons.html#gafdb30e468c5cd1e9c233b4c97362793f',1,'draw_sel_circle_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c']]],
+  ['draw_5fsel_5feraser_5fbutton_18',['draw_sel_eraser_button',['../group__draw__buttons.html#ga6154e9081a9c711dd0c2fd0a892d6945',1,'draw_sel_eraser_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c'],['../group__draw__buttons.html#ga6154e9081a9c711dd0c2fd0a892d6945',1,'draw_sel_eraser_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c']]],
+  ['draw_5fsel_5fline_5fbutton_19',['draw_sel_line_button',['../group__draw__buttons.html#ga14673af5638efb032dac6c0df453489d',1,'draw_sel_line_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c'],['../group__draw__buttons.html#ga14673af5638efb032dac6c0df453489d',1,'draw_sel_line_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c']]],
+  ['draw_5fsel_5fsquare_5fbutton_20',['draw_sel_square_button',['../group__draw__buttons.html#ga62f6170bf1049dc4eb22778cd53df23b',1,'draw_sel_square_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c'],['../group__draw__buttons.html#ga62f6170bf1049dc4eb22778cd53df23b',1,'draw_sel_square_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c']]],
+  ['draw_5fsel_5ftext_5fbutton_21',['draw_sel_text_button',['../group__draw__buttons.html#ga11c349438dd852c7d0432983bc0cb02d',1,'draw_sel_text_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c'],['../group__draw__buttons.html#ga11c349438dd852c7d0432983bc0cb02d',1,'draw_sel_text_button(pixel_buffer const *const buf, position topleft_pos):&#160;draw_buttons.c']]],
+  ['draw_5ftext_2ec_22',['draw_text.c',['../draw__text_8c.html',1,'']]],
+  ['draw_5ftext_2eh_23',['draw_text.h',['../draw__text_8h.html',1,'']]],
+  ['dst_24',['DST',['../group__rtc.html#ga6fc0b23b4c9782e24b280ad09c68b7a3',1,'rtc.h']]]
+];

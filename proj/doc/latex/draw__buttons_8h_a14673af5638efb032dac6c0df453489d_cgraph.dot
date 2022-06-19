@@ -1,0 +1,18 @@
+digraph "draw_sel_line_button"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="draw_sel_line_button",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Draws the button to draw a straight line on a pixel buffer."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="buf_draw_rectangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$graphics_8c.html#a12e0a019382481d6af4dfb730d2468c7",tooltip="Draws a rectangle on a pixel buffer."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="draw_button_frame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$draw__buttons_8c.html#aa6af89646cd7d59141040cb6d1b907f9",tooltip="Draws a button frame on a pixel buffer."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="buf_draw_hline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$graphics_8c.html#a46c7629f4db6494a40730b69b99d482f",tooltip="Draws an horizontal line on a pixel buffer."];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="buf_draw_vline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$graphics_8c.html#a217f0eee3bf0366f3ceda240ca6a9e7f",tooltip="Draws a vertical line on a pixel buffer."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="buf_draw_pixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$graphics_8c.html#a49604fff88a75a0bdf9d860b6bfd45a8",tooltip="Draws a pixel on a pixel_buffer."];
+}

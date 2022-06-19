@@ -1,0 +1,44 @@
+\hypertarget{graphics_8h_source}{}\doxysection{graphics.\+h}
+\label{graphics_8h_source}\index{src/devices/video/graphics.h@{src/devices/video/graphics.h}}
+\mbox{\hyperlink{graphics_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GRAPHICS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GRAPHICS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../../game/charset.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../../game/cursor.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}../../game/draw\_text.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}../../game/pixel\_buffer.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../../game/text.h"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../../utils/color.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}../../utils/const.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../../utils/position.h"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{video__gr_8h}{video\_gr.h}}"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{24 void(\mbox{\hyperlink{group__graphics_ga930f38837332d52d5d905332257ee640}{load\_backbuffer}})();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{30 \mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *(\mbox{\hyperlink{group__graphics_gab3432881d182a4c6455e0cfbaafece78}{get\_back\_buffer}}) ();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{41 int(\mbox{\hyperlink{group__graphics_ga49604fff88a75a0bdf9d860b6bfd45a8}{buf\_draw\_pixel}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} pos, uint8\_t color);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{52 int(\mbox{\hyperlink{group__graphics_gaa712047397faf1dd3c0fa122a3de0df3}{buf\_draw\_line}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} from\_pos, \mbox{\hyperlink{structposition}{position}} to\_pos, uint8\_t color);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{63 int(\mbox{\hyperlink{group__graphics_ga12e0a019382481d6af4dfb730d2468c7}{buf\_draw\_rectangle}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} pos, uint16\_t width, uint16\_t height, uint8\_t color);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{73 int(\mbox{\hyperlink{group__graphics_ga3f2490703f76d68ee31a7e93671633da}{buf\_draw\_circle}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} pos, uint16\_t radius, uint8\_t color);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{83 int(\mbox{\hyperlink{group__graphics_ga46c7629f4db6494a40730b69b99d482f}{buf\_draw\_hline}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} pos, uint16\_t len, uint8\_t color);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{93 int(\mbox{\hyperlink{group__graphics_ga217f0eee3bf0366f3ceda240ca6a9e7f}{buf\_draw\_vline}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} pos, uint16\_t len, uint8\_t color);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{104 int(\mbox{\hyperlink{group__graphics_ga34c7bdd63f72bd3f735f7bec8738ddd6}{buf\_draw\_xpm}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \textcolor{keyword}{const} xpm\_image\_t xpm\_info, \mbox{\hyperlink{structposition}{position}} pos);}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{116 int(\mbox{\hyperlink{group__graphics_gaf1ece22510b6c3de2d3a5d4559028fb9}{buf\_draw\_text}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \textcolor{keywordtype}{char} *\mbox{\hyperlink{draw__text_8c_adc81d7685fb07fbe51e23b5cad40c2e7}{text}}, \mbox{\hyperlink{structposition}{position}} pos, \mbox{\hyperlink{group__text_gaf1e0001cfe7b013e77a8c663c6a323cf}{text\_alignment\_t}} alignment);}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{120 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,44 @@
+\hypertarget{element_8h_source}{}\doxysection{element.\+h}
+\label{element_8h_source}\index{src/game/element.h@{src/game/element.h}}
+\mbox{\hyperlink{element_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef INTERACTIVE\_ELEMENT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define INTERACTIVE\_ELEMENT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../utils/position.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{canvas_8h}{canvas.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cursor_8h}{cursor.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{draw__buttons_8h}{draw\_buttons.h}}"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define COLOR\_BUTTON\_PRIORITY 3 }}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define STYLE\_BUTTON\_PRIORITY 3 }}
+\DoxyCodeLine{32 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{33   \mbox{\hyperlink{structposition}{position}} \mbox{\hyperlink{structinteractive__element_a3bbe87dad96b271b4f4e0dfd93d3f3ab}{top\_pos}};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35   uint16\_t \mbox{\hyperlink{structinteractive__element_a1207fc8c67f78b65180588248643f3ab}{h\_len}};}
+\DoxyCodeLine{36   uint16\_t \mbox{\hyperlink{structinteractive__element_a497cc5468ea01fbf4c947e03bb640ee2}{v\_len}};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38   uint8\_t \mbox{\hyperlink{structinteractive__element_aa99ddefe5089389e170ccbec18a60ec2}{color}};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40   int8\_t \mbox{\hyperlink{structinteractive__element_ab398e208da224c1ec04257e8089a715a}{event\_priority}};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42   void (*mouse\_event\_handler)(uint8\_t color);}
+\DoxyCodeLine{43 \} \mbox{\hyperlink{structinteractive__element}{interactive\_element}};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{50 xpm\_image\_t(\mbox{\hyperlink{group__element_gabff989c0f3c9ea14d469dc75a4495fb0}{get\_button\_plus}})();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{56 void(\mbox{\hyperlink{group__element_ga75aa8cfcbee4af0933a79d05e6707679}{load\_ie\_drawing}})();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{64 bool(\mbox{\hyperlink{group__element_gae8101644d06b333a92712ffd2569e7e1}{is\_hovered}})(\mbox{\hyperlink{structinteractive__element}{interactive\_element}} elem);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{71 uint8\_t(\mbox{\hyperlink{group__element_gaaf38b2af1b79d39b1e12ee6cf9c6123f}{get\_number\_of\_drawing\_ies}})();}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{78 \mbox{\hyperlink{structinteractive__element}{interactive\_element}} *(\mbox{\hyperlink{group__element_ga833c1198c28dd920754f979f25c1ca49}{get\_drawing\_ies}}) ();}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

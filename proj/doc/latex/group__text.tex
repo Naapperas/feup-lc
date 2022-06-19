@@ -1,0 +1,167 @@
+\hypertarget{group__text}{}\doxysection{text}
+\label{group__text}\index{text@{text}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__text_ga655981006fca173dd2e056bf81a63dc3}{CHAR\+\_\+\+WIDTH}}~6
+\begin{DoxyCompactList}\small\item\em the width of a character loaded from the font XPM \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__text_gae2eecd07a9b6a2256002a15b28e388f2}{CHAR\+\_\+\+HEIGHT}}~11
+\begin{DoxyCompactList}\small\item\em the height of a character loaded from the font XPM \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__text_ga7b2e9cc063e140c50b67a4f224988a45}{FONT\+\_\+\+WIDTH}}~16
+\begin{DoxyCompactList}\small\item\em how many characters exist per column \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__text_ga33f4fac49f2a5e27e2857eb27f054510}{FONT\+\_\+\+HEIGHT}}~16
+\begin{DoxyCompactList}\small\item\em how many characters exist per row \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__text_gaf1e0001cfe7b013e77a8c663c6a323cf}{text\+\_\+alignment\+\_\+t}} \{ \mbox{\hyperlink{group__text_ggaf1e0001cfe7b013e77a8c663c6a323cfadb45120aafd37a973140edee24708065}{LEFT}}
+, \mbox{\hyperlink{group__text_ggaf1e0001cfe7b013e77a8c663c6a323cfa2159ffbd3a68037511ab5ab4dd35ace7}{CENTER}}
+, \mbox{\hyperlink{group__text_ggaf1e0001cfe7b013e77a8c663c6a323cfaec8379af7490bb9eaaf579cf17876f38}{RIGHT}}
+ \}
+\begin{DoxyCompactList}\small\item\em A structure to represent the possible alignments of a piece of text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__text_ga9536f1946908e3035e306ef317714487}{text\+\_\+load}} ()
+\begin{DoxyCompactList}\small\item\em Loads the text font xpm. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__text_ga6c5fe02ebe5a3657d4679c0e5acf01d6}{text\+\_\+draw}} (char $\ast$\mbox{\hyperlink{draw__text_8c_adc81d7685fb07fbe51e23b5cad40c2e7}{text}}, int16\+\_\+t x, int16\+\_\+t y, int16\+\_\+t scale, int color, \mbox{\hyperlink{group__text_gaf1e0001cfe7b013e77a8c663c6a323cf}{text\+\_\+alignment\+\_\+t}} alignment)
+\begin{DoxyCompactList}\small\item\em Draws a piece of text to the screen. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t() \mbox{\hyperlink{group__text_gade215bd9889bb8b69de584385ca0c557}{get\+\_\+font\+\_\+xpm}} ()
+\begin{DoxyCompactList}\small\item\em Returns the xpm image of the font. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants, structures and functions used for programming the text used by our program 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__text_gae2eecd07a9b6a2256002a15b28e388f2}\label{group__text_gae2eecd07a9b6a2256002a15b28e388f2}} 
+\index{text@{text}!CHAR\_HEIGHT@{CHAR\_HEIGHT}}
+\index{CHAR\_HEIGHT@{CHAR\_HEIGHT}!text@{text}}
+\doxysubsubsection{\texorpdfstring{CHAR\_HEIGHT}{CHAR\_HEIGHT}}
+{\footnotesize\ttfamily \#define CHAR\+\_\+\+HEIGHT~11}
+
+
+
+the height of a character loaded from the font XPM 
+
+\mbox{\Hypertarget{group__text_ga655981006fca173dd2e056bf81a63dc3}\label{group__text_ga655981006fca173dd2e056bf81a63dc3}} 
+\index{text@{text}!CHAR\_WIDTH@{CHAR\_WIDTH}}
+\index{CHAR\_WIDTH@{CHAR\_WIDTH}!text@{text}}
+\doxysubsubsection{\texorpdfstring{CHAR\_WIDTH}{CHAR\_WIDTH}}
+{\footnotesize\ttfamily \#define CHAR\+\_\+\+WIDTH~6}
+
+
+
+the width of a character loaded from the font XPM 
+
+\mbox{\Hypertarget{group__text_ga33f4fac49f2a5e27e2857eb27f054510}\label{group__text_ga33f4fac49f2a5e27e2857eb27f054510}} 
+\index{text@{text}!FONT\_HEIGHT@{FONT\_HEIGHT}}
+\index{FONT\_HEIGHT@{FONT\_HEIGHT}!text@{text}}
+\doxysubsubsection{\texorpdfstring{FONT\_HEIGHT}{FONT\_HEIGHT}}
+{\footnotesize\ttfamily \#define FONT\+\_\+\+HEIGHT~16}
+
+
+
+how many characters exist per row 
+
+\mbox{\Hypertarget{group__text_ga7b2e9cc063e140c50b67a4f224988a45}\label{group__text_ga7b2e9cc063e140c50b67a4f224988a45}} 
+\index{text@{text}!FONT\_WIDTH@{FONT\_WIDTH}}
+\index{FONT\_WIDTH@{FONT\_WIDTH}!text@{text}}
+\doxysubsubsection{\texorpdfstring{FONT\_WIDTH}{FONT\_WIDTH}}
+{\footnotesize\ttfamily \#define FONT\+\_\+\+WIDTH~16}
+
+
+
+how many characters exist per column 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__text_gaf1e0001cfe7b013e77a8c663c6a323cf}\label{group__text_gaf1e0001cfe7b013e77a8c663c6a323cf}} 
+\index{text@{text}!text\_alignment\_t@{text\_alignment\_t}}
+\index{text\_alignment\_t@{text\_alignment\_t}!text@{text}}
+\doxysubsubsection{\texorpdfstring{text\_alignment\_t}{text\_alignment\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__text_gaf1e0001cfe7b013e77a8c663c6a323cf}{text\+\_\+alignment\+\_\+t}}}
+
+
+
+A structure to represent the possible alignments of a piece of text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em LEFT} & align the text to the left \\
+\hline
+{\em CENTER} & align the text to the center \\
+\hline
+{\em RIGHT} & align the text to the right \\
+\hline
+\end{DoxyParams}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFT@{LEFT}!text@{text}}\index{text@{text}!LEFT@{LEFT}}}\mbox{\Hypertarget{group__text_ggaf1e0001cfe7b013e77a8c663c6a323cfadb45120aafd37a973140edee24708065}\label{group__text_ggaf1e0001cfe7b013e77a8c663c6a323cfadb45120aafd37a973140edee24708065}} 
+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENTER@{CENTER}!text@{text}}\index{text@{text}!CENTER@{CENTER}}}\mbox{\Hypertarget{group__text_ggaf1e0001cfe7b013e77a8c663c6a323cfa2159ffbd3a68037511ab5ab4dd35ace7}\label{group__text_ggaf1e0001cfe7b013e77a8c663c6a323cfa2159ffbd3a68037511ab5ab4dd35ace7}} 
+CENTER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT@{RIGHT}!text@{text}}\index{text@{text}!RIGHT@{RIGHT}}}\mbox{\Hypertarget{group__text_ggaf1e0001cfe7b013e77a8c663c6a323cfaec8379af7490bb9eaaf579cf17876f38}\label{group__text_ggaf1e0001cfe7b013e77a8c663c6a323cfaec8379af7490bb9eaaf579cf17876f38}} 
+RIGHT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__text_gade215bd9889bb8b69de584385ca0c557}\label{group__text_gade215bd9889bb8b69de584385ca0c557}} 
+\index{text@{text}!get\_font\_xpm@{get\_font\_xpm}}
+\index{get\_font\_xpm@{get\_font\_xpm}!text@{text}}
+\doxysubsubsection{\texorpdfstring{get\_font\_xpm()}{get\_font\_xpm()}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t() get\+\_\+font\+\_\+xpm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the xpm image of the font. 
+
+\begin{DoxyReturn}{Returns}
+font\+\_\+xpm 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{group__text_ga6c5fe02ebe5a3657d4679c0e5acf01d6}\label{group__text_ga6c5fe02ebe5a3657d4679c0e5acf01d6}} 
+\index{text@{text}!text\_draw@{text\_draw}}
+\index{text\_draw@{text\_draw}!text@{text}}
+\doxysubsubsection{\texorpdfstring{text\_draw()}{text\_draw()}}
+{\footnotesize\ttfamily void() text\+\_\+draw (\begin{DoxyParamCaption}\item[{char $\ast$}]{text,  }\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y,  }\item[{int16\+\_\+t}]{scale,  }\item[{int}]{color,  }\item[{\mbox{\hyperlink{group__text_gaf1e0001cfe7b013e77a8c663c6a323cf}{text\+\_\+alignment\+\_\+t}}}]{alignment }\end{DoxyParamCaption})}
+
+
+
+Draws a piece of text to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & the text to be drawn \\
+\hline
+{\em x} & upper-\/left x coordinate of the first character of the text \\
+\hline
+{\em y} & upper-\/left y coordinate of the first character of the text \\
+\hline
+{\em scale} & scale used to draw the text \\
+\hline
+{\em color} & color of the text \\
+\hline
+{\em alignment} & alignment of the text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__text_ga9536f1946908e3035e306ef317714487}\label{group__text_ga9536f1946908e3035e306ef317714487}} 
+\index{text@{text}!text\_load@{text\_load}}
+\index{text\_load@{text\_load}!text@{text}}
+\doxysubsubsection{\texorpdfstring{text\_load()}{text\_load()}}
+{\footnotesize\ttfamily void() text\+\_\+load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the text font xpm. 
+
+Here is the caller graph for this function\+:
+% FIG 1

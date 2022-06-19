@@ -1,0 +1,321 @@
+\hypertarget{group__draw__buttons}{}\doxysection{draw\+\_\+buttons}
+\label{group__draw__buttons}\index{draw\_buttons@{draw\_buttons}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__draw__buttons_gae27574b7a4dace214062de8fc12de968}{BUTTON\+\_\+\+FRAME\+\_\+\+WIDTH}}~40
+\begin{DoxyCompactList}\small\item\em the width of the interactive buttons\textquotesingle{} frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__draw__buttons_ga94e3951adf6e4e786bd3d8fc3103ec14}{BUTTON\+\_\+\+FRAME\+\_\+\+HEIGHT}}~40
+\begin{DoxyCompactList}\small\item\em the height of the interactive buttons\textquotesingle{} frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__draw__buttons_ga2227a40dfb9ada8f4cae2df4d1a01787}{BUTTON\+\_\+\+FRAME\+\_\+\+COLOR}}~7
+\begin{DoxyCompactList}\small\item\em the color of the interactive buttons\textquotesingle{} frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__draw__buttons_gaa6af89646cd7d59141040cb6d1b907f9}{draw\+\_\+button\+\_\+frame}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws a button frame on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_ga8a09809fd380fc02ab5992ad80cc350b}{draw\+\_\+color\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos, uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a color button on a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_gae33dca8a3beac80b89738430d3bb1c8d}{load\+\_\+button\+\_\+xpms}} ()
+\begin{DoxyCompactList}\small\item\em Loads the button xpms. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_ga71307477d443a89392611816abdd709d}{draw\+\_\+plus\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to increase the thickness of the cursor on a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_gaa6435009e8ddd5baa6240bb3d81b19fd}{draw\+\_\+minus\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to decrease the thickness of the cursor on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_ga14673af5638efb032dac6c0df453489d}{draw\+\_\+sel\+\_\+line\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to draw a straight line on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_ga62f6170bf1049dc4eb22778cd53df23b}{draw\+\_\+sel\+\_\+square\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to draw a square on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_gafdb30e468c5cd1e9c233b4c97362793f}{draw\+\_\+sel\+\_\+circle\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to draw a circle on a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_ga6154e9081a9c711dd0c2fd0a892d6945}{draw\+\_\+sel\+\_\+eraser\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button that allows the user to use an eraser on the canvas to a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_ga11c349438dd852c7d0432983bc0cb02d}{draw\+\_\+sel\+\_\+text\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button that allows the user to input text into the canvas to a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_gae0bc54b9eec329ced28428d60c2e0865}{draw\+\_\+clear\+\_\+canvas\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button that allows the user to clear the canvas to a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_ga8d46b5bb0547f68fd65d40c6782054e8}{buttons\+\_\+draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the buttons on screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants, structures and functions used for programming the drawing of buttons 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__draw__buttons_ga2227a40dfb9ada8f4cae2df4d1a01787}\label{group__draw__buttons_ga2227a40dfb9ada8f4cae2df4d1a01787}} 
+\index{draw\_buttons@{draw\_buttons}!BUTTON\_FRAME\_COLOR@{BUTTON\_FRAME\_COLOR}}
+\index{BUTTON\_FRAME\_COLOR@{BUTTON\_FRAME\_COLOR}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_FRAME\_COLOR}{BUTTON\_FRAME\_COLOR}}
+{\footnotesize\ttfamily \#define BUTTON\+\_\+\+FRAME\+\_\+\+COLOR~7}
+
+
+
+the color of the interactive buttons\textquotesingle{} frame 
+
+\mbox{\Hypertarget{group__draw__buttons_ga94e3951adf6e4e786bd3d8fc3103ec14}\label{group__draw__buttons_ga94e3951adf6e4e786bd3d8fc3103ec14}} 
+\index{draw\_buttons@{draw\_buttons}!BUTTON\_FRAME\_HEIGHT@{BUTTON\_FRAME\_HEIGHT}}
+\index{BUTTON\_FRAME\_HEIGHT@{BUTTON\_FRAME\_HEIGHT}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_FRAME\_HEIGHT}{BUTTON\_FRAME\_HEIGHT}}
+{\footnotesize\ttfamily \#define BUTTON\+\_\+\+FRAME\+\_\+\+HEIGHT~40}
+
+
+
+the height of the interactive buttons\textquotesingle{} frame 
+
+\mbox{\Hypertarget{group__draw__buttons_gae27574b7a4dace214062de8fc12de968}\label{group__draw__buttons_gae27574b7a4dace214062de8fc12de968}} 
+\index{draw\_buttons@{draw\_buttons}!BUTTON\_FRAME\_WIDTH@{BUTTON\_FRAME\_WIDTH}}
+\index{BUTTON\_FRAME\_WIDTH@{BUTTON\_FRAME\_WIDTH}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{BUTTON\_FRAME\_WIDTH}{BUTTON\_FRAME\_WIDTH}}
+{\footnotesize\ttfamily \#define BUTTON\+\_\+\+FRAME\+\_\+\+WIDTH~40}
+
+
+
+the width of the interactive buttons\textquotesingle{} frame 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__draw__buttons_ga8d46b5bb0547f68fd65d40c6782054e8}\label{group__draw__buttons_ga8d46b5bb0547f68fd65d40c6782054e8}} 
+\index{draw\_buttons@{draw\_buttons}!buttons\_draw@{buttons\_draw}}
+\index{buttons\_draw@{buttons\_draw}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{buttons\_draw()}{buttons\_draw()}}
+{\footnotesize\ttfamily int() buttons\+\_\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the buttons on screen. 
+
+\begin{DoxyReturn}{Returns}
+OK if successful, != OK otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{group__draw__buttons_gaa6af89646cd7d59141040cb6d1b907f9}\label{group__draw__buttons_gaa6af89646cd7d59141040cb6d1b907f9}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_button\_frame@{draw\_button\_frame}}
+\index{draw\_button\_frame@{draw\_button\_frame}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_button\_frame()}{draw\_button\_frame()}}
+{\footnotesize\ttfamily void() draw\+\_\+button\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Draws a button frame on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{group__draw__buttons_gae0bc54b9eec329ced28428d60c2e0865}\label{group__draw__buttons_gae0bc54b9eec329ced28428d60c2e0865}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_clear\_canvas\_button@{draw\_clear\_canvas\_button}}
+\index{draw\_clear\_canvas\_button@{draw\_clear\_canvas\_button}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_clear\_canvas\_button()}{draw\_clear\_canvas\_button()}}
+{\footnotesize\ttfamily void() draw\+\_\+clear\+\_\+canvas\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Draws the button that allows the user to clear the canvas to a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{group__draw__buttons_ga8a09809fd380fc02ab5992ad80cc350b}\label{group__draw__buttons_ga8a09809fd380fc02ab5992ad80cc350b}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_color\_button@{draw\_color\_button}}
+\index{draw\_color\_button@{draw\_color\_button}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_color\_button()}{draw\_color\_button()}}
+{\footnotesize\ttfamily int() draw\+\_\+color\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos,  }\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a color button on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+{\em color} & color of the button\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful, != OK otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{group__draw__buttons_gaa6435009e8ddd5baa6240bb3d81b19fd}\label{group__draw__buttons_gaa6435009e8ddd5baa6240bb3d81b19fd}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_minus\_button@{draw\_minus\_button}}
+\index{draw\_minus\_button@{draw\_minus\_button}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_minus\_button()}{draw\_minus\_button()}}
+{\footnotesize\ttfamily void() draw\+\_\+minus\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Draws the button to decrease the thickness of the cursor on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{group__draw__buttons_ga71307477d443a89392611816abdd709d}\label{group__draw__buttons_ga71307477d443a89392611816abdd709d}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_plus\_button@{draw\_plus\_button}}
+\index{draw\_plus\_button@{draw\_plus\_button}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_plus\_button()}{draw\_plus\_button()}}
+{\footnotesize\ttfamily void() draw\+\_\+plus\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Draws the button to increase the thickness of the cursor on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{group__draw__buttons_gafdb30e468c5cd1e9c233b4c97362793f}\label{group__draw__buttons_gafdb30e468c5cd1e9c233b4c97362793f}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_sel\_circle\_button@{draw\_sel\_circle\_button}}
+\index{draw\_sel\_circle\_button@{draw\_sel\_circle\_button}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_sel\_circle\_button()}{draw\_sel\_circle\_button()}}
+{\footnotesize\ttfamily int() draw\+\_\+sel\+\_\+circle\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Draws the button to draw a circle on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 12
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{group__draw__buttons_ga6154e9081a9c711dd0c2fd0a892d6945}\label{group__draw__buttons_ga6154e9081a9c711dd0c2fd0a892d6945}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_sel\_eraser\_button@{draw\_sel\_eraser\_button}}
+\index{draw\_sel\_eraser\_button@{draw\_sel\_eraser\_button}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_sel\_eraser\_button()}{draw\_sel\_eraser\_button()}}
+{\footnotesize\ttfamily void() draw\+\_\+sel\+\_\+eraser\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Draws the button that allows the user to use an eraser on the canvas to a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{group__draw__buttons_ga14673af5638efb032dac6c0df453489d}\label{group__draw__buttons_ga14673af5638efb032dac6c0df453489d}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_sel\_line\_button@{draw\_sel\_line\_button}}
+\index{draw\_sel\_line\_button@{draw\_sel\_line\_button}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_sel\_line\_button()}{draw\_sel\_line\_button()}}
+{\footnotesize\ttfamily int() draw\+\_\+sel\+\_\+line\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Draws the button to draw a straight line on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 16
+Here is the caller graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{group__draw__buttons_ga62f6170bf1049dc4eb22778cd53df23b}\label{group__draw__buttons_ga62f6170bf1049dc4eb22778cd53df23b}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_sel\_square\_button@{draw\_sel\_square\_button}}
+\index{draw\_sel\_square\_button@{draw\_sel\_square\_button}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_sel\_square\_button()}{draw\_sel\_square\_button()}}
+{\footnotesize\ttfamily int() draw\+\_\+sel\+\_\+square\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Draws the button to draw a square on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 18
+Here is the caller graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{group__draw__buttons_ga11c349438dd852c7d0432983bc0cb02d}\label{group__draw__buttons_ga11c349438dd852c7d0432983bc0cb02d}} 
+\index{draw\_buttons@{draw\_buttons}!draw\_sel\_text\_button@{draw\_sel\_text\_button}}
+\index{draw\_sel\_text\_button@{draw\_sel\_text\_button}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{draw\_sel\_text\_button()}{draw\_sel\_text\_button()}}
+{\footnotesize\ttfamily void() draw\+\_\+sel\+\_\+text\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{topleft\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Draws the button that allows the user to input text into the canvas to a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer where the frame will be drawn \\
+\hline
+{\em topleft\+\_\+pos} & the top left position of the frame \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 20
+Here is the caller graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{group__draw__buttons_gae33dca8a3beac80b89738430d3bb1c8d}\label{group__draw__buttons_gae33dca8a3beac80b89738430d3bb1c8d}} 
+\index{draw\_buttons@{draw\_buttons}!load\_button\_xpms@{load\_button\_xpms}}
+\index{load\_button\_xpms@{load\_button\_xpms}!draw\_buttons@{draw\_buttons}}
+\doxysubsubsection{\texorpdfstring{load\_button\_xpms()}{load\_button\_xpms()}}
+{\footnotesize\ttfamily void() load\+\_\+button\+\_\+xpms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the button xpms. 
+
+Here is the caller graph for this function\+:
+% FIG 22

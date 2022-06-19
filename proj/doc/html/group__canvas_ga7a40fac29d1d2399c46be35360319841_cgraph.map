@@ -1,0 +1,16 @@
+<map id="canvas_handle_line" name="canvas_handle_line">
+<area shape="rect" id="node1" title="Handles the drawing of straight lines made by clicking on an initial and final positions." alt="" coords="5,224,156,251"/>
+<area shape="rect" id="node2" href="$canvas_8c.html#a81e915729ce5cc907dd3d08d790b3cb9" title=" " alt="" coords="223,56,362,83"/>
+<area shape="rect" id="node9" href="$group__cursor.html#ga201b3a410e597535f1ebb22527564fdf" title="Returns the intial position of the line to be drawn." alt="" coords="225,107,360,149"/>
+<area shape="rect" id="node10" href="$group__cursor.html#ga3a1751e66bd2ebcd3d82ef8fbbffa2bc" title="Returns the line counter of the cursor." alt="" coords="204,173,381,200"/>
+<area shape="rect" id="node11" href="$group__cursor.html#ga0af9b29a32a86441cce1cc594e2ff982" title="Returns the current position of the cursor." alt="" coords="233,224,353,251"/>
+<area shape="rect" id="node12" href="$group__cursor.html#ga62e511b022e2f8a98a87230c84cf2100" title="Increases the counter of the line and indicates the number of clicks done by the user." alt="" coords="215,275,370,317"/>
+<area shape="rect" id="node13" href="$group__cursor.html#ga565cbdb0a5f7b4f6ecc1fc2ab09011d7" title="Indicates whether the left button was pressed or not." alt="" coords="207,341,379,368"/>
+<area shape="rect" id="node14" href="$group__cursor.html#ga3f2b51ead9e3ff5d1956cf74a0399da9" title="Sets the initial position of the line to be drawn." alt="" coords="226,393,359,434"/>
+<area shape="rect" id="node3" href="$canvas_8c.html#a00fc737a073d8cd4d2ba07485f881a53" title=" " alt="" coords="429,31,603,57"/>
+<area shape="rect" id="node8" href="$canvas_8c.html#a654b1a28b128143b1e490b1a79d73327" title=" " alt="" coords="432,81,600,108"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga3f2490703f76d68ee31a7e93671633da" title="Draws a circle on a pixel buffer." alt="" coords="668,5,792,32"/>
+<area shape="rect" id="node6" href="$group__cursor.html#ga4826d95c25c8d6d0dcd3b07f5ef7cdb3" title="Gets the current style of the cursor." alt="" coords="665,56,795,83"/>
+<area shape="rect" id="node7" href="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b" title="Get cursor thickness." alt="" coords="651,107,809,133"/>
+<area shape="rect" id="node5" href="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="857,5,979,32"/>
+</map>

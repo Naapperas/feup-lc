@@ -1,0 +1,136 @@
+\hypertarget{group__vbe}{}\doxysection{vbe}
+\label{group__vbe}\index{vbe@{vbe}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__vbe_gace04f6ae9a1b70f0b4d1c19bbb9b91d7}{VBE\+\_\+\+INTERFACE}}~0x10
+\begin{DoxyCompactList}\small\item\em interrupt number of the vbe call \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_ga02477c4996ff058aee590b54f2146eb5}{VBE\+\_\+\+SET\+\_\+\+MODE}}~0x4\+F02
+\begin{DoxyCompactList}\small\item\em set vbe mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_ga50a1643aa09a3502459f1c06657600e1}{LINEAR\+\_\+\+MODE}}~BIT(14)
+\begin{DoxyCompactList}\small\item\em linear mode bit \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_gabc2e3886ab8cd536e868aa899d9f01be}{VBE\+\_\+\+MODE\+\_\+800x600\+\_\+\+INDEXED}}~0x103
+\begin{DoxyCompactList}\small\item\em masked used to set the VBE to a 800x600 indexed mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_ga72256554e9551b4c9a5b3dd6fe4bf094}{VBE\+\_\+\+MODE\+\_\+1024x768\+\_\+\+INDEXED}}~0x105
+\begin{DoxyCompactList}\small\item\em masked used to set the VBE to a 1024x768 indexed mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vbe_gaf8daefce2d37460f509371a30ced85a6}{VBE\+\_\+\+MODE\+\_\+1280x1024\+\_\+\+FULL\+\_\+\+COLOR}}~0x11B
+\begin{DoxyCompactList}\small\item\em masked used to set the VBE to a 1280x1024 full color mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__vbe_ga8ae818bfffe265cbf70ff64273234b26}{get\+RGB}} (uint32\+\_\+t color, uint8\+\_\+t $\ast$r, uint8\+\_\+t $\ast$g, uint8\+\_\+t $\ast$b)
+\begin{DoxyCompactList}\small\item\em Separates a color into their red, green and blue components. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__vbe_ga636b97374e16752de60def2b1d4853a3}{make\+RGB}} (uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em Given red, green and blue components, return the result color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Additional constants and functions used for the programming of the VBE 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__vbe_ga50a1643aa09a3502459f1c06657600e1}\label{group__vbe_ga50a1643aa09a3502459f1c06657600e1}} 
+\index{vbe@{vbe}!LINEAR\_MODE@{LINEAR\_MODE}}
+\index{LINEAR\_MODE@{LINEAR\_MODE}!vbe@{vbe}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_MODE}{LINEAR\_MODE}}
+{\footnotesize\ttfamily \#define LINEAR\+\_\+\+MODE~BIT(14)}
+
+
+
+linear mode bit 
+
+\mbox{\Hypertarget{group__vbe_gace04f6ae9a1b70f0b4d1c19bbb9b91d7}\label{group__vbe_gace04f6ae9a1b70f0b4d1c19bbb9b91d7}} 
+\index{vbe@{vbe}!VBE\_INTERFACE@{VBE\_INTERFACE}}
+\index{VBE\_INTERFACE@{VBE\_INTERFACE}!vbe@{vbe}}
+\doxysubsubsection{\texorpdfstring{VBE\_INTERFACE}{VBE\_INTERFACE}}
+{\footnotesize\ttfamily \#define VBE\+\_\+\+INTERFACE~0x10}
+
+
+
+interrupt number of the vbe call 
+
+\mbox{\Hypertarget{group__vbe_ga72256554e9551b4c9a5b3dd6fe4bf094}\label{group__vbe_ga72256554e9551b4c9a5b3dd6fe4bf094}} 
+\index{vbe@{vbe}!VBE\_MODE\_1024x768\_INDEXED@{VBE\_MODE\_1024x768\_INDEXED}}
+\index{VBE\_MODE\_1024x768\_INDEXED@{VBE\_MODE\_1024x768\_INDEXED}!vbe@{vbe}}
+\doxysubsubsection{\texorpdfstring{VBE\_MODE\_1024x768\_INDEXED}{VBE\_MODE\_1024x768\_INDEXED}}
+{\footnotesize\ttfamily \#define VBE\+\_\+\+MODE\+\_\+1024x768\+\_\+\+INDEXED~0x105}
+
+
+
+masked used to set the VBE to a 1024x768 indexed mode 
+
+\mbox{\Hypertarget{group__vbe_gaf8daefce2d37460f509371a30ced85a6}\label{group__vbe_gaf8daefce2d37460f509371a30ced85a6}} 
+\index{vbe@{vbe}!VBE\_MODE\_1280x1024\_FULL\_COLOR@{VBE\_MODE\_1280x1024\_FULL\_COLOR}}
+\index{VBE\_MODE\_1280x1024\_FULL\_COLOR@{VBE\_MODE\_1280x1024\_FULL\_COLOR}!vbe@{vbe}}
+\doxysubsubsection{\texorpdfstring{VBE\_MODE\_1280x1024\_FULL\_COLOR}{VBE\_MODE\_1280x1024\_FULL\_COLOR}}
+{\footnotesize\ttfamily \#define VBE\+\_\+\+MODE\+\_\+1280x1024\+\_\+\+FULL\+\_\+\+COLOR~0x11B}
+
+
+
+masked used to set the VBE to a 1280x1024 full color mode 
+
+\mbox{\Hypertarget{group__vbe_gabc2e3886ab8cd536e868aa899d9f01be}\label{group__vbe_gabc2e3886ab8cd536e868aa899d9f01be}} 
+\index{vbe@{vbe}!VBE\_MODE\_800x600\_INDEXED@{VBE\_MODE\_800x600\_INDEXED}}
+\index{VBE\_MODE\_800x600\_INDEXED@{VBE\_MODE\_800x600\_INDEXED}!vbe@{vbe}}
+\doxysubsubsection{\texorpdfstring{VBE\_MODE\_800x600\_INDEXED}{VBE\_MODE\_800x600\_INDEXED}}
+{\footnotesize\ttfamily \#define VBE\+\_\+\+MODE\+\_\+800x600\+\_\+\+INDEXED~0x103}
+
+
+
+masked used to set the VBE to a 800x600 indexed mode 
+
+\mbox{\Hypertarget{group__vbe_ga02477c4996ff058aee590b54f2146eb5}\label{group__vbe_ga02477c4996ff058aee590b54f2146eb5}} 
+\index{vbe@{vbe}!VBE\_SET\_MODE@{VBE\_SET\_MODE}}
+\index{VBE\_SET\_MODE@{VBE\_SET\_MODE}!vbe@{vbe}}
+\doxysubsubsection{\texorpdfstring{VBE\_SET\_MODE}{VBE\_SET\_MODE}}
+{\footnotesize\ttfamily \#define VBE\+\_\+\+SET\+\_\+\+MODE~0x4\+F02}
+
+
+
+set vbe mode 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__vbe_ga8ae818bfffe265cbf70ff64273234b26}\label{group__vbe_ga8ae818bfffe265cbf70ff64273234b26}} 
+\index{vbe@{vbe}!getRGB@{getRGB}}
+\index{getRGB@{getRGB}!vbe@{vbe}}
+\doxysubsubsection{\texorpdfstring{getRGB()}{getRGB()}}
+{\footnotesize\ttfamily void get\+RGB (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t $\ast$}]{r,  }\item[{uint8\+\_\+t $\ast$}]{g,  }\item[{uint8\+\_\+t $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+Separates a color into their red, green and blue components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & main color \\
+\hline
+{\em r} & red component \\
+\hline
+{\em g} & green component \\
+\hline
+{\em b} & blue component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__vbe_ga636b97374e16752de60def2b1d4853a3}\label{group__vbe_ga636b97374e16752de60def2b1d4853a3}} 
+\index{vbe@{vbe}!makeRGB@{makeRGB}}
+\index{makeRGB@{makeRGB}!vbe@{vbe}}
+\doxysubsubsection{\texorpdfstring{makeRGB()}{makeRGB()}}
+{\footnotesize\ttfamily uint32\+\_\+t make\+RGB (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+
+
+Given red, green and blue components, return the result color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & red component \\
+\hline
+{\em g} & green component \\
+\hline
+{\em b} & blue component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result color 
+\end{DoxyReturn}

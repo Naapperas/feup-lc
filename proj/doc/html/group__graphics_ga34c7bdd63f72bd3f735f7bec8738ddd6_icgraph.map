@@ -1,0 +1,13 @@
+<map id="buf_draw_xpm" name="buf_draw_xpm">
+<area shape="rect" id="node1" title="Draws a XPM to the given pixel buffer." alt="" coords="704,149,823,175"/>
+<area shape="rect" id="node2" href="$group__draw__clock.html#ga0e677f9e1a3031898c345d429e524360" title="Draws the clock on the screen." alt="" coords="311,10,405,37"/>
+<area shape="rect" id="node4" href="$group__draw__buttons.html#gae0bc54b9eec329ced28428d60c2e0865" title="Draws the button that allows the user to clear the canvas to a pixel buffer." alt="" coords="461,47,656,74"/>
+<area shape="rect" id="node7" href="$group__draw__buttons.html#gaa6435009e8ddd5baa6240bb3d81b19fd" title="Draws the button to decrease the thickness of the cursor on a pixel buffer." alt="" coords="483,98,634,125"/>
+<area shape="rect" id="node8" href="$group__draw__buttons.html#ga71307477d443a89392611816abdd709d" title="Draws the button to increase the thickness of the cursor on a pixel buffer." alt="" coords="490,149,627,175"/>
+<area shape="rect" id="node9" href="$draw__buttons_8c.html#a4ceb04b45bd391b844175580d97bfccb" title=" " alt="" coords="469,199,648,226"/>
+<area shape="rect" id="node10" href="$group__draw__buttons.html#ga6154e9081a9c711dd0c2fd0a892d6945" title="Draws the button that allows the user to use an eraser on the canvas to a pixel buffer." alt="" coords="470,250,647,277"/>
+<area shape="rect" id="node11" href="$group__draw__buttons.html#ga11c349438dd852c7d0432983bc0cb02d" title="Draws the button that allows the user to input text into the canvas to a pixel buffer." alt="" coords="477,301,640,327"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54" title="Draws the program assets on screen." alt="" coords="5,73,108,99"/>
+<area shape="rect" id="node5" href="$group__draw__buttons.html#ga8d46b5bb0547f68fd65d40c6782054e8" title="Draws the buttons on screen." alt="" coords="303,149,413,175"/>
+<area shape="rect" id="node6" href="$group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7" title="Draws the menu (background) and calls the function responsible for drawing the buttons." alt="" coords="156,98,255,125"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="write_command_to_mouse" name="write_command_to_mouse">
+<area shape="rect" id="node1" title="Writes the given command to the mouse." alt="" coords="5,31,204,57"/>
+<area shape="rect" id="node2" href="$group__mouse.html#ga783d0f32c217e4857504c449b4a89793" title="Get mouse command feedback." alt="" coords="252,5,457,32"/>
+<area shape="rect" id="node4" href="$group__mouse.html#ga36c05f7ca3ccc807afddd659252d77e8" title="waits for the KBC input buffer to be empty" alt="" coords="270,56,439,83"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="505,31,604,57"/>
+</map>

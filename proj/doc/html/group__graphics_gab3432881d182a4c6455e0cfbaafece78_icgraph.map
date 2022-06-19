@@ -1,0 +1,7 @@
+<map id="get_back_buffer" name="get_back_buffer">
+<area shape="rect" id="node1" title="Returns the back buffer." alt="" coords="461,81,588,108"/>
+<area shape="rect" id="node2" href="$group__draw__buttons.html#ga8d46b5bb0547f68fd65d40c6782054e8" title="Draws the buttons on screen." alt="" coords="303,5,413,32"/>
+<area shape="rect" id="node3" href="$group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7" title="Draws the menu (background) and calls the function responsible for drawing the buttons." alt="" coords="156,56,255,83"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54" title="Draws the program assets on screen." alt="" coords="5,107,108,133"/>
+<area shape="rect" id="node5" href="$group__draw__clock.html#ga0e677f9e1a3031898c345d429e524360" title="Draws the clock on the screen." alt="" coords="158,157,253,184"/>
+</map>

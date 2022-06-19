@@ -1,0 +1,4 @@
+<map id="kbc_mouse_data" name="kbc_mouse_data">
+<area shape="rect" id="node1" title="Check if mouse output buffer is full." alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node2" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="185,5,284,32"/>
+</map>

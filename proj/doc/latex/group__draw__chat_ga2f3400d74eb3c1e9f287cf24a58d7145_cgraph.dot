@@ -1,0 +1,10 @@
+digraph "clear_current_text"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="clear_current_text",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Removes characters from the current text until it's empty."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="remove_char_from_current_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__chat.html#ga70e8df51af0f05caa7009ce6c6d564b9",tooltip="Removes the last character to be added to the current text."];
+}

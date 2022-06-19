@@ -1,0 +1,40 @@
+\hypertarget{mouse_8h_source}{}\doxysection{mouse.\+h}
+\label{mouse_8h_source}\index{src/devices/kbc/mouse.h@{src/devices/kbc/mouse.h}}
+\mbox{\hyperlink{mouse_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../../utils/utils.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_p_s2_8h}{PS2.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{i8042_8h}{i8042.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define mouse\_packet\_t struct packet}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{22 int(\mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\_subscribe\_int}})(uint8\_t *bit\_no);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27 int(\mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\_unsubscribe\_int}})();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{34 bool(\mbox{\hyperlink{group__mouse_gaa15e334757e4523c4ee9906b8afe110e}{kbc\_mouse\_data}})();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{41 bool(\mbox{\hyperlink{group__mouse_ga692625f0ff4d0490d38137d19be5811e}{lb\_is\_pressed}})();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48 \mbox{\hyperlink{group__mouse_gafdd08f62e591c36b8bd14ebd40743ef7}{mouse\_packet\_t}}(\mbox{\hyperlink{group__mouse_ga0cc322061bf385b4396d89e93b2974b4}{get\_mouse\_packet}})();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{54 void(\mbox{\hyperlink{group__mouse_ga0d78bea3540ef23412704f4dd2721fce}{reset\_kbc}})();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60 void(\mbox{\hyperlink{group__mouse_ga36c05f7ca3ccc807afddd659252d77e8}{wait\_for\_inbuff\_empty}})();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{67 void(\mbox{\hyperlink{group__mouse_ga19a82faff0e40829b26501342b08bb81}{write\_command\_to\_mouse}})(uint8\_t command);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{73 void(\mbox{\hyperlink{group__mouse_gaf049d2ae2b13d6904e9225383152bbf2}{kbc\_enable\_data\_report}})();}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{79 uint8\_t(\mbox{\hyperlink{group__mouse_ga783d0f32c217e4857504c449b4a89793}{mouse\_command\_feedback}})();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{89 int16\_t(\mbox{\hyperlink{group__mouse_ga25f8882df15e15d7c7e619348b82fceb}{uint8\_to\_int16}})(uint8\_t uint8\_val, \textcolor{keywordtype}{bool} sign);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{96 bool(\mbox{\hyperlink{group__mouse_ga27312d3b687eb2d30d1e30bfd7b22599}{mouse\_packet\_ready}})();}
+\DoxyCodeLine{97 }
+
+\end{DoxyCode}

@@ -1,0 +1,4 @@
+<map id="buf_draw_xpm" name="buf_draw_xpm">
+<area shape="rect" id="node1" title="Draws a XPM to the given pixel buffer." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="172,5,293,32"/>
+</map>

@@ -1,0 +1,49 @@
+\hypertarget{rtc_8h_source}{}\doxysection{rtc.\+h}
+\label{rtc_8h_source}\index{src/devices/rtc/rtc.h@{src/devices/rtc/rtc.h}}
+\mbox{\hyperlink{rtc_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef RTC\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define RTC\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define RTC\_IRQ 0x8 }}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define RTC\_ADDR\_REG 0x70 }}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define RTC\_DATA\_REG 0x71 }}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define RTC\_SECONDS\_REG 0       }}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define RTC\_SECONDS\_ALARM\_REG 1 }}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define RTC\_MINUTES\_REG 2       }}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define RTC\_MINUTES\_ALARM\_REG 3 }}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define RTC\_HOURS\_REG 4         }}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define RTC\_HOURS\_ALARM\_REG 5   }}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define RTC\_CTRL\_REG\_A 10 }}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define RTC\_CTRL\_REG\_B 11 }}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define RTC\_CTRL\_REG\_C 12 }}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define RTC\_CTRL\_REG\_D 13 }}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define ENABLE\_UPDATE\_INTERRUPT BIT(4) }}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define BINARY\_COUNTING\_MODE BIT(2)    }}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define HOUR\_RANGE\_24H BIT(1)          }}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define DST BIT(0)                     }}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define IQRF BIT(7)            }}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define UPDATE\_INT\_FLAG BIT(4) }}
+\DoxyCodeLine{40 int(\mbox{\hyperlink{group__rtc_ga6bbe679f115cec90d36d50eb2aac1b89}{rtc\_subscribe\_int}})(uint8\_t *bit\_no);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{45 int(\mbox{\hyperlink{group__rtc_ga9d4850bb2a488644672d43287f160622}{rtc\_unsubscribe\_int}})();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{50 void(\mbox{\hyperlink{group__rtc_gab4aa45a2195a25a1c74c377654347870}{rtc\_int\_handler}})();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{55 void(\mbox{\hyperlink{group__rtc_ga430c89f38c7cfff176948c443c57560f}{setup\_update\_interrupts}})();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{64 uint8\_t(\mbox{\hyperlink{group__rtc_ga401ff1a42d649d1b925b573f7032d94f}{read\_from\_reg}})(uint8\_t reg\_no);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{72 void(\mbox{\hyperlink{group__rtc_gaf4b0c75f2edcc135a569ebb37f1a7e41}{write\_to\_reg}})(uint8\_t reg\_no, uint8\_t data);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{79 \textcolor{keywordtype}{unsigned} short(\mbox{\hyperlink{group__rtc_gada2df48da87f50fd7142f861a714a34d}{rtc\_get\_seconds}})();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{86 \textcolor{keywordtype}{unsigned} short(\mbox{\hyperlink{group__rtc_ga311e93f37194c8885e38c16a2125cdb5}{rtc\_get\_minutes}})();}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{93 \textcolor{keywordtype}{unsigned} short(\mbox{\hyperlink{group__rtc_ga5cacd466f3283cd7d2bbf02c413a253d}{rtc\_get\_hours}})();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{100 \textcolor{keywordtype}{char} *(\mbox{\hyperlink{group__rtc_ga7a4171e6ddacc8510ea7c2644e26c01a}{rtc\_get\_formatted\_time}}) ();}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{104 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

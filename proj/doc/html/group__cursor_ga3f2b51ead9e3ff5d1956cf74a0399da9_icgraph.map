@@ -1,0 +1,8 @@
+<map id="cursor_set_initial_line_position" name="cursor_set_initial_line_position">
+<area shape="rect" id="node1" title="Sets the initial position of the line to be drawn." alt="" coords="920,5,1053,47"/>
+<area shape="rect" id="node2" href="$group__canvas.html#ga7a40fac29d1d2399c46be35360319841" title="Handles the drawing of straight lines made by clicking on an initial and final positions." alt="" coords="721,13,872,39"/>
+<area shape="rect" id="node3" href="$group__canvas.html#ga33567ef82c11af5b0b894616851cc03b" title="Handles mouse events that happen within the canvas section of the screen." alt="" coords="499,13,673,39"/>
+<area shape="rect" id="node4" href="$group__element.html#ga75aa8cfcbee4af0933a79d05e6707679" title="Loads and creates every interactive element present on screen." alt="" coords="323,13,451,39"/>
+<area shape="rect" id="node5" href="$proj_8c.html#a621db57ab86ebe569aa26e70d11c9688" title="Loads the necessary assets." alt="" coords="176,13,275,39"/>
+<area shape="rect" id="node6" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,13,128,39"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="cursor_get_pos" name="cursor_get_pos">
+<area shape="rect" id="node1" title="Returns the current position of the cursor." alt="" coords="923,107,1043,134"/>
+<area shape="rect" id="node2" href="$group__canvas.html#gaa4b92ad51f39f4432397dcd16c3a3625" title="Draws a circle on screen at the given cursor position." alt="" coords="721,5,875,47"/>
+<area shape="rect" id="node7" href="$group__canvas.html#ga6b1d3293521f7ea36a4e7bf970304057" title="Draws a square on screen at the given cursor position." alt="" coords="721,71,875,112"/>
+<area shape="rect" id="node8" href="$group__canvas.html#ga7a40fac29d1d2399c46be35360319841" title="Handles the drawing of straight lines made by clicking on an initial and final positions." alt="" coords="723,137,873,163"/>
+<area shape="rect" id="node9" href="$group__element.html#gae8101644d06b333a92712ffd2569e7e1" title="Indicates whether a given interactive element is being hovered by the cursor or not." alt="" coords="751,187,845,214"/>
+<area shape="rect" id="node3" href="$group__canvas.html#ga33567ef82c11af5b0b894616851cc03b" title="Handles mouse events that happen within the canvas section of the screen." alt="" coords="499,78,673,105"/>
+<area shape="rect" id="node4" href="$group__element.html#ga75aa8cfcbee4af0933a79d05e6707679" title="Loads and creates every interactive element present on screen." alt="" coords="323,78,451,105"/>
+<area shape="rect" id="node5" href="$proj_8c.html#a621db57ab86ebe569aa26e70d11c9688" title="Loads the necessary assets." alt="" coords="176,78,275,105"/>
+<area shape="rect" id="node6" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,78,128,105"/>
+</map>

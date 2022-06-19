@@ -1,0 +1,16 @@
+<map id="buf_draw_rectangle" name="buf_draw_rectangle">
+<area shape="rect" id="node1" title="Draws a rectangle on a pixel buffer." alt="" coords="1149,157,1300,184"/>
+<area shape="rect" id="node2" href="$group__graphics.html#gaf1ece22510b6c3de2d3a5d4559028fb9" title="draws the given string to the given buffer on the given position." alt="" coords="954,56,1069,83"/>
+<area shape="rect" id="node10" href="$group__draw__buttons.html#ga8a09809fd380fc02ab5992ad80cc350b" title="Draws a color button on a pixel buffer." alt="" coords="940,107,1083,133"/>
+<area shape="rect" id="node12" href="$group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7" title="Draws the menu (background) and calls the function responsible for drawing the buttons." alt="" coords="537,157,635,184"/>
+<area shape="rect" id="node13" href="$group__draw__buttons.html#ga14673af5638efb032dac6c0df453489d" title="Draws the button to draw a straight line on a pixel buffer." alt="" coords="931,157,1091,184"/>
+<area shape="rect" id="node14" href="$group__draw__buttons.html#ga62f6170bf1049dc4eb22778cd53df23b" title="Draws the button to draw a square on a pixel buffer." alt="" coords="921,208,1101,235"/>
+<area shape="rect" id="node3" href="$group__canvas.html#ga2a8f55e20f4a68fa050db0fffced2bb3" title="Handles how clicks on the canvas while the cursor is in text state should behave." alt="" coords="721,5,873,32"/>
+<area shape="rect" id="node8" href="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54" title="Draws the program assets on screen." alt="" coords="335,107,438,133"/>
+<area shape="rect" id="node9" href="$group__charset.html#ga5cf34e49e0ee978293deca0bd7097852" title=" " alt="" coords="727,107,867,133"/>
+<area shape="rect" id="node4" href="$group__canvas.html#ga33567ef82c11af5b0b894616851cc03b" title="Handles mouse events that happen within the canvas section of the screen." alt="" coords="499,5,673,32"/>
+<area shape="rect" id="node5" href="$group__element.html#ga75aa8cfcbee4af0933a79d05e6707679" title="Loads and creates every interactive element present on screen." alt="" coords="323,5,451,32"/>
+<area shape="rect" id="node6" href="$proj_8c.html#a621db57ab86ebe569aa26e70d11c9688" title="Loads the necessary assets." alt="" coords="176,5,275,32"/>
+<area shape="rect" id="node7" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node11" href="$group__draw__buttons.html#ga8d46b5bb0547f68fd65d40c6782054e8" title="Draws the buttons on screen." alt="" coords="742,157,853,184"/>
+</map>

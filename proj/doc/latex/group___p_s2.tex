@@ -1,0 +1,332 @@
+\hypertarget{group___p_s2}{}\doxysection{PS2}
+\label{group___p_s2}\index{PS2@{PS2}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_s2_ga81c0f94add844b0761bd142f7f708431}{MOUSE\+\_\+\+LB}}~BIT(0)
+\begin{DoxyCompactList}\small\item\em if set the left button is pressed \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga5f47c1d60579c8691054c939c1d7c20e}{MOUSE\+\_\+\+RB}}~BIT(1)
+\begin{DoxyCompactList}\small\item\em if set the right button is pressed \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga5a934eaadd3536aabe6df0adf6728e8e}{MOUSE\+\_\+\+MB}}~BIT(2)
+\begin{DoxyCompactList}\small\item\em if set the middle button is pressed \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga9d84bd1a7c164df58cf4db3b94f1c9c1}{MOUSE\+\_\+\+FBYTE}}~BIT(3)
+\begin{DoxyCompactList}\small\item\em check if the received byte is the first packet byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gaf2b11758f02224a6ee0af9580da0ec91}{MOUSE\+\_\+\+XSIGN}}~BIT(4)
+\begin{DoxyCompactList}\small\item\em if set delta x is negative \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gade58ae219dbf8a1973e050873a3b15a2}{MOUSE\+\_\+\+YSIGN}}~BIT(5)
+\begin{DoxyCompactList}\small\item\em if set delta y is negative \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gabd7234253a78e8178b2af9d1cd042c62}{MOUSE\+\_\+\+XOVFL}}~BIT(6)
+\begin{DoxyCompactList}\small\item\em if set overflow on x \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gaa84b3122247153fc95c80e03e5a7e855}{MOUSE\+\_\+\+YOVFL}}~BIT(7)
+\begin{DoxyCompactList}\small\item\em if set overflow on y \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga064ec583ce5b039303686ce4c64b4f3e}{MOUSE\+\_\+\+ACK}}~0x\+FA
+\begin{DoxyCompactList}\small\item\em everything OK \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gaef4a299dedf83b6dc4765baab230affd}{MOUSE\+\_\+\+NACK}}~0x\+FE
+\begin{DoxyCompactList}\small\item\em invalid byte, should retry sending the command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga75ebb9e8d0615febfa6c7c96ad48a38b}{MOUSE\+\_\+\+ERROR}}~0x\+FC
+\begin{DoxyCompactList}\small\item\em second consecutive invalid byte \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga6b902000c4f0a66e57f0eb78d7611105}{MOUSE\+\_\+\+RESET}}~0x\+FF
+\begin{DoxyCompactList}\small\item\em resets the mouse \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga1a33902ed453e53395da2d845da0c5b6}{MOUSE\+\_\+\+RESEND}}~0x\+FE
+\begin{DoxyCompactList}\small\item\em used in case of a communication error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gaacb967610731528c8b5652024e8a1ac7}{MOUSE\+\_\+\+SET\+\_\+\+DEFAULTS}}~0x\+F6
+\begin{DoxyCompactList}\small\item\em set defaults \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga841cebcb7d56f8cc3505c202865f3dc2}{MOUSE\+\_\+\+DISABLE\+\_\+\+DATA\+\_\+\+REPORTING}}~0x\+F5
+\begin{DoxyCompactList}\small\item\em disables data reporting \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gab9680a69d58165012e6b3c102d6cec69}{MOUSE\+\_\+\+ENABLE\+\_\+\+DATA\+\_\+\+REPORTING}}~0x\+F4
+\begin{DoxyCompactList}\small\item\em enables data reporting \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gab755944a7aa52223e0d49b6f8974974e}{MOUSE\+\_\+\+SET\+\_\+\+SAMPLE\+\_\+\+RATE}}~0x\+F3
+\begin{DoxyCompactList}\small\item\em sets the sample rate \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gaaa2d5ba39424fb94c1593ae86906008c}{MOUSE\+\_\+\+SET\+\_\+\+REMOTE\+\_\+\+MODE}}~0x\+F0
+\begin{DoxyCompactList}\small\item\em sets the remote mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga6065e2718e2c8e4a5b5d005cba836cbc}{MOUSE\+\_\+\+READ\+\_\+\+DATA}}~0x\+EB
+\begin{DoxyCompactList}\small\item\em read data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga9af4ac19fb83e1b113043bf44520d386}{MOUSE\+\_\+\+SET\+\_\+\+STREAM\+\_\+\+MODE}}~0x\+EA
+\begin{DoxyCompactList}\small\item\em set the stream mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gae81dac725cb48935cbc4564c35a46c5d}{MOUSE\+\_\+\+STATUS\+\_\+\+REQUEST}}~0x\+E8
+\begin{DoxyCompactList}\small\item\em get mouse configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga8f8d8784039ad37ba8f03185ce3c48dc}{MOUSE\+\_\+\+SET\+\_\+\+RESOLUTION}}~0x\+E8
+\begin{DoxyCompactList}\small\item\em sets the mouse resolution \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga6db50e045f5f24f3c7ad9f32bc82831d}{MOUSE\+\_\+\+SET\+\_\+\+SCALING2}}~0x\+E7
+\begin{DoxyCompactList}\small\item\em sets the scaling 2\+:1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga472b5d376779ce0186bf2a2573696b6b}{MOUSE\+\_\+\+SET\+\_\+\+SCALING1}}~0x\+E6
+\begin{DoxyCompactList}\small\item\em sets the scaling 1\+:1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gab68ffa76160866a0585aead19b67a130}{MOUSE\+\_\+\+HOOK\+\_\+\+ID}}~16
+\begin{DoxyCompactList}\small\item\em mouse hook id used on interrupts \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_ga30e853ba69680ce287260eb07e199daa}{MOUSE\+\_\+\+XSIGN\+\_\+\+SHIFT}}~4
+\begin{DoxyCompactList}\small\item\em shift amount \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___p_s2_gaa27c29fc6f203aac29fb3632a0bafda5}{NEG}}~BIT(7)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants used for the programming of the mouse 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___p_s2_ga064ec583ce5b039303686ce4c64b4f3e}\label{group___p_s2_ga064ec583ce5b039303686ce4c64b4f3e}} 
+\index{PS2@{PS2}!MOUSE\_ACK@{MOUSE\_ACK}}
+\index{MOUSE\_ACK@{MOUSE\_ACK}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ACK}{MOUSE\_ACK}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+ACK~0x\+FA}
+
+
+
+everything OK 
+
+\mbox{\Hypertarget{group___p_s2_ga841cebcb7d56f8cc3505c202865f3dc2}\label{group___p_s2_ga841cebcb7d56f8cc3505c202865f3dc2}} 
+\index{PS2@{PS2}!MOUSE\_DISABLE\_DATA\_REPORTING@{MOUSE\_DISABLE\_DATA\_REPORTING}}
+\index{MOUSE\_DISABLE\_DATA\_REPORTING@{MOUSE\_DISABLE\_DATA\_REPORTING}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_DISABLE\_DATA\_REPORTING}{MOUSE\_DISABLE\_DATA\_REPORTING}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+DISABLE\+\_\+\+DATA\+\_\+\+REPORTING~0x\+F5}
+
+
+
+disables data reporting 
+
+\mbox{\Hypertarget{group___p_s2_gab9680a69d58165012e6b3c102d6cec69}\label{group___p_s2_gab9680a69d58165012e6b3c102d6cec69}} 
+\index{PS2@{PS2}!MOUSE\_ENABLE\_DATA\_REPORTING@{MOUSE\_ENABLE\_DATA\_REPORTING}}
+\index{MOUSE\_ENABLE\_DATA\_REPORTING@{MOUSE\_ENABLE\_DATA\_REPORTING}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ENABLE\_DATA\_REPORTING}{MOUSE\_ENABLE\_DATA\_REPORTING}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+ENABLE\+\_\+\+DATA\+\_\+\+REPORTING~0x\+F4}
+
+
+
+enables data reporting 
+
+\mbox{\Hypertarget{group___p_s2_ga75ebb9e8d0615febfa6c7c96ad48a38b}\label{group___p_s2_ga75ebb9e8d0615febfa6c7c96ad48a38b}} 
+\index{PS2@{PS2}!MOUSE\_ERROR@{MOUSE\_ERROR}}
+\index{MOUSE\_ERROR@{MOUSE\_ERROR}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ERROR}{MOUSE\_ERROR}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+ERROR~0x\+FC}
+
+
+
+second consecutive invalid byte 
+
+\mbox{\Hypertarget{group___p_s2_ga9d84bd1a7c164df58cf4db3b94f1c9c1}\label{group___p_s2_ga9d84bd1a7c164df58cf4db3b94f1c9c1}} 
+\index{PS2@{PS2}!MOUSE\_FBYTE@{MOUSE\_FBYTE}}
+\index{MOUSE\_FBYTE@{MOUSE\_FBYTE}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_FBYTE}{MOUSE\_FBYTE}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+FBYTE~BIT(3)}
+
+
+
+check if the received byte is the first packet byte 
+
+\mbox{\Hypertarget{group___p_s2_gab68ffa76160866a0585aead19b67a130}\label{group___p_s2_gab68ffa76160866a0585aead19b67a130}} 
+\index{PS2@{PS2}!MOUSE\_HOOK\_ID@{MOUSE\_HOOK\_ID}}
+\index{MOUSE\_HOOK\_ID@{MOUSE\_HOOK\_ID}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_HOOK\_ID}{MOUSE\_HOOK\_ID}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+HOOK\+\_\+\+ID~16}
+
+
+
+mouse hook id used on interrupts 
+
+\mbox{\Hypertarget{group___p_s2_ga81c0f94add844b0761bd142f7f708431}\label{group___p_s2_ga81c0f94add844b0761bd142f7f708431}} 
+\index{PS2@{PS2}!MOUSE\_LB@{MOUSE\_LB}}
+\index{MOUSE\_LB@{MOUSE\_LB}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_LB}{MOUSE\_LB}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+LB~BIT(0)}
+
+
+
+if set the left button is pressed 
+
+\mbox{\Hypertarget{group___p_s2_ga5a934eaadd3536aabe6df0adf6728e8e}\label{group___p_s2_ga5a934eaadd3536aabe6df0adf6728e8e}} 
+\index{PS2@{PS2}!MOUSE\_MB@{MOUSE\_MB}}
+\index{MOUSE\_MB@{MOUSE\_MB}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_MB}{MOUSE\_MB}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+MB~BIT(2)}
+
+
+
+if set the middle button is pressed 
+
+\mbox{\Hypertarget{group___p_s2_gaef4a299dedf83b6dc4765baab230affd}\label{group___p_s2_gaef4a299dedf83b6dc4765baab230affd}} 
+\index{PS2@{PS2}!MOUSE\_NACK@{MOUSE\_NACK}}
+\index{MOUSE\_NACK@{MOUSE\_NACK}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_NACK}{MOUSE\_NACK}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+NACK~0x\+FE}
+
+
+
+invalid byte, should retry sending the command 
+
+\mbox{\Hypertarget{group___p_s2_ga5f47c1d60579c8691054c939c1d7c20e}\label{group___p_s2_ga5f47c1d60579c8691054c939c1d7c20e}} 
+\index{PS2@{PS2}!MOUSE\_RB@{MOUSE\_RB}}
+\index{MOUSE\_RB@{MOUSE\_RB}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_RB}{MOUSE\_RB}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+RB~BIT(1)}
+
+
+
+if set the right button is pressed 
+
+\mbox{\Hypertarget{group___p_s2_ga6065e2718e2c8e4a5b5d005cba836cbc}\label{group___p_s2_ga6065e2718e2c8e4a5b5d005cba836cbc}} 
+\index{PS2@{PS2}!MOUSE\_READ\_DATA@{MOUSE\_READ\_DATA}}
+\index{MOUSE\_READ\_DATA@{MOUSE\_READ\_DATA}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_READ\_DATA}{MOUSE\_READ\_DATA}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+READ\+\_\+\+DATA~0x\+EB}
+
+
+
+read data 
+
+\mbox{\Hypertarget{group___p_s2_ga1a33902ed453e53395da2d845da0c5b6}\label{group___p_s2_ga1a33902ed453e53395da2d845da0c5b6}} 
+\index{PS2@{PS2}!MOUSE\_RESEND@{MOUSE\_RESEND}}
+\index{MOUSE\_RESEND@{MOUSE\_RESEND}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_RESEND}{MOUSE\_RESEND}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+RESEND~0x\+FE}
+
+
+
+used in case of a communication error 
+
+\mbox{\Hypertarget{group___p_s2_ga6b902000c4f0a66e57f0eb78d7611105}\label{group___p_s2_ga6b902000c4f0a66e57f0eb78d7611105}} 
+\index{PS2@{PS2}!MOUSE\_RESET@{MOUSE\_RESET}}
+\index{MOUSE\_RESET@{MOUSE\_RESET}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_RESET}{MOUSE\_RESET}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+RESET~0x\+FF}
+
+
+
+resets the mouse 
+
+\mbox{\Hypertarget{group___p_s2_gaacb967610731528c8b5652024e8a1ac7}\label{group___p_s2_gaacb967610731528c8b5652024e8a1ac7}} 
+\index{PS2@{PS2}!MOUSE\_SET\_DEFAULTS@{MOUSE\_SET\_DEFAULTS}}
+\index{MOUSE\_SET\_DEFAULTS@{MOUSE\_SET\_DEFAULTS}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_DEFAULTS}{MOUSE\_SET\_DEFAULTS}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+SET\+\_\+\+DEFAULTS~0x\+F6}
+
+
+
+set defaults 
+
+\mbox{\Hypertarget{group___p_s2_gaaa2d5ba39424fb94c1593ae86906008c}\label{group___p_s2_gaaa2d5ba39424fb94c1593ae86906008c}} 
+\index{PS2@{PS2}!MOUSE\_SET\_REMOTE\_MODE@{MOUSE\_SET\_REMOTE\_MODE}}
+\index{MOUSE\_SET\_REMOTE\_MODE@{MOUSE\_SET\_REMOTE\_MODE}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_REMOTE\_MODE}{MOUSE\_SET\_REMOTE\_MODE}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+SET\+\_\+\+REMOTE\+\_\+\+MODE~0x\+F0}
+
+
+
+sets the remote mode 
+
+\mbox{\Hypertarget{group___p_s2_ga8f8d8784039ad37ba8f03185ce3c48dc}\label{group___p_s2_ga8f8d8784039ad37ba8f03185ce3c48dc}} 
+\index{PS2@{PS2}!MOUSE\_SET\_RESOLUTION@{MOUSE\_SET\_RESOLUTION}}
+\index{MOUSE\_SET\_RESOLUTION@{MOUSE\_SET\_RESOLUTION}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_RESOLUTION}{MOUSE\_SET\_RESOLUTION}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+SET\+\_\+\+RESOLUTION~0x\+E8}
+
+
+
+sets the mouse resolution 
+
+\mbox{\Hypertarget{group___p_s2_gab755944a7aa52223e0d49b6f8974974e}\label{group___p_s2_gab755944a7aa52223e0d49b6f8974974e}} 
+\index{PS2@{PS2}!MOUSE\_SET\_SAMPLE\_RATE@{MOUSE\_SET\_SAMPLE\_RATE}}
+\index{MOUSE\_SET\_SAMPLE\_RATE@{MOUSE\_SET\_SAMPLE\_RATE}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_SAMPLE\_RATE}{MOUSE\_SET\_SAMPLE\_RATE}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+SET\+\_\+\+SAMPLE\+\_\+\+RATE~0x\+F3}
+
+
+
+sets the sample rate 
+
+\mbox{\Hypertarget{group___p_s2_ga472b5d376779ce0186bf2a2573696b6b}\label{group___p_s2_ga472b5d376779ce0186bf2a2573696b6b}} 
+\index{PS2@{PS2}!MOUSE\_SET\_SCALING1@{MOUSE\_SET\_SCALING1}}
+\index{MOUSE\_SET\_SCALING1@{MOUSE\_SET\_SCALING1}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_SCALING1}{MOUSE\_SET\_SCALING1}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+SET\+\_\+\+SCALING1~0x\+E6}
+
+
+
+sets the scaling 1\+:1 
+
+\mbox{\Hypertarget{group___p_s2_ga6db50e045f5f24f3c7ad9f32bc82831d}\label{group___p_s2_ga6db50e045f5f24f3c7ad9f32bc82831d}} 
+\index{PS2@{PS2}!MOUSE\_SET\_SCALING2@{MOUSE\_SET\_SCALING2}}
+\index{MOUSE\_SET\_SCALING2@{MOUSE\_SET\_SCALING2}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_SCALING2}{MOUSE\_SET\_SCALING2}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+SET\+\_\+\+SCALING2~0x\+E7}
+
+
+
+sets the scaling 2\+:1 
+
+\mbox{\Hypertarget{group___p_s2_ga9af4ac19fb83e1b113043bf44520d386}\label{group___p_s2_ga9af4ac19fb83e1b113043bf44520d386}} 
+\index{PS2@{PS2}!MOUSE\_SET\_STREAM\_MODE@{MOUSE\_SET\_STREAM\_MODE}}
+\index{MOUSE\_SET\_STREAM\_MODE@{MOUSE\_SET\_STREAM\_MODE}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_SET\_STREAM\_MODE}{MOUSE\_SET\_STREAM\_MODE}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+SET\+\_\+\+STREAM\+\_\+\+MODE~0x\+EA}
+
+
+
+set the stream mode 
+
+\mbox{\Hypertarget{group___p_s2_gae81dac725cb48935cbc4564c35a46c5d}\label{group___p_s2_gae81dac725cb48935cbc4564c35a46c5d}} 
+\index{PS2@{PS2}!MOUSE\_STATUS\_REQUEST@{MOUSE\_STATUS\_REQUEST}}
+\index{MOUSE\_STATUS\_REQUEST@{MOUSE\_STATUS\_REQUEST}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_STATUS\_REQUEST}{MOUSE\_STATUS\_REQUEST}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+STATUS\+\_\+\+REQUEST~0x\+E8}
+
+
+
+get mouse configuration 
+
+\mbox{\Hypertarget{group___p_s2_gabd7234253a78e8178b2af9d1cd042c62}\label{group___p_s2_gabd7234253a78e8178b2af9d1cd042c62}} 
+\index{PS2@{PS2}!MOUSE\_XOVFL@{MOUSE\_XOVFL}}
+\index{MOUSE\_XOVFL@{MOUSE\_XOVFL}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_XOVFL}{MOUSE\_XOVFL}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+XOVFL~BIT(6)}
+
+
+
+if set overflow on x 
+
+\mbox{\Hypertarget{group___p_s2_gaf2b11758f02224a6ee0af9580da0ec91}\label{group___p_s2_gaf2b11758f02224a6ee0af9580da0ec91}} 
+\index{PS2@{PS2}!MOUSE\_XSIGN@{MOUSE\_XSIGN}}
+\index{MOUSE\_XSIGN@{MOUSE\_XSIGN}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_XSIGN}{MOUSE\_XSIGN}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+XSIGN~BIT(4)}
+
+
+
+if set delta x is negative 
+
+\mbox{\Hypertarget{group___p_s2_ga30e853ba69680ce287260eb07e199daa}\label{group___p_s2_ga30e853ba69680ce287260eb07e199daa}} 
+\index{PS2@{PS2}!MOUSE\_XSIGN\_SHIFT@{MOUSE\_XSIGN\_SHIFT}}
+\index{MOUSE\_XSIGN\_SHIFT@{MOUSE\_XSIGN\_SHIFT}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_XSIGN\_SHIFT}{MOUSE\_XSIGN\_SHIFT}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+XSIGN\+\_\+\+SHIFT~4}
+
+
+
+shift amount 
+
+\mbox{\Hypertarget{group___p_s2_gaa84b3122247153fc95c80e03e5a7e855}\label{group___p_s2_gaa84b3122247153fc95c80e03e5a7e855}} 
+\index{PS2@{PS2}!MOUSE\_YOVFL@{MOUSE\_YOVFL}}
+\index{MOUSE\_YOVFL@{MOUSE\_YOVFL}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_YOVFL}{MOUSE\_YOVFL}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+YOVFL~BIT(7)}
+
+
+
+if set overflow on y 
+
+\mbox{\Hypertarget{group___p_s2_gade58ae219dbf8a1973e050873a3b15a2}\label{group___p_s2_gade58ae219dbf8a1973e050873a3b15a2}} 
+\index{PS2@{PS2}!MOUSE\_YSIGN@{MOUSE\_YSIGN}}
+\index{MOUSE\_YSIGN@{MOUSE\_YSIGN}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_YSIGN}{MOUSE\_YSIGN}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+YSIGN~BIT(5)}
+
+
+
+if set delta y is negative 
+
+\mbox{\Hypertarget{group___p_s2_gaa27c29fc6f203aac29fb3632a0bafda5}\label{group___p_s2_gaa27c29fc6f203aac29fb3632a0bafda5}} 
+\index{PS2@{PS2}!NEG@{NEG}}
+\index{NEG@{NEG}!PS2@{PS2}}
+\doxysubsubsection{\texorpdfstring{NEG}{NEG}}
+{\footnotesize\ttfamily \#define NEG~BIT(7)}
+
+@ if set the number is negative 

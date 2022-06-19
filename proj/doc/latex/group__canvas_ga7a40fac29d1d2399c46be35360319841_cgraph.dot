@@ -1,0 +1,37 @@
+digraph "canvas_handle_line"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="canvas_handle_line",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Handles the drawing of straight lines made by clicking on an initial and final positions."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="canvas_draw_line",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$canvas_8c.html#a81e915729ce5cc907dd3d08d790b3cb9",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="canvas_draw_line_high",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$canvas_8c.html#a00fc737a073d8cd4d2ba07485f881a53",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="buf_draw_circle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga3f2490703f76d68ee31a7e93671633da",tooltip="Draws a circle on a pixel buffer."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="buf_draw_pixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8",tooltip="Draws a pixel on a pixel_buffer."];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="cursor_get_style",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga4826d95c25c8d6d0dcd3b07f5ef7cdb3",tooltip="Gets the current style of the cursor."];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="cursor_get_thickness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b",tooltip="Get cursor thickness."];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="canvas_draw_line_low",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$canvas_8c.html#a654b1a28b128143b1e490b1a79d73327",tooltip=" "];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="cursor_get_initial\l_line_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga201b3a410e597535f1ebb22527564fdf",tooltip="Returns the intial position of the line to be drawn."];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="cursor_get_line_counter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga3a1751e66bd2ebcd3d82ef8fbbffa2bc",tooltip="Returns the line counter of the cursor."];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="cursor_get_pos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga0af9b29a32a86441cce1cc594e2ff982",tooltip="Returns the current position of the cursor."];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="cursor_increase_line\l_counter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga62e511b022e2f8a98a87230c84cf2100",tooltip="Increases the counter of the line and indicates the number of clicks done by the user."];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="cursor_lb_was_pressed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga565cbdb0a5f7b4f6ecc1fc2ab09011d7",tooltip="Indicates whether the left button was pressed or not."];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="cursor_set_initial\l_line_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga3f2b51ead9e3ff5d1956cf74a0399da9",tooltip="Sets the initial position of the line to be drawn."];
+}

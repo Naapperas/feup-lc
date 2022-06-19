@@ -1,0 +1,68 @@
+\hypertarget{rtc_8h}{}\doxysection{src/devices/rtc/rtc.h File Reference}
+\label{rtc_8h}\index{src/devices/rtc/rtc.h@{src/devices/rtc/rtc.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga4e22feb6ffbc1cda32fadff5c740dc51}{RTC\+\_\+\+IRQ}}~0x8
+\begin{DoxyCompactList}\small\item\em the IRQ line used for RTC interrupts \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga710b98232df2c563009e6f8a6cd18220}{RTC\+\_\+\+ADDR\+\_\+\+REG}}~0x70
+\begin{DoxyCompactList}\small\item\em the RTC register used for setting the RTC register to work with \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga2f258a00c59c3f347c8d2d4a75471ce0}{RTC\+\_\+\+DATA\+\_\+\+REG}}~0x71
+\begin{DoxyCompactList}\small\item\em the RTC register used for reading/writing data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga27c23772b2c1d411ded5053d4684f990}{RTC\+\_\+\+SECONDS\+\_\+\+REG}}~0
+\begin{DoxyCompactList}\small\item\em the number of the RTC register that contains information about the seconds \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_gabbe55d44e44a797ebc8596e8d40b651e}{RTC\+\_\+\+SECONDS\+\_\+\+ALARM\+\_\+\+REG}}~1
+\begin{DoxyCompactList}\small\item\em the number of the RTC register that contains information about the seconds portion of the alarm \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_gac49437cf9aab24ff4e184d5de55d28d6}{RTC\+\_\+\+MINUTES\+\_\+\+REG}}~2
+\begin{DoxyCompactList}\small\item\em the number of the RTC register that contains information about the minutes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga1cc85af58e46d6e2fd67df505e6da5fd}{RTC\+\_\+\+MINUTES\+\_\+\+ALARM\+\_\+\+REG}}~3
+\begin{DoxyCompactList}\small\item\em the number of the RTC register that contains information about the minutes portion of the alarm \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga00bf728375d3b021e67dbf8e3bea1786}{RTC\+\_\+\+HOURS\+\_\+\+REG}}~4
+\begin{DoxyCompactList}\small\item\em the number of the RTC register that contains information about the hours \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga6e7316c4f55bf37d04cbbc15c79316ff}{RTC\+\_\+\+HOURS\+\_\+\+ALARM\+\_\+\+REG}}~5
+\begin{DoxyCompactList}\small\item\em the number of the RTC register that contains information about the hours portion of the alarm \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga31d4952b517473322cb90b9f50186473}{RTC\+\_\+\+CTRL\+\_\+\+REG\+\_\+A}}~10
+\begin{DoxyCompactList}\small\item\em the number of the RTC control register A \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_gac4dbbdac59ed84b63dd47fca36752a46}{RTC\+\_\+\+CTRL\+\_\+\+REG\+\_\+B}}~11
+\begin{DoxyCompactList}\small\item\em the number of the RTC control register B \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_gaddc26b195748368226569ac42ce54871}{RTC\+\_\+\+CTRL\+\_\+\+REG\+\_\+C}}~12
+\begin{DoxyCompactList}\small\item\em the number of the RTC control register C \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga714f6dd6cc47f551c1a5fe3b28cc0e86}{RTC\+\_\+\+CTRL\+\_\+\+REG\+\_\+D}}~13
+\begin{DoxyCompactList}\small\item\em the number of the RTC control register D \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_gacf4525caee33cec3890e45814ace8e06}{ENABLE\+\_\+\+UPDATE\+\_\+\+INTERRUPT}}~BIT(4)
+\begin{DoxyCompactList}\small\item\em mask for the bit used to enable Update-\/\+Ended interrupts \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_gae56cd75faadd47d72836ff49c409cb6b}{BINARY\+\_\+\+COUNTING\+\_\+\+MODE}}~BIT(2)
+\begin{DoxyCompactList}\small\item\em mask for the bit used to set the RTC counters in binary counting mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_gaca86577a51d533fc00e425f9fb054a02}{HOUR\+\_\+\+RANGE\+\_\+24H}}~BIT(1)
+\begin{DoxyCompactList}\small\item\em mask for the bit used to set the RTC counters hour range to 0-\/24 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga6fc0b23b4c9782e24b280ad09c68b7a3}{DST}}~BIT(0)
+\begin{DoxyCompactList}\small\item\em mask for the bit used to enable Daylight Savings TIme \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_ga324f182e97b59111bd7d8ed4e8cae57f}{IQRF}}~BIT(7)
+\begin{DoxyCompactList}\small\item\em mask for the bit used to check for IQRF (ctrl reg C) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__rtc_gaf6e5983fc905b4d934e53458b4fc93eb}{UPDATE\+\_\+\+INT\+\_\+\+FLAG}}~BIT(4)
+\begin{DoxyCompactList}\small\item\em mask for the bit used to check if a given interrupt is an Update-\/\+Ended Interrupt \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__rtc_ga6bbe679f115cec90d36d50eb2aac1b89}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes to RTC interrupts and puts the given bit in bit\+\_\+no \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__rtc_ga9d4850bb2a488644672d43287f160622}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes RTC interrupts \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__rtc_gab4aa45a2195a25a1c74c377654347870}{rtc\+\_\+int\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em interrupt handler for the RTC \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__rtc_ga430c89f38c7cfff176948c443c57560f}{setup\+\_\+update\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em sets up the RTC with some default operation values \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__rtc_ga401ff1a42d649d1b925b573f7032d94f}{read\+\_\+from\+\_\+reg}} (uint8\+\_\+t reg\+\_\+no)
+\begin{DoxyCompactList}\small\item\em reads the value present in the given RTC register \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__rtc_gaf4b0c75f2edcc135a569ebb37f1a7e41}{write\+\_\+to\+\_\+reg}} (uint8\+\_\+t reg\+\_\+no, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em writes the given value to the given RTC register \end{DoxyCompactList}\item 
+unsigned short() \mbox{\hyperlink{group__rtc_gada2df48da87f50fd7142f861a714a34d}{rtc\+\_\+get\+\_\+seconds}} ()
+\begin{DoxyCompactList}\small\item\em get current seconds \end{DoxyCompactList}\item 
+unsigned short() \mbox{\hyperlink{group__rtc_ga311e93f37194c8885e38c16a2125cdb5}{rtc\+\_\+get\+\_\+minutes}} ()
+\begin{DoxyCompactList}\small\item\em get current minutes \end{DoxyCompactList}\item 
+unsigned short() \mbox{\hyperlink{group__rtc_ga5cacd466f3283cd7d2bbf02c413a253d}{rtc\+\_\+get\+\_\+hours}} ()
+\begin{DoxyCompactList}\small\item\em get current hours \end{DoxyCompactList}\item 
+char $\ast$() \mbox{\hyperlink{group__rtc_ga7a4171e6ddacc8510ea7c2644e26c01a}{rtc\+\_\+get\+\_\+formatted\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em get a formatted representation of the current time \end{DoxyCompactList}\end{DoxyCompactItemize}

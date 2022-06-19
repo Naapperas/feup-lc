@@ -1,0 +1,6 @@
+<map id="rtc_int_handler" name="rtc_int_handler">
+<area shape="rect" id="node1" title="interrupt handler for the RTC" alt="" coords="5,31,124,57"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#a9f92f313c3714cb364715862d8737cd4" title=" " alt="" coords="172,5,315,32"/>
+<area shape="rect" id="node3" href="$group__rtc.html#ga401ff1a42d649d1b925b573f7032d94f" title="reads the value present in the given RTC register" alt="" coords="363,31,480,57"/>
+<area shape="rect" id="node4" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="528,31,627,57"/>
+</map>

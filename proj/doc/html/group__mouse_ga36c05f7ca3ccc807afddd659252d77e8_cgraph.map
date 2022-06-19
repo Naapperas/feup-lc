@@ -1,0 +1,4 @@
+<map id="wait_for_inbuff_empty" name="wait_for_inbuff_empty">
+<area shape="rect" id="node1" title="waits for the KBC input buffer to be empty" alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node2" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="223,5,321,32"/>
+</map>

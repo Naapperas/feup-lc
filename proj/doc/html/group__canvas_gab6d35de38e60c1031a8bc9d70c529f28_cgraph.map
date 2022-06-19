@@ -1,0 +1,5 @@
+<map id="canvas_handle_bucket" name="canvas_handle_bucket">
+<area shape="rect" id="node1" title="Handles the filling of the canvas with the cursor color." alt="" coords="5,31,175,57"/>
+<area shape="rect" id="node2" href="$group__canvas.html#ga638de35fdbe6db429ae8b24c98b9cc13" title="Fills the entire screen with the given color and updates the &quot;canvas_background_color&quot; variable." alt="" coords="241,5,333,32"/>
+<area shape="rect" id="node3" href="$group__cursor.html#ga5f8c8d3eed096c6d94a911f9bfa72df4" title="Returns the current color of the cursor." alt="" coords="223,56,352,83"/>
+</map>

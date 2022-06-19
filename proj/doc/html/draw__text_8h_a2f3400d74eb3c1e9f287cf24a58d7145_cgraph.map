@@ -1,0 +1,4 @@
+<map id="clear_current_text" name="clear_current_text">
+<area shape="rect" id="node1" title="Removes characters from the current text until it&#39;s empty." alt="" coords="5,5,145,32"/>
+<area shape="rect" id="node2" href="$draw__text_8c.html#a70e8df51af0f05caa7009ce6c6d564b9" title="Removes the last character to be added to the current text." alt="" coords="193,5,424,32"/>
+</map>

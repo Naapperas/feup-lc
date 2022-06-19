@@ -1,0 +1,321 @@
+\hypertarget{group__canvas}{}\doxysection{canvas}
+\label{group__canvas}\index{canvas@{canvas}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}}~60
+\begin{DoxyCompactList}\small\item\em the margin of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gaa04ece9d00a940c9b1968887f16faeb3}{CANVAS\+\_\+\+WIDTH}}~(\mbox{\hyperlink{group__const_gabf6f66114c31b8f87c80534ca695a00b}{H\+\_\+\+RES}} -\/ \mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}} $\ast$ 2)
+\begin{DoxyCompactList}\small\item\em the width of the canvas relative to the window dimensions \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gac8417e7f15a5262562983c1febe9e35e}{CANVAS\+\_\+\+HEIGHT}}~(708)
+\begin{DoxyCompactList}\small\item\em the height of the canvas relative to the window dimensions \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gaf861f3616f26339d6279a8abbf524faa}{CANVAS\+\_\+\+TOP\+\_\+\+VISIBLE\+\_\+\+LIMIT}}~\mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}}
+\begin{DoxyCompactList}\small\item\em the top limit of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_ga8278102739b698539c1b24885826cdf4}{CANVAS\+\_\+\+BOTTOM\+\_\+\+VISIBLE\+\_\+\+LIMIT}}~(\mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}} + \mbox{\hyperlink{group__canvas_gac8417e7f15a5262562983c1febe9e35e}{CANVAS\+\_\+\+HEIGHT}})
+\begin{DoxyCompactList}\small\item\em the bottom limit of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gaa4a0df1490d3c8da490aa06e3f654388}{CANVAS\+\_\+\+LEFT\+\_\+\+VISIBLE\+\_\+\+LIMIT}}~\mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}}
+\begin{DoxyCompactList}\small\item\em the left limit of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gaba53a3c3946de3d5be5909d0cb626829}{CANVAS\+\_\+\+RIGHT\+\_\+\+VISIBLE\+\_\+\+LIMIT}}~(\mbox{\hyperlink{group__const_gabf6f66114c31b8f87c80534ca695a00b}{H\+\_\+\+RES}} -\/ \mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}})
+\begin{DoxyCompactList}\small\item\em the right limit of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gadf7f1d2e39b646285c48c66f04905d86}{CANVAS\+\_\+\+BYPP}}~1
+\begin{DoxyCompactList}\small\item\em number of bytes that each canvas pixel takes in physical memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__canvas_ga80055034f5f9ceae3b737cc3cdc2ef47}{canvas\+\_\+load}} ()
+\begin{DoxyCompactList}\small\item\em Loads canvas information and allocates the necessary memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$() \mbox{\hyperlink{group__canvas_ga6e396a9fe595370839ca1f2e3cc98acb}{get\+\_\+canvas\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Returns the canvas buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_gab8aca11a163aa9c456d966da7e3004e5}{canvas\+\_\+draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the canvas to the back buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga638de35fdbe6db429ae8b24c98b9cc13}{canvas\+\_\+fill}} (uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Fills the entire screen with the given color and updates the \char`\"{}canvas\+\_\+background\+\_\+color\char`\"{} variable. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga325ed9223a8ace1fb14418c4d9a00795}{canvas\+\_\+clear}} ()
+\begin{DoxyCompactList}\small\item\em Fills the canvas with a white color. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga33567ef82c11af5b0b894616851cc03b}{canvas\+\_\+mouse\+\_\+handler}} (uint8\+\_\+t \+\_\+)
+\begin{DoxyCompactList}\small\item\em Handles mouse events that happen within the canvas section of the screen. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__canvas_gaa4b92ad51f39f4432397dcd16c3a3625}{canvas\+\_\+draw\+\_\+pencil\+\_\+circle}} ()
+\begin{DoxyCompactList}\small\item\em Draws a circle on screen at the given cursor position. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__canvas_ga6b1d3293521f7ea36a4e7bf970304057}{canvas\+\_\+draw\+\_\+pencil\+\_\+square}} ()
+\begin{DoxyCompactList}\small\item\em Draws a square on screen at the given cursor position. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga7a40fac29d1d2399c46be35360319841}{canvas\+\_\+handle\+\_\+line}} ()
+\begin{DoxyCompactList}\small\item\em Handles the drawing of straight lines made by clicking on an initial and final positions. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_gab6d35de38e60c1031a8bc9d70c529f28}{canvas\+\_\+handle\+\_\+bucket}} ()
+\begin{DoxyCompactList}\small\item\em Handles the filling of the canvas with the cursor color. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga087d6760c3afc2795718e3d4f746beab}{canvas\+\_\+flood\+\_\+fill}} (\mbox{\hyperlink{structposition}{position}} curr\+\_\+pos, uint8\+\_\+t color\+\_\+to\+\_\+replace, uint8\+\_\+t color\+\_\+to\+\_\+replace\+\_\+with)
+\begin{DoxyCompactList}\small\item\em Function that is supposed to replace an area of color \char`\"{}color\+\_\+to\+\_\+replace\+\_\+with\char`\"{} with a new color \char`\"{}color\+\_\+to\+\_\+replace\char`\"{}. Utilizes a linked list / queue but is unused at the moment. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga2a8f55e20f4a68fa050db0fffced2bb3}{canvas\+\_\+handle\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Handles how clicks on the canvas while the cursor is in text state should behave. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants and functions used for programming the canvas 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__canvas_ga8278102739b698539c1b24885826cdf4}\label{group__canvas_ga8278102739b698539c1b24885826cdf4}} 
+\index{canvas@{canvas}!CANVAS\_BOTTOM\_VISIBLE\_LIMIT@{CANVAS\_BOTTOM\_VISIBLE\_LIMIT}}
+\index{CANVAS\_BOTTOM\_VISIBLE\_LIMIT@{CANVAS\_BOTTOM\_VISIBLE\_LIMIT}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_BOTTOM\_VISIBLE\_LIMIT}{CANVAS\_BOTTOM\_VISIBLE\_LIMIT}}
+{\footnotesize\ttfamily \#define CANVAS\+\_\+\+BOTTOM\+\_\+\+VISIBLE\+\_\+\+LIMIT~(\mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}} + \mbox{\hyperlink{group__canvas_gac8417e7f15a5262562983c1febe9e35e}{CANVAS\+\_\+\+HEIGHT}})}
+
+
+
+the bottom limit of the canvas 
+
+\mbox{\Hypertarget{group__canvas_gadf7f1d2e39b646285c48c66f04905d86}\label{group__canvas_gadf7f1d2e39b646285c48c66f04905d86}} 
+\index{canvas@{canvas}!CANVAS\_BYPP@{CANVAS\_BYPP}}
+\index{CANVAS\_BYPP@{CANVAS\_BYPP}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_BYPP}{CANVAS\_BYPP}}
+{\footnotesize\ttfamily \#define CANVAS\+\_\+\+BYPP~1}
+
+
+
+number of bytes that each canvas pixel takes in physical memory 
+
+\mbox{\Hypertarget{group__canvas_gac8417e7f15a5262562983c1febe9e35e}\label{group__canvas_gac8417e7f15a5262562983c1febe9e35e}} 
+\index{canvas@{canvas}!CANVAS\_HEIGHT@{CANVAS\_HEIGHT}}
+\index{CANVAS\_HEIGHT@{CANVAS\_HEIGHT}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_HEIGHT}{CANVAS\_HEIGHT}}
+{\footnotesize\ttfamily \#define CANVAS\+\_\+\+HEIGHT~(708)}
+
+
+
+the height of the canvas relative to the window dimensions 
+
+\mbox{\Hypertarget{group__canvas_gaa4a0df1490d3c8da490aa06e3f654388}\label{group__canvas_gaa4a0df1490d3c8da490aa06e3f654388}} 
+\index{canvas@{canvas}!CANVAS\_LEFT\_VISIBLE\_LIMIT@{CANVAS\_LEFT\_VISIBLE\_LIMIT}}
+\index{CANVAS\_LEFT\_VISIBLE\_LIMIT@{CANVAS\_LEFT\_VISIBLE\_LIMIT}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_LEFT\_VISIBLE\_LIMIT}{CANVAS\_LEFT\_VISIBLE\_LIMIT}}
+{\footnotesize\ttfamily \#define CANVAS\+\_\+\+LEFT\+\_\+\+VISIBLE\+\_\+\+LIMIT~\mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}}}
+
+
+
+the left limit of the canvas 
+
+\mbox{\Hypertarget{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}\label{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}} 
+\index{canvas@{canvas}!CANVAS\_MARGIN@{CANVAS\_MARGIN}}
+\index{CANVAS\_MARGIN@{CANVAS\_MARGIN}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_MARGIN}{CANVAS\_MARGIN}}
+{\footnotesize\ttfamily \#define CANVAS\+\_\+\+MARGIN~60}
+
+
+
+the margin of the canvas 
+
+\mbox{\Hypertarget{group__canvas_gaba53a3c3946de3d5be5909d0cb626829}\label{group__canvas_gaba53a3c3946de3d5be5909d0cb626829}} 
+\index{canvas@{canvas}!CANVAS\_RIGHT\_VISIBLE\_LIMIT@{CANVAS\_RIGHT\_VISIBLE\_LIMIT}}
+\index{CANVAS\_RIGHT\_VISIBLE\_LIMIT@{CANVAS\_RIGHT\_VISIBLE\_LIMIT}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_RIGHT\_VISIBLE\_LIMIT}{CANVAS\_RIGHT\_VISIBLE\_LIMIT}}
+{\footnotesize\ttfamily \#define CANVAS\+\_\+\+RIGHT\+\_\+\+VISIBLE\+\_\+\+LIMIT~(\mbox{\hyperlink{group__const_gabf6f66114c31b8f87c80534ca695a00b}{H\+\_\+\+RES}} -\/ \mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}})}
+
+
+
+the right limit of the canvas 
+
+\mbox{\Hypertarget{group__canvas_gaf861f3616f26339d6279a8abbf524faa}\label{group__canvas_gaf861f3616f26339d6279a8abbf524faa}} 
+\index{canvas@{canvas}!CANVAS\_TOP\_VISIBLE\_LIMIT@{CANVAS\_TOP\_VISIBLE\_LIMIT}}
+\index{CANVAS\_TOP\_VISIBLE\_LIMIT@{CANVAS\_TOP\_VISIBLE\_LIMIT}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_TOP\_VISIBLE\_LIMIT}{CANVAS\_TOP\_VISIBLE\_LIMIT}}
+{\footnotesize\ttfamily \#define CANVAS\+\_\+\+TOP\+\_\+\+VISIBLE\+\_\+\+LIMIT~\mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}}}
+
+
+
+the top limit of the canvas 
+
+\mbox{\Hypertarget{group__canvas_gaa04ece9d00a940c9b1968887f16faeb3}\label{group__canvas_gaa04ece9d00a940c9b1968887f16faeb3}} 
+\index{canvas@{canvas}!CANVAS\_WIDTH@{CANVAS\_WIDTH}}
+\index{CANVAS\_WIDTH@{CANVAS\_WIDTH}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{CANVAS\_WIDTH}{CANVAS\_WIDTH}}
+{\footnotesize\ttfamily \#define CANVAS\+\_\+\+WIDTH~(\mbox{\hyperlink{group__const_gabf6f66114c31b8f87c80534ca695a00b}{H\+\_\+\+RES}} -\/ \mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}} $\ast$ 2)}
+
+
+
+the width of the canvas relative to the window dimensions 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__canvas_ga325ed9223a8ace1fb14418c4d9a00795}\label{group__canvas_ga325ed9223a8ace1fb14418c4d9a00795}} 
+\index{canvas@{canvas}!canvas\_clear@{canvas\_clear}}
+\index{canvas\_clear@{canvas\_clear}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_clear()}{canvas\_clear()}}
+{\footnotesize\ttfamily void() canvas\+\_\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fills the canvas with a white color. 
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{group__canvas_gab8aca11a163aa9c456d966da7e3004e5}\label{group__canvas_gab8aca11a163aa9c456d966da7e3004e5}} 
+\index{canvas@{canvas}!canvas\_draw@{canvas\_draw}}
+\index{canvas\_draw@{canvas\_draw}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_draw()}{canvas\_draw()}}
+{\footnotesize\ttfamily void() canvas\+\_\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the canvas to the back buffer. 
+
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{group__canvas_gaa4b92ad51f39f4432397dcd16c3a3625}\label{group__canvas_gaa4b92ad51f39f4432397dcd16c3a3625}} 
+\index{canvas@{canvas}!canvas\_draw\_pencil\_circle@{canvas\_draw\_pencil\_circle}}
+\index{canvas\_draw\_pencil\_circle@{canvas\_draw\_pencil\_circle}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_draw\_pencil\_circle()}{canvas\_draw\_pencil\_circle()}}
+{\footnotesize\ttfamily int() canvas\+\_\+draw\+\_\+pencil\+\_\+circle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws a circle on screen at the given cursor position. 
+
+\begin{DoxyReturn}{Returns}
+0 if success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{group__canvas_ga6b1d3293521f7ea36a4e7bf970304057}\label{group__canvas_ga6b1d3293521f7ea36a4e7bf970304057}} 
+\index{canvas@{canvas}!canvas\_draw\_pencil\_square@{canvas\_draw\_pencil\_square}}
+\index{canvas\_draw\_pencil\_square@{canvas\_draw\_pencil\_square}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_draw\_pencil\_square()}{canvas\_draw\_pencil\_square()}}
+{\footnotesize\ttfamily int() canvas\+\_\+draw\+\_\+pencil\+\_\+square (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws a square on screen at the given cursor position. 
+
+\begin{DoxyReturn}{Returns}
+0 if success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{group__canvas_ga638de35fdbe6db429ae8b24c98b9cc13}\label{group__canvas_ga638de35fdbe6db429ae8b24c98b9cc13}} 
+\index{canvas@{canvas}!canvas\_fill@{canvas\_fill}}
+\index{canvas\_fill@{canvas\_fill}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_fill()}{canvas\_fill()}}
+{\footnotesize\ttfamily void() canvas\+\_\+fill (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Fills the entire screen with the given color and updates the \char`\"{}canvas\+\_\+background\+\_\+color\char`\"{} variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & color to fill the area with \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{group__canvas_ga087d6760c3afc2795718e3d4f746beab}\label{group__canvas_ga087d6760c3afc2795718e3d4f746beab}} 
+\index{canvas@{canvas}!canvas\_flood\_fill@{canvas\_flood\_fill}}
+\index{canvas\_flood\_fill@{canvas\_flood\_fill}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_flood\_fill()}{canvas\_flood\_fill()}}
+{\footnotesize\ttfamily void() canvas\+\_\+flood\+\_\+fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structposition}{position}}}]{curr\+\_\+pos,  }\item[{uint8\+\_\+t}]{color\+\_\+to\+\_\+replace,  }\item[{uint8\+\_\+t}]{color\+\_\+to\+\_\+replace\+\_\+with }\end{DoxyParamCaption})}
+
+
+
+Function that is supposed to replace an area of color \char`\"{}color\+\_\+to\+\_\+replace\+\_\+with\char`\"{} with a new color \char`\"{}color\+\_\+to\+\_\+replace\char`\"{}. Utilizes a linked list / queue but is unused at the moment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+\_\+pos} & the position of the first pixel to be replaced\\
+\hline
+{\em color\+\_\+to\+\_\+replace} & the color that will be replaced\\
+\hline
+{\em color\+\_\+to\+\_\+replace\+\_\+with} & the color that will be used to replace the other color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__canvas_gab6d35de38e60c1031a8bc9d70c529f28}\label{group__canvas_gab6d35de38e60c1031a8bc9d70c529f28}} 
+\index{canvas@{canvas}!canvas\_handle\_bucket@{canvas\_handle\_bucket}}
+\index{canvas\_handle\_bucket@{canvas\_handle\_bucket}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_handle\_bucket()}{canvas\_handle\_bucket()}}
+{\footnotesize\ttfamily void() canvas\+\_\+handle\+\_\+bucket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the filling of the canvas with the cursor color. 
+
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{group__canvas_ga7a40fac29d1d2399c46be35360319841}\label{group__canvas_ga7a40fac29d1d2399c46be35360319841}} 
+\index{canvas@{canvas}!canvas\_handle\_line@{canvas\_handle\_line}}
+\index{canvas\_handle\_line@{canvas\_handle\_line}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_handle\_line()}{canvas\_handle\_line()}}
+{\footnotesize\ttfamily void() canvas\+\_\+handle\+\_\+line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the drawing of straight lines made by clicking on an initial and final positions. 
+
+Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{group__canvas_ga2a8f55e20f4a68fa050db0fffced2bb3}\label{group__canvas_ga2a8f55e20f4a68fa050db0fffced2bb3}} 
+\index{canvas@{canvas}!canvas\_handle\_text@{canvas\_handle\_text}}
+\index{canvas\_handle\_text@{canvas\_handle\_text}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_handle\_text()}{canvas\_handle\_text()}}
+{\footnotesize\ttfamily void() canvas\+\_\+handle\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles how clicks on the canvas while the cursor is in text state should behave. 
+
+Here is the call graph for this function\+:
+% FIG 12
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{group__canvas_ga80055034f5f9ceae3b737cc3cdc2ef47}\label{group__canvas_ga80055034f5f9ceae3b737cc3cdc2ef47}} 
+\index{canvas@{canvas}!canvas\_load@{canvas\_load}}
+\index{canvas\_load@{canvas\_load}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_load()}{canvas\_load()}}
+{\footnotesize\ttfamily void() canvas\+\_\+load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads canvas information and allocates the necessary memory. 
+
+Here is the caller graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{group__canvas_ga33567ef82c11af5b0b894616851cc03b}\label{group__canvas_ga33567ef82c11af5b0b894616851cc03b}} 
+\index{canvas@{canvas}!canvas\_mouse\_handler@{canvas\_mouse\_handler}}
+\index{canvas\_mouse\_handler@{canvas\_mouse\_handler}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{canvas\_mouse\_handler()}{canvas\_mouse\_handler()}}
+{\footnotesize\ttfamily void() canvas\+\_\+mouse\+\_\+handler (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Handles mouse events that happen within the canvas section of the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+} & unused \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 15
+Here is the caller graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{group__canvas_ga6e396a9fe595370839ca1f2e3cc98acb}\label{group__canvas_ga6e396a9fe595370839ca1f2e3cc98acb}} 
+\index{canvas@{canvas}!get\_canvas\_buffer@{get\_canvas\_buffer}}
+\index{get\_canvas\_buffer@{get\_canvas\_buffer}!canvas@{canvas}}
+\doxysubsubsection{\texorpdfstring{get\_canvas\_buffer()}{get\_canvas\_buffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const  $\ast$() get\+\_\+canvas\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the canvas buffer. 
+
+\begin{DoxyReturn}{Returns}
+canvas\+\_\+buffer 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 17

@@ -1,0 +1,4 @@
+<map id="canvas_clear" name="canvas_clear">
+<area shape="rect" id="node1" title="Fills the canvas with a white color." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$group__canvas.html#ga638de35fdbe6db429ae8b24c98b9cc13" title="Fills the entire screen with the given color and updates the &quot;canvas_background_color&quot; variable." alt="" coords="160,5,252,32"/>
+</map>

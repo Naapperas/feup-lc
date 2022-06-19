@@ -1,0 +1,10 @@
+<map id="canvas_handle_text" name="canvas_handle_text">
+<area shape="rect" id="node1" title="Handles how clicks on the canvas while the cursor is in text state should behave." alt="" coords="5,132,157,159"/>
+<area shape="rect" id="node2" href="$group__graphics.html#gaf1ece22510b6c3de2d3a5d4559028fb9" title="draws the given string to the given buffer on the given position." alt="" coords="234,81,349,108"/>
+<area shape="rect" id="node7" href="$group__cursor.html#ga565cbdb0a5f7b4f6ecc1fc2ab09011d7" title="Indicates whether the left button was pressed or not." alt="" coords="205,132,377,159"/>
+<area shape="rect" id="node8" href="$group__cursor.html#gaf77450d0441ac50608634a16cbf4ec1e" title="Getter for the &quot;typing&quot; variable." alt="" coords="237,183,346,209"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga12e0a019382481d6af4dfb730d2468c7" title="Draws a rectangle on a pixel buffer." alt="" coords="429,5,580,32"/>
+<area shape="rect" id="node4" href="$group__cursor.html#ga5f8c8d3eed096c6d94a911f9bfa72df4" title="Returns the current color of the cursor." alt="" coords="440,56,569,83"/>
+<area shape="rect" id="node5" href="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b" title="Get cursor thickness." alt="" coords="425,107,584,133"/>
+<area shape="rect" id="node6" href="$group__text.html#gade215bd9889bb8b69de584385ca0c557" title="Returns the xpm image of the font." alt="" coords="449,157,561,184"/>
+</map>

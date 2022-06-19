@@ -1,0 +1,8 @@
+<map id="draw_color_button" name="draw_color_button">
+<area shape="rect" id="node1" title="Draws a color button on a pixel buffer." alt="" coords="5,31,148,57"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga12e0a019382481d6af4dfb730d2468c7" title="Draws a rectangle on a pixel buffer." alt="" coords="196,5,347,32"/>
+<area shape="rect" id="node3" href="$group__draw__buttons.html#gaa6af89646cd7d59141040cb6d1b907f9" title="Draws a button frame on a pixel buffer." alt="" coords="197,56,346,83"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga46c7629f4db6494a40730b69b99d482f" title="Draws an horizontal line on a pixel buffer." alt="" coords="395,31,516,57"/>
+<area shape="rect" id="node5" href="$group__graphics.html#ga217f0eee3bf0366f3ceda240ca6a9e7f" title="Draws a vertical line on a pixel buffer." alt="" coords="395,81,516,108"/>
+<area shape="rect" id="node6" href="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="564,81,685,108"/>
+</map>

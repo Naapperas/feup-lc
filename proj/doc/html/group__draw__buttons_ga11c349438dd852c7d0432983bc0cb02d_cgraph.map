@@ -1,0 +1,5 @@
+<map id="draw_sel_text_button" name="draw_sel_text_button">
+<area shape="rect" id="node1" title="Draws the button that allows the user to input text into the canvas to a pixel buffer." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga34c7bdd63f72bd3f735f7bec8738ddd6" title="Draws a XPM to the given pixel buffer." alt="" coords="216,5,335,32"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="383,5,504,32"/>
+</map>

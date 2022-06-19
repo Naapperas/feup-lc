@@ -1,0 +1,5 @@
+<map id="buttons_draw" name="buttons_draw">
+<area shape="rect" id="node1" title="Draws the buttons on screen." alt="" coords="303,5,413,32"/>
+<area shape="rect" id="node2" href="$group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7" title="Draws the menu (background) and calls the function responsible for drawing the buttons." alt="" coords="156,5,255,32"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54" title="Draws the program assets on screen." alt="" coords="5,5,108,32"/>
+</map>

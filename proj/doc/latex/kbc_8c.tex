@@ -1,0 +1,142 @@
+\hypertarget{kbc_8c}{}\doxysection{src/devices/kbc/kbc.c File Reference}
+\label{kbc_8c}\index{src/devices/kbc/kbc.c@{src/devices/kbc/kbc.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for kbc.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__kbc_ga02884ada1971dbade466081413210b18}{kbc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes to keyboard interrupts and puts the given bit in bit\+\_\+no \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga1102381e6a9e876e05dd78c58ccb5673}{kbc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes mouse interrupts \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{kbc_8c_aea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\item 
+void() \mbox{\hyperlink{group__kbc_gad1a9123fa6adccb9ffed9c6bf6462be2}{kbc\+\_\+enable\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Reenable keyboard interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga5d49f0d32349d79f4746dcb41edc32c6}{kbc\+\_\+outbuf\+\_\+full}} ()
+\begin{DoxyCompactList}\small\item\em Check if keyboard output buffer is full. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__kbc_ga3562ffbd4da6a82063fb08bc1b3476fd}{keyboard\+\_\+ready}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the keyboard scancode is ready to process. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__kbc_ga5fec9823dc00d0eaa85e1789c3da0e82}{mark\+\_\+scancode\+\_\+processed}} ()
+\begin{DoxyCompactList}\small\item\em Marks the current keyboard scancode as processed. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga765690bfea17f01031409d68e9a9e2df}{get\+\_\+scancode\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current keyboard scancode size. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga4d32d8dd8bbee36ee6409f6cb3e3f37a}{get\+\_\+scancode\+\_\+type}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current keyboard scancode type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{kbc_8c_a7cc98c0518e4b373d202b209415b1d43}{scancode\+\_\+size}} = 1
+\begin{DoxyCompactList}\small\item\em the size of the scancode \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{kbc_8c_a32d9cc695134cbfdfcc71eb566a072d5}{scancode\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em the type of the scancode\+: can be MAKE or BREAK \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{kbc_8c_a4bbe97da213d78f0171df8c632498923}{kbc\+\_\+global\+\_\+hook\+\_\+id}}
+\begin{DoxyCompactList}\small\item\em the hook id that is used to unsubscribe interrupts from the KBC \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{kbc_8c_aa5c52e33d062ce1dfc70bc3eb4b0e7bc}{st\+\_\+reg}}
+\begin{DoxyCompactList}\small\item\em variable used to store the status register of the KBC \end{DoxyCompactList}\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{kbc_8c_aa6778bcea436e75bf1ff9d93853768e4}{scancodes}} = NULL
+\begin{DoxyCompactList}\small\item\em array of bytes that make up the scancode \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{kbc_8c_aa950f6618cd4a7058e1b4b31445545b9}{keyboard\+\_\+packet\+\_\+ready}} = false
+\begin{DoxyCompactList}\small\item\em indicates whether the keyboard packet is ready or not \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{kbc_8c_aad98dbb81d2309aa7c0397d544776575}{scancode\+\_\+processed}} = false
+\begin{DoxyCompactList}\small\item\em indicates whether the current scancode has been processed or not \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{kbc_8c_a2e20cac612cf0dd1a1c260f95411d0ee}{bytes\+\_\+read}} = 0
+\begin{DoxyCompactList}\small\item\em the number of bytes from the current scancode that have been read so far \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kbc_8c_aea970a154161a35f6894898a092ed70a}\label{kbc_8c_aea970a154161a35f6894898a092ed70a}} 
+\index{kbc.c@{kbc.c}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily void() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{kbc_8c_a2e20cac612cf0dd1a1c260f95411d0ee}\label{kbc_8c_a2e20cac612cf0dd1a1c260f95411d0ee}} 
+\index{kbc.c@{kbc.c}!bytes\_read@{bytes\_read}}
+\index{bytes\_read@{bytes\_read}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{bytes\_read}{bytes\_read}}
+{\footnotesize\ttfamily int bytes\+\_\+read = 0}
+
+
+
+the number of bytes from the current scancode that have been read so far 
+
+\mbox{\Hypertarget{kbc_8c_a4bbe97da213d78f0171df8c632498923}\label{kbc_8c_a4bbe97da213d78f0171df8c632498923}} 
+\index{kbc.c@{kbc.c}!kbc\_global\_hook\_id@{kbc\_global\_hook\_id}}
+\index{kbc\_global\_hook\_id@{kbc\_global\_hook\_id}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_global\_hook\_id}{kbc\_global\_hook\_id}}
+{\footnotesize\ttfamily int32\+\_\+t kbc\+\_\+global\+\_\+hook\+\_\+id}
+
+
+
+the hook id that is used to unsubscribe interrupts from the KBC 
+
+\mbox{\Hypertarget{kbc_8c_aa950f6618cd4a7058e1b4b31445545b9}\label{kbc_8c_aa950f6618cd4a7058e1b4b31445545b9}} 
+\index{kbc.c@{kbc.c}!keyboard\_packet\_ready@{keyboard\_packet\_ready}}
+\index{keyboard\_packet\_ready@{keyboard\_packet\_ready}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{keyboard\_packet\_ready}{keyboard\_packet\_ready}}
+{\footnotesize\ttfamily bool keyboard\+\_\+packet\+\_\+ready = false}
+
+
+
+indicates whether the keyboard packet is ready or not 
+
+\mbox{\Hypertarget{kbc_8c_aad98dbb81d2309aa7c0397d544776575}\label{kbc_8c_aad98dbb81d2309aa7c0397d544776575}} 
+\index{kbc.c@{kbc.c}!scancode\_processed@{scancode\_processed}}
+\index{scancode\_processed@{scancode\_processed}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{scancode\_processed}{scancode\_processed}}
+{\footnotesize\ttfamily bool scancode\+\_\+processed = false}
+
+
+
+indicates whether the current scancode has been processed or not 
+
+\mbox{\Hypertarget{kbc_8c_a7cc98c0518e4b373d202b209415b1d43}\label{kbc_8c_a7cc98c0518e4b373d202b209415b1d43}} 
+\index{kbc.c@{kbc.c}!scancode\_size@{scancode\_size}}
+\index{scancode\_size@{scancode\_size}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{scancode\_size}{scancode\_size}}
+{\footnotesize\ttfamily int scancode\+\_\+size = 1}
+
+
+
+the size of the scancode 
+
+\mbox{\Hypertarget{kbc_8c_a32d9cc695134cbfdfcc71eb566a072d5}\label{kbc_8c_a32d9cc695134cbfdfcc71eb566a072d5}} 
+\index{kbc.c@{kbc.c}!scancode\_type@{scancode\_type}}
+\index{scancode\_type@{scancode\_type}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{scancode\_type}{scancode\_type}}
+{\footnotesize\ttfamily int scancode\+\_\+type}
+
+
+
+the type of the scancode\+: can be MAKE or BREAK 
+
+\mbox{\Hypertarget{kbc_8c_aa6778bcea436e75bf1ff9d93853768e4}\label{kbc_8c_aa6778bcea436e75bf1ff9d93853768e4}} 
+\index{kbc.c@{kbc.c}!scancodes@{scancodes}}
+\index{scancodes@{scancodes}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{scancodes}{scancodes}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ scancodes = NULL}
+
+
+
+array of bytes that make up the scancode 
+
+\mbox{\Hypertarget{kbc_8c_aa5c52e33d062ce1dfc70bc3eb4b0e7bc}\label{kbc_8c_aa5c52e33d062ce1dfc70bc3eb4b0e7bc}} 
+\index{kbc.c@{kbc.c}!st\_reg@{st\_reg}}
+\index{st\_reg@{st\_reg}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{st\_reg}{st\_reg}}
+{\footnotesize\ttfamily uint8\+\_\+t st\+\_\+reg}
+
+
+
+variable used to store the status register of the KBC 
+

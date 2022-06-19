@@ -1,0 +1,10 @@
+digraph "is_hovered"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="is_hovered",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Indicates whether a given interactive element is being hovered by the cursor or not."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="cursor_get_pos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga0af9b29a32a86441cce1cc594e2ff982",tooltip="Returns the current position of the cursor."];
+}

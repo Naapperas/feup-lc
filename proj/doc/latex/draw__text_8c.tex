@@ -1,0 +1,50 @@
+\hypertarget{draw__text_8c}{}\doxysection{src/game/draw\+\_\+text.c File Reference}
+\label{draw__text_8c}\index{src/game/draw\_text.c@{src/game/draw\_text.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../devices/video/graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}charset.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw\+\_\+text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}text.\+h\char`\"{}}\newline
+Include dependency graph for draw\+\_\+text.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__draw__chat_gac2461a1f880fb30adc88490ea47debc2}{add\+\_\+char\+\_\+to\+\_\+current\+\_\+text}} (char c)
+\begin{DoxyCompactList}\small\item\em Adds a character to the current text. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__chat_ga70e8df51af0f05caa7009ce6c6d564b9}{remove\+\_\+char\+\_\+from\+\_\+current\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Removes the last character to be added to the current text. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__chat_ga2f3400d74eb3c1e9f287cf24a58d7145}{clear\+\_\+current\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Removes characters from the current text until it\textquotesingle{}s empty. \end{DoxyCompactList}\item 
+char $\ast$() \mbox{\hyperlink{group__draw__chat_ga57634330ce5d2468a25996bbacfd0ab3}{get\+\_\+current\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{draw__text_8c_a70163219ede8395a1e8908372ae76f94}{text\+\_\+size}} = 0
+\begin{DoxyCompactList}\small\item\em size of the piece of text \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{draw__text_8c_adc81d7685fb07fbe51e23b5cad40c2e7}{text}} \mbox{[}\mbox{\hyperlink{group__draw__chat_ga77157daf10d4e4a26a4a2a2cb062202f}{INPUT\+\_\+\+CHAR\+\_\+\+SIZE}}+1\mbox{]} = \{0\}
+\begin{DoxyCompactList}\small\item\em the text currently being edited \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{draw__text_8c_adc81d7685fb07fbe51e23b5cad40c2e7}\label{draw__text_8c_adc81d7685fb07fbe51e23b5cad40c2e7}} 
+\index{draw\_text.c@{draw\_text.c}!text@{text}}
+\index{text@{text}!draw\_text.c@{draw\_text.c}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily char text\mbox{[}\mbox{\hyperlink{group__draw__chat_ga77157daf10d4e4a26a4a2a2cb062202f}{INPUT\+\_\+\+CHAR\+\_\+\+SIZE}}+1\mbox{]} = \{0\}}
+
+
+
+the text currently being edited 
+
+\mbox{\Hypertarget{draw__text_8c_a70163219ede8395a1e8908372ae76f94}\label{draw__text_8c_a70163219ede8395a1e8908372ae76f94}} 
+\index{draw\_text.c@{draw\_text.c}!text\_size@{text\_size}}
+\index{text\_size@{text\_size}!draw\_text.c@{draw\_text.c}}
+\doxysubsubsection{\texorpdfstring{text\_size}{text\_size}}
+{\footnotesize\ttfamily int text\+\_\+size = 0}
+
+
+
+size of the piece of text 
+

@@ -1,0 +1,9 @@
+<map id="canvas_fill" name="canvas_fill">
+<area shape="rect" id="node1" title="Fills the entire screen with the given color and updates the &quot;canvas_background_color&quot; variable." alt="" coords="939,56,1031,83"/>
+<area shape="rect" id="node2" href="$group__canvas.html#ga325ed9223a8ace1fb14418c4d9a00795" title="Fills the canvas with a white color." alt="" coords="753,5,859,32"/>
+<area shape="rect" id="node3" href="$group__canvas.html#gab6d35de38e60c1031a8bc9d70c529f28" title="Handles the filling of the canvas with the cursor color." alt="" coords="721,56,891,83"/>
+<area shape="rect" id="node5" href="$group__element.html#ga75aa8cfcbee4af0933a79d05e6707679" title="Loads and creates every interactive element present on screen." alt="" coords="323,81,451,108"/>
+<area shape="rect" id="node4" href="$group__canvas.html#ga33567ef82c11af5b0b894616851cc03b" title="Handles mouse events that happen within the canvas section of the screen." alt="" coords="499,56,673,83"/>
+<area shape="rect" id="node6" href="$proj_8c.html#a621db57ab86ebe569aa26e70d11c9688" title="Loads the necessary assets." alt="" coords="176,81,275,108"/>
+<area shape="rect" id="node7" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,81,128,108"/>
+</map>

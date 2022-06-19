@@ -1,0 +1,4 @@
+<map id="to_bcd" name="to_bcd">
+<area shape="rect" id="node1" title="converts an unsigned 16 bit value to bcd" alt="" coords="209,5,275,32"/>
+<area shape="rect" id="node2" href="$timer_8c.html#af2c04fa8e97ffa748fd3f612886a92a7" title=" " alt="" coords="5,5,161,32"/>
+</map>

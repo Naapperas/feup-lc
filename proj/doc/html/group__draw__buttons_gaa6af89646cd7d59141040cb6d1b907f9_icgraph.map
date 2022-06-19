@@ -1,0 +1,11 @@
+<map id="draw_button_frame" name="draw_button_frame">
+<area shape="rect" id="node1" title="Draws a button frame on a pixel buffer." alt="" coords="689,107,839,133"/>
+<area shape="rect" id="node2" href="$group__draw__buttons.html#ga8a09809fd380fc02ab5992ad80cc350b" title="Draws a color button on a pixel buffer." alt="" coords="480,5,623,32"/>
+<area shape="rect" id="node6" href="$group__draw__buttons.html#gafdb30e468c5cd1e9c233b4c97362793f" title="Draws the button to draw a circle on a pixel buffer." alt="" coords="466,56,637,83"/>
+<area shape="rect" id="node7" href="$group__draw__buttons.html#ga6154e9081a9c711dd0c2fd0a892d6945" title="Draws the button that allows the user to use an eraser on the canvas to a pixel buffer." alt="" coords="463,107,640,133"/>
+<area shape="rect" id="node8" href="$group__draw__buttons.html#ga14673af5638efb032dac6c0df453489d" title="Draws the button to draw a straight line on a pixel buffer." alt="" coords="471,157,631,184"/>
+<area shape="rect" id="node9" href="$group__draw__buttons.html#ga62f6170bf1049dc4eb22778cd53df23b" title="Draws the button to draw a square on a pixel buffer." alt="" coords="461,208,641,235"/>
+<area shape="rect" id="node3" href="$group__draw__buttons.html#ga8d46b5bb0547f68fd65d40c6782054e8" title="Draws the buttons on screen." alt="" coords="303,107,413,133"/>
+<area shape="rect" id="node4" href="$group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7" title="Draws the menu (background) and calls the function responsible for drawing the buttons." alt="" coords="156,107,255,133"/>
+<area shape="rect" id="node5" href="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54" title="Draws the program assets on screen." alt="" coords="5,107,108,133"/>
+</map>

@@ -1,0 +1,490 @@
+\hypertarget{group__cursor}{}\doxysection{cursor}
+\label{group__cursor}\index{cursor@{cursor}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__cursor_ga75982b108852c67f741bc1310a1e5fca}{MIN\+\_\+\+THICKNESS}}~1
+\begin{DoxyCompactList}\small\item\em the minimum thickness of the cursor \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__cursor_ga3add834485af3ac681bb02575caf9ae7}{MAX\+\_\+\+THICKNESS}}~24
+\begin{DoxyCompactList}\small\item\em the maximum thickness of the cursor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{group__cursor_ga99618eb300a45f7d23a757c5000b1ccc}{cursor\+\_\+style}} \mbox{\hyperlink{group__cursor_gade731461adeae88133ba01829b86aff9}{cursor\+\_\+state\+\_\+style\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em States that define what the mouse will draw and how it looks when hovering the canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__cursor_ga99618eb300a45f7d23a757c5000b1ccc}{cursor\+\_\+style}} \{ \newline
+\mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1ccca208fa52a1b98383b5461ad92bef82500}{CURSOR\+\_\+\+DSTATE\+\_\+\+CIRCLE}}
+, \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1cccad42acd32426d3e2c4fabe21c0d24d3e6}{CURSOR\+\_\+\+DSTATE\+\_\+\+SQUARE}}
+, \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaaa35fefbc296c732406e6bfa265f71a6}{CURSOR\+\_\+\+DSTATE\+\_\+\+TEXT}}
+, \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaaac92aaf69eb80f2bf3a5e505d7fcbba}{CURSOR\+\_\+\+DSTATE\+\_\+\+LINE}}
+, \newline
+\mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaf512370483502caf72f6a819587aa639}{CURSOR\+\_\+\+DSTATE\+\_\+\+ERASER}}
+, \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1ccca18e126aed21fca3bef10e6dae2ffb577}{CURSOR\+\_\+\+DSTATE\+\_\+\+BUCKET}}
+ \}
+\begin{DoxyCompactList}\small\item\em States that define what the mouse will draw and how it looks when hovering the canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__cursor_gafe31cdb51564035453bfebc44333d8e6}{cursor\+\_\+load}} ()
+\begin{DoxyCompactList}\small\item\em Loads the xpm image of the cursor and sets it\textquotesingle{}s initial coordinates. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_ga77008c8ff256136c0a49cb34e950d4c0}{cursor\+\_\+move}} (int16\+\_\+t delta\+\_\+x, int16\+\_\+t delta\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Moves the cursor around by updating it\textquotesingle{}s coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structposition}{position}}() \mbox{\hyperlink{group__cursor_ga0af9b29a32a86441cce1cc594e2ff982}{cursor\+\_\+get\+\_\+pos}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current position of the cursor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__cursor_gade731461adeae88133ba01829b86aff9}{cursor\+\_\+state\+\_\+style\+\_\+t}}() \mbox{\hyperlink{group__cursor_ga4826d95c25c8d6d0dcd3b07f5ef7cdb3}{cursor\+\_\+get\+\_\+style}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current style of the cursor. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_gae935272ce3eabeb1b6824da72b7e879f}{cursor\+\_\+set\+\_\+style}} (uint8\+\_\+t style)
+\begin{DoxyCompactList}\small\item\em Set cursor state. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__cursor_gab3f0eafdff5a3a2edb2d2637ddfd7f4b}{cursor\+\_\+get\+\_\+thickness}} ()
+\begin{DoxyCompactList}\small\item\em Get cursor thickness. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_ga269516aee4764c460bfc69b6d0f84f35}{cursor\+\_\+set\+\_\+thickness}} (uint8\+\_\+t thickness)
+\begin{DoxyCompactList}\small\item\em Set cursor thickness. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_gaecf69830f5a4343c6a598d1713d07a26}{cursor\+\_\+increase\+\_\+thickness}} (uint8\+\_\+t \+\_\+)
+\begin{DoxyCompactList}\small\item\em Increases the thickness of the cursor. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_ga70c35d2bf7529b2584d568c203efcddb}{cursor\+\_\+decrease\+\_\+thickness}} (uint8\+\_\+t \+\_\+)
+\begin{DoxyCompactList}\small\item\em Decreases the thickness of the cursor. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_ga4648530c8e1a1b7846ec80cb78781ca5}{cursor\+\_\+draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the cursor on screen. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_ga2656ac7c2d78ec8eebbd8ee79e8b2ac4}{cursor\+\_\+set\+\_\+lb}} (bool lb)
+\begin{DoxyCompactList}\small\item\em Assigns a new value to the left button of the cursor. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__cursor_ga565cbdb0a5f7b4f6ecc1fc2ab09011d7}{cursor\+\_\+lb\+\_\+was\+\_\+pressed}} ()
+\begin{DoxyCompactList}\small\item\em Indicates whether the left button was pressed or not. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__cursor_ga5f8c8d3eed096c6d94a911f9bfa72df4}{cursor\+\_\+get\+\_\+color}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current color of the cursor. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_ga3df0743bf101e3c12fc4f83edaba3d2e}{cursor\+\_\+set\+\_\+color}} (uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Sets the cursor color. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__cursor_ga3a1751e66bd2ebcd3d82ef8fbbffa2bc}{cursor\+\_\+get\+\_\+line\+\_\+counter}} ()
+\begin{DoxyCompactList}\small\item\em Returns the line counter of the cursor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structposition}{position}}() \mbox{\hyperlink{group__cursor_ga201b3a410e597535f1ebb22527564fdf}{cursor\+\_\+get\+\_\+initial\+\_\+line\+\_\+position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the intial position of the line to be drawn. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_ga3f2b51ead9e3ff5d1956cf74a0399da9}{cursor\+\_\+set\+\_\+initial\+\_\+line\+\_\+position}} (\mbox{\hyperlink{structposition}{position}} pos)
+\begin{DoxyCompactList}\small\item\em Sets the initial position of the line to be drawn. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_ga62e511b022e2f8a98a87230c84cf2100}{cursor\+\_\+increase\+\_\+line\+\_\+counter}} ()
+\begin{DoxyCompactList}\small\item\em Increases the counter of the line and indicates the number of clicks done by the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structposition}{position}}() \mbox{\hyperlink{group__cursor_ga0542477ca7ae4c641bbc12e8872a0d12}{get\+\_\+text\+\_\+initial\+\_\+position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the initial position of where the text should be printedthe text. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__cursor_gaf77450d0441ac50608634a16cbf4ec1e}{get\+\_\+is\+\_\+typing}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the \char`\"{}typing\char`\"{} variable. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_ga0d1db46a41844e572bf74a5a269e0eaf}{set\+\_\+is\+\_\+typing}} (bool new\+\_\+is\+\_\+typing)
+\begin{DoxyCompactList}\small\item\em Setter for the \char`\"{}typing\char`\"{} variable. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__cursor_gacd5c344c1e75b3efea4ab56a9078823f}{set\+\_\+text\+\_\+initial\+\_\+position}} (\mbox{\hyperlink{structposition}{position}} pos)
+\begin{DoxyCompactList}\small\item\em Setter for the initial position where the text should start being drawn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants, structures and functions used for programming the cursor 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__cursor_ga3add834485af3ac681bb02575caf9ae7}\label{group__cursor_ga3add834485af3ac681bb02575caf9ae7}} 
+\index{cursor@{cursor}!MAX\_THICKNESS@{MAX\_THICKNESS}}
+\index{MAX\_THICKNESS@{MAX\_THICKNESS}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{MAX\_THICKNESS}{MAX\_THICKNESS}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+THICKNESS~24}
+
+
+
+the maximum thickness of the cursor 
+
+\mbox{\Hypertarget{group__cursor_ga75982b108852c67f741bc1310a1e5fca}\label{group__cursor_ga75982b108852c67f741bc1310a1e5fca}} 
+\index{cursor@{cursor}!MIN\_THICKNESS@{MIN\_THICKNESS}}
+\index{MIN\_THICKNESS@{MIN\_THICKNESS}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{MIN\_THICKNESS}{MIN\_THICKNESS}}
+{\footnotesize\ttfamily \#define MIN\+\_\+\+THICKNESS~1}
+
+
+
+the minimum thickness of the cursor 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{group__cursor_gade731461adeae88133ba01829b86aff9}\label{group__cursor_gade731461adeae88133ba01829b86aff9}} 
+\index{cursor@{cursor}!cursor\_state\_style\_t@{cursor\_state\_style\_t}}
+\index{cursor\_state\_style\_t@{cursor\_state\_style\_t}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_state\_style\_t}{cursor\_state\_style\_t}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{group__cursor_ga99618eb300a45f7d23a757c5000b1ccc}{cursor\+\_\+style}} \mbox{\hyperlink{group__cursor_gade731461adeae88133ba01829b86aff9}{cursor\+\_\+state\+\_\+style\+\_\+t}}}
+
+
+
+States that define what the mouse will draw and how it looks when hovering the canvas. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__cursor_ga99618eb300a45f7d23a757c5000b1ccc}\label{group__cursor_ga99618eb300a45f7d23a757c5000b1ccc}} 
+\index{cursor@{cursor}!cursor\_style@{cursor\_style}}
+\index{cursor\_style@{cursor\_style}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_style}{cursor\_style}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__cursor_ga99618eb300a45f7d23a757c5000b1ccc}{cursor\+\_\+style}}}
+
+
+
+States that define what the mouse will draw and how it looks when hovering the canvas. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CURSOR\_DSTATE\_CIRCLE@{CURSOR\_DSTATE\_CIRCLE}!cursor@{cursor}}\index{cursor@{cursor}!CURSOR\_DSTATE\_CIRCLE@{CURSOR\_DSTATE\_CIRCLE}}}\mbox{\Hypertarget{group__cursor_gga99618eb300a45f7d23a757c5000b1ccca208fa52a1b98383b5461ad92bef82500}\label{group__cursor_gga99618eb300a45f7d23a757c5000b1ccca208fa52a1b98383b5461ad92bef82500}} 
+CURSOR\+\_\+\+DSTATE\+\_\+\+CIRCLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CURSOR\_DSTATE\_SQUARE@{CURSOR\_DSTATE\_SQUARE}!cursor@{cursor}}\index{cursor@{cursor}!CURSOR\_DSTATE\_SQUARE@{CURSOR\_DSTATE\_SQUARE}}}\mbox{\Hypertarget{group__cursor_gga99618eb300a45f7d23a757c5000b1cccad42acd32426d3e2c4fabe21c0d24d3e6}\label{group__cursor_gga99618eb300a45f7d23a757c5000b1cccad42acd32426d3e2c4fabe21c0d24d3e6}} 
+CURSOR\+\_\+\+DSTATE\+\_\+\+SQUARE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CURSOR\_DSTATE\_TEXT@{CURSOR\_DSTATE\_TEXT}!cursor@{cursor}}\index{cursor@{cursor}!CURSOR\_DSTATE\_TEXT@{CURSOR\_DSTATE\_TEXT}}}\mbox{\Hypertarget{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaaa35fefbc296c732406e6bfa265f71a6}\label{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaaa35fefbc296c732406e6bfa265f71a6}} 
+CURSOR\+\_\+\+DSTATE\+\_\+\+TEXT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CURSOR\_DSTATE\_LINE@{CURSOR\_DSTATE\_LINE}!cursor@{cursor}}\index{cursor@{cursor}!CURSOR\_DSTATE\_LINE@{CURSOR\_DSTATE\_LINE}}}\mbox{\Hypertarget{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaaac92aaf69eb80f2bf3a5e505d7fcbba}\label{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaaac92aaf69eb80f2bf3a5e505d7fcbba}} 
+CURSOR\+\_\+\+DSTATE\+\_\+\+LINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CURSOR\_DSTATE\_ERASER@{CURSOR\_DSTATE\_ERASER}!cursor@{cursor}}\index{cursor@{cursor}!CURSOR\_DSTATE\_ERASER@{CURSOR\_DSTATE\_ERASER}}}\mbox{\Hypertarget{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaf512370483502caf72f6a819587aa639}\label{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaf512370483502caf72f6a819587aa639}} 
+CURSOR\+\_\+\+DSTATE\+\_\+\+ERASER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CURSOR\_DSTATE\_BUCKET@{CURSOR\_DSTATE\_BUCKET}!cursor@{cursor}}\index{cursor@{cursor}!CURSOR\_DSTATE\_BUCKET@{CURSOR\_DSTATE\_BUCKET}}}\mbox{\Hypertarget{group__cursor_gga99618eb300a45f7d23a757c5000b1ccca18e126aed21fca3bef10e6dae2ffb577}\label{group__cursor_gga99618eb300a45f7d23a757c5000b1ccca18e126aed21fca3bef10e6dae2ffb577}} 
+CURSOR\+\_\+\+DSTATE\+\_\+\+BUCKET&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__cursor_ga70c35d2bf7529b2584d568c203efcddb}\label{group__cursor_ga70c35d2bf7529b2584d568c203efcddb}} 
+\index{cursor@{cursor}!cursor\_decrease\_thickness@{cursor\_decrease\_thickness}}
+\index{cursor\_decrease\_thickness@{cursor\_decrease\_thickness}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_decrease\_thickness()}{cursor\_decrease\_thickness()}}
+{\footnotesize\ttfamily void() cursor\+\_\+decrease\+\_\+thickness (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Decreases the thickness of the cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+} & unused \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{group__cursor_ga4648530c8e1a1b7846ec80cb78781ca5}\label{group__cursor_ga4648530c8e1a1b7846ec80cb78781ca5}} 
+\index{cursor@{cursor}!cursor\_draw@{cursor\_draw}}
+\index{cursor\_draw@{cursor\_draw}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_draw()}{cursor\_draw()}}
+{\footnotesize\ttfamily void() cursor\+\_\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the cursor on screen. 
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{group__cursor_ga5f8c8d3eed096c6d94a911f9bfa72df4}\label{group__cursor_ga5f8c8d3eed096c6d94a911f9bfa72df4}} 
+\index{cursor@{cursor}!cursor\_get\_color@{cursor\_get\_color}}
+\index{cursor\_get\_color@{cursor\_get\_color}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_get\_color()}{cursor\_get\_color()}}
+{\footnotesize\ttfamily uint8\+\_\+t() cursor\+\_\+get\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current color of the cursor. 
+
+\begin{DoxyReturn}{Returns}
+cursor\+\_\+color 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{group__cursor_ga201b3a410e597535f1ebb22527564fdf}\label{group__cursor_ga201b3a410e597535f1ebb22527564fdf}} 
+\index{cursor@{cursor}!cursor\_get\_initial\_line\_position@{cursor\_get\_initial\_line\_position}}
+\index{cursor\_get\_initial\_line\_position@{cursor\_get\_initial\_line\_position}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_get\_initial\_line\_position()}{cursor\_get\_initial\_line\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structposition}{position}}() cursor\+\_\+get\+\_\+initial\+\_\+line\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the intial position of the line to be drawn. 
+
+\begin{DoxyReturn}{Returns}
+line\+\_\+initial\+\_\+position 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{group__cursor_ga3a1751e66bd2ebcd3d82ef8fbbffa2bc}\label{group__cursor_ga3a1751e66bd2ebcd3d82ef8fbbffa2bc}} 
+\index{cursor@{cursor}!cursor\_get\_line\_counter@{cursor\_get\_line\_counter}}
+\index{cursor\_get\_line\_counter@{cursor\_get\_line\_counter}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_get\_line\_counter()}{cursor\_get\_line\_counter()}}
+{\footnotesize\ttfamily uint8\+\_\+t() cursor\+\_\+get\+\_\+line\+\_\+counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the line counter of the cursor. 
+
+\begin{DoxyReturn}{Returns}
+cursor\+\_\+line\+\_\+counter 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{group__cursor_ga0af9b29a32a86441cce1cc594e2ff982}\label{group__cursor_ga0af9b29a32a86441cce1cc594e2ff982}} 
+\index{cursor@{cursor}!cursor\_get\_pos@{cursor\_get\_pos}}
+\index{cursor\_get\_pos@{cursor\_get\_pos}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_get\_pos()}{cursor\_get\_pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structposition}{position}}() cursor\+\_\+get\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current position of the cursor. 
+
+\begin{DoxyReturn}{Returns}
+current position of the structure 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{group__cursor_ga4826d95c25c8d6d0dcd3b07f5ef7cdb3}\label{group__cursor_ga4826d95c25c8d6d0dcd3b07f5ef7cdb3}} 
+\index{cursor@{cursor}!cursor\_get\_style@{cursor\_get\_style}}
+\index{cursor\_get\_style@{cursor\_get\_style}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_get\_style()}{cursor\_get\_style()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__cursor_gade731461adeae88133ba01829b86aff9}{cursor\+\_\+state\+\_\+style\+\_\+t}}() cursor\+\_\+get\+\_\+style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current style of the cursor. 
+
+\begin{DoxyReturn}{Returns}
+cursor style 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{group__cursor_gab3f0eafdff5a3a2edb2d2637ddfd7f4b}\label{group__cursor_gab3f0eafdff5a3a2edb2d2637ddfd7f4b}} 
+\index{cursor@{cursor}!cursor\_get\_thickness@{cursor\_get\_thickness}}
+\index{cursor\_get\_thickness@{cursor\_get\_thickness}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_get\_thickness()}{cursor\_get\_thickness()}}
+{\footnotesize\ttfamily uint8\+\_\+t() cursor\+\_\+get\+\_\+thickness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get cursor thickness. 
+
+\begin{DoxyReturn}{Returns}
+cursor thickness 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{group__cursor_ga62e511b022e2f8a98a87230c84cf2100}\label{group__cursor_ga62e511b022e2f8a98a87230c84cf2100}} 
+\index{cursor@{cursor}!cursor\_increase\_line\_counter@{cursor\_increase\_line\_counter}}
+\index{cursor\_increase\_line\_counter@{cursor\_increase\_line\_counter}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_increase\_line\_counter()}{cursor\_increase\_line\_counter()}}
+{\footnotesize\ttfamily void() cursor\+\_\+increase\+\_\+line\+\_\+counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increases the counter of the line and indicates the number of clicks done by the user. 
+
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{group__cursor_gaecf69830f5a4343c6a598d1713d07a26}\label{group__cursor_gaecf69830f5a4343c6a598d1713d07a26}} 
+\index{cursor@{cursor}!cursor\_increase\_thickness@{cursor\_increase\_thickness}}
+\index{cursor\_increase\_thickness@{cursor\_increase\_thickness}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_increase\_thickness()}{cursor\_increase\_thickness()}}
+{\footnotesize\ttfamily void() cursor\+\_\+increase\+\_\+thickness (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Increases the thickness of the cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+} & unused \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{group__cursor_ga565cbdb0a5f7b4f6ecc1fc2ab09011d7}\label{group__cursor_ga565cbdb0a5f7b4f6ecc1fc2ab09011d7}} 
+\index{cursor@{cursor}!cursor\_lb\_was\_pressed@{cursor\_lb\_was\_pressed}}
+\index{cursor\_lb\_was\_pressed@{cursor\_lb\_was\_pressed}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_lb\_was\_pressed()}{cursor\_lb\_was\_pressed()}}
+{\footnotesize\ttfamily bool() cursor\+\_\+lb\+\_\+was\+\_\+pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicates whether the left button was pressed or not. 
+
+\begin{DoxyReturn}{Returns}
+true if the left button was pressed, false otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{group__cursor_gafe31cdb51564035453bfebc44333d8e6}\label{group__cursor_gafe31cdb51564035453bfebc44333d8e6}} 
+\index{cursor@{cursor}!cursor\_load@{cursor\_load}}
+\index{cursor\_load@{cursor\_load}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_load()}{cursor\_load()}}
+{\footnotesize\ttfamily void() cursor\+\_\+load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the xpm image of the cursor and sets it\textquotesingle{}s initial coordinates. 
+
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{group__cursor_ga77008c8ff256136c0a49cb34e950d4c0}\label{group__cursor_ga77008c8ff256136c0a49cb34e950d4c0}} 
+\index{cursor@{cursor}!cursor\_move@{cursor\_move}}
+\index{cursor\_move@{cursor\_move}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_move()}{cursor\_move()}}
+{\footnotesize\ttfamily void() cursor\+\_\+move (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{delta\+\_\+x,  }\item[{int16\+\_\+t}]{delta\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Moves the cursor around by updating it\textquotesingle{}s coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+\_\+x} & x axis offset \\
+\hline
+{\em delta\+\_\+y} & y axis offset \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__cursor_ga3df0743bf101e3c12fc4f83edaba3d2e}\label{group__cursor_ga3df0743bf101e3c12fc4f83edaba3d2e}} 
+\index{cursor@{cursor}!cursor\_set\_color@{cursor\_set\_color}}
+\index{cursor\_set\_color@{cursor\_set\_color}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_set\_color()}{cursor\_set\_color()}}
+{\footnotesize\ttfamily void() cursor\+\_\+set\+\_\+color (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the cursor color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & color to be set \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{group__cursor_ga3f2b51ead9e3ff5d1956cf74a0399da9}\label{group__cursor_ga3f2b51ead9e3ff5d1956cf74a0399da9}} 
+\index{cursor@{cursor}!cursor\_set\_initial\_line\_position@{cursor\_set\_initial\_line\_position}}
+\index{cursor\_set\_initial\_line\_position@{cursor\_set\_initial\_line\_position}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_set\_initial\_line\_position()}{cursor\_set\_initial\_line\_position()}}
+{\footnotesize\ttfamily void() cursor\+\_\+set\+\_\+initial\+\_\+line\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structposition}{position}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Sets the initial position of the line to be drawn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & position to be set \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{group__cursor_ga2656ac7c2d78ec8eebbd8ee79e8b2ac4}\label{group__cursor_ga2656ac7c2d78ec8eebbd8ee79e8b2ac4}} 
+\index{cursor@{cursor}!cursor\_set\_lb@{cursor\_set\_lb}}
+\index{cursor\_set\_lb@{cursor\_set\_lb}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_set\_lb()}{cursor\_set\_lb()}}
+{\footnotesize\ttfamily void() cursor\+\_\+set\+\_\+lb (\begin{DoxyParamCaption}\item[{bool}]{lb }\end{DoxyParamCaption})}
+
+
+
+Assigns a new value to the left button of the cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+lb} & new value of the left button \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__cursor_gae935272ce3eabeb1b6824da72b7e879f}\label{group__cursor_gae935272ce3eabeb1b6824da72b7e879f}} 
+\index{cursor@{cursor}!cursor\_set\_style@{cursor\_set\_style}}
+\index{cursor\_set\_style@{cursor\_set\_style}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_set\_style()}{cursor\_set\_style()}}
+{\footnotesize\ttfamily void() cursor\+\_\+set\+\_\+style (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{style }\end{DoxyParamCaption})}
+
+
+
+Set cursor state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & state to be set \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{group__cursor_ga269516aee4764c460bfc69b6d0f84f35}\label{group__cursor_ga269516aee4764c460bfc69b6d0f84f35}} 
+\index{cursor@{cursor}!cursor\_set\_thickness@{cursor\_set\_thickness}}
+\index{cursor\_set\_thickness@{cursor\_set\_thickness}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{cursor\_set\_thickness()}{cursor\_set\_thickness()}}
+{\footnotesize\ttfamily void() cursor\+\_\+set\+\_\+thickness (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{thickness }\end{DoxyParamCaption})}
+
+
+
+Set cursor thickness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thickness} & cursor thickness to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__cursor_gaf77450d0441ac50608634a16cbf4ec1e}\label{group__cursor_gaf77450d0441ac50608634a16cbf4ec1e}} 
+\index{cursor@{cursor}!get\_is\_typing@{get\_is\_typing}}
+\index{get\_is\_typing@{get\_is\_typing}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{get\_is\_typing()}{get\_is\_typing()}}
+{\footnotesize\ttfamily bool() get\+\_\+is\+\_\+typing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the \char`\"{}typing\char`\"{} variable. 
+
+\begin{DoxyReturn}{Returns}
+true if the user is currently in a state of drawing or editing text, false otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{group__cursor_ga0542477ca7ae4c641bbc12e8872a0d12}\label{group__cursor_ga0542477ca7ae4c641bbc12e8872a0d12}} 
+\index{cursor@{cursor}!get\_text\_initial\_position@{get\_text\_initial\_position}}
+\index{get\_text\_initial\_position@{get\_text\_initial\_position}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{get\_text\_initial\_position()}{get\_text\_initial\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structposition}{position}}() get\+\_\+text\+\_\+initial\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the initial position of where the text should be printedthe text. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{group__cursor_ga0d1db46a41844e572bf74a5a269e0eaf}\label{group__cursor_ga0d1db46a41844e572bf74a5a269e0eaf}} 
+\index{cursor@{cursor}!set\_is\_typing@{set\_is\_typing}}
+\index{set\_is\_typing@{set\_is\_typing}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{set\_is\_typing()}{set\_is\_typing()}}
+{\footnotesize\ttfamily void() set\+\_\+is\+\_\+typing (\begin{DoxyParamCaption}\item[{bool}]{new\+\_\+is\+\_\+typing }\end{DoxyParamCaption})}
+
+
+
+Setter for the \char`\"{}typing\char`\"{} variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+is\+\_\+typing} & the value \char`\"{}typing\char`\"{} should be set to. Should be true when the user is supposed to be writing text and false otherwise \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{group__cursor_gacd5c344c1e75b3efea4ab56a9078823f}\label{group__cursor_gacd5c344c1e75b3efea4ab56a9078823f}} 
+\index{cursor@{cursor}!set\_text\_initial\_position@{set\_text\_initial\_position}}
+\index{set\_text\_initial\_position@{set\_text\_initial\_position}!cursor@{cursor}}
+\doxysubsubsection{\texorpdfstring{set\_text\_initial\_position()}{set\_text\_initial\_position()}}
+{\footnotesize\ttfamily void() set\+\_\+text\+\_\+initial\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structposition}{position}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Setter for the initial position where the text should start being drawn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & position to be set \\
+\hline
+\end{DoxyParams}

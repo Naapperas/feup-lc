@@ -1,0 +1,6 @@
+<map id="vg_draw_line" name="vg_draw_line">
+<area shape="rect" id="node1" title="Draws a line on a given position." alt="" coords="5,31,113,57"/>
+<area shape="rect" id="node2" href="$video__gr_8c.html#a9ad89c479170f8c6f615097dc48c5947" title=" " alt="" coords="161,5,312,32"/>
+<area shape="rect" id="node4" href="$video__gr_8c.html#a81132604c5b9c517b266a9c20cba3763" title=" " alt="" coords="164,56,309,83"/>
+<area shape="rect" id="node3" href="$group__video__gr.html#ga08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel on a given position." alt="" coords="360,31,476,57"/>
+</map>

@@ -1,0 +1,44 @@
+\hypertarget{element_8c}{}\doxysection{src/game/element.c File Reference}
+\label{element_8c}\index{src/game/element.c@{src/game/element.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}element.\+h\char`\"{}}\newline
+Include dependency graph for element.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structinteractive__element}{interactive\+\_\+element}}() \mbox{\hyperlink{element_8c_a19e8669505eb778441ceeaad46f53572}{create\+\_\+color\+\_\+button}} (\mbox{\hyperlink{structposition}{position}} pos, uint8\+\_\+t color)
+\item 
+\mbox{\hyperlink{structinteractive__element}{interactive\+\_\+element}}() \mbox{\hyperlink{element_8c_af1c625565bd00d61562982e2d030ab81}{create\+\_\+style\+\_\+button}} (\mbox{\hyperlink{structposition}{position}} pos, enum \mbox{\hyperlink{group__cursor_ga99618eb300a45f7d23a757c5000b1ccc}{cursor\+\_\+style}} style)
+\item 
+void() \mbox{\hyperlink{group__element_ga75aa8cfcbee4af0933a79d05e6707679}{load\+\_\+ie\+\_\+drawing}} ()
+\begin{DoxyCompactList}\small\item\em Loads and creates every interactive element present on screen. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__element_gae8101644d06b333a92712ffd2569e7e1}{is\+\_\+hovered}} (\mbox{\hyperlink{structinteractive__element}{interactive\+\_\+element}} elem)
+\begin{DoxyCompactList}\small\item\em Indicates whether a given interactive element is being hovered by the cursor or not. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__element_gaaf38b2af1b79d39b1e12ee6cf9c6123f}{get\+\_\+number\+\_\+of\+\_\+drawing\+\_\+ies}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current number of interactive elements present on screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structinteractive__element}{interactive\+\_\+element}} $\ast$() \mbox{\hyperlink{group__element_ga833c1198c28dd920754f979f25c1ca49}{get\+\_\+drawing\+\_\+ies}} ()
+\begin{DoxyCompactList}\small\item\em Returns the container of the interactive elements present on screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{element_8c_a19e8669505eb778441ceeaad46f53572}\label{element_8c_a19e8669505eb778441ceeaad46f53572}} 
+\index{element.c@{element.c}!create\_color\_button@{create\_color\_button}}
+\index{create\_color\_button@{create\_color\_button}!element.c@{element.c}}
+\doxysubsubsection{\texorpdfstring{create\_color\_button()}{create\_color\_button()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structinteractive__element}{interactive\+\_\+element}}() create\+\_\+color\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structposition}{position}}}]{pos,  }\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{element_8c_af1c625565bd00d61562982e2d030ab81}\label{element_8c_af1c625565bd00d61562982e2d030ab81}} 
+\index{element.c@{element.c}!create\_style\_button@{create\_style\_button}}
+\index{create\_style\_button@{create\_style\_button}!element.c@{element.c}}
+\doxysubsubsection{\texorpdfstring{create\_style\_button()}{create\_style\_button()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structinteractive__element}{interactive\+\_\+element}}() create\+\_\+style\+\_\+button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structposition}{position}}}]{pos,  }\item[{enum \mbox{\hyperlink{group__cursor_ga99618eb300a45f7d23a757c5000b1ccc}{cursor\+\_\+style}}}]{style }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4

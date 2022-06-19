@@ -1,0 +1,107 @@
+\hypertarget{group__draw__chat}{}\doxysection{draw\+\_\+chat}
+\label{group__draw__chat}\index{draw\_chat@{draw\_chat}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__draw__chat_ga9d620541ac06997e47c8486aed3640b0}{CHAR\+\_\+\+SCALE}}~2
+\begin{DoxyCompactList}\small\item\em the size scale of a character relative to the font used \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__draw__chat_ga77157daf10d4e4a26a4a2a2cb062202f}{INPUT\+\_\+\+CHAR\+\_\+\+SIZE}}~80
+\begin{DoxyCompactList}\small\item\em size of the text buffer when writing strings to the canvas \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__draw__chat_gac2461a1f880fb30adc88490ea47debc2}{add\+\_\+char\+\_\+to\+\_\+current\+\_\+text}} (char c)
+\begin{DoxyCompactList}\small\item\em Adds a character to the current text. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__chat_ga2f3400d74eb3c1e9f287cf24a58d7145}{clear\+\_\+current\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Removes characters from the current text until it\textquotesingle{}s empty. \end{DoxyCompactList}\item 
+char $\ast$() \mbox{\hyperlink{group__draw__chat_ga57634330ce5d2468a25996bbacfd0ab3}{get\+\_\+current\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current text. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__chat_ga70e8df51af0f05caa7009ce6c6d564b9}{remove\+\_\+char\+\_\+from\+\_\+current\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Removes the last character to be added to the current text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants, structures and functions used for programming the drawing of the chat 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__draw__chat_ga9d620541ac06997e47c8486aed3640b0}\label{group__draw__chat_ga9d620541ac06997e47c8486aed3640b0}} 
+\index{draw\_chat@{draw\_chat}!CHAR\_SCALE@{CHAR\_SCALE}}
+\index{CHAR\_SCALE@{CHAR\_SCALE}!draw\_chat@{draw\_chat}}
+\doxysubsubsection{\texorpdfstring{CHAR\_SCALE}{CHAR\_SCALE}}
+{\footnotesize\ttfamily \#define CHAR\+\_\+\+SCALE~2}
+
+
+
+the size scale of a character relative to the font used 
+
+\mbox{\Hypertarget{group__draw__chat_ga77157daf10d4e4a26a4a2a2cb062202f}\label{group__draw__chat_ga77157daf10d4e4a26a4a2a2cb062202f}} 
+\index{draw\_chat@{draw\_chat}!INPUT\_CHAR\_SIZE@{INPUT\_CHAR\_SIZE}}
+\index{INPUT\_CHAR\_SIZE@{INPUT\_CHAR\_SIZE}!draw\_chat@{draw\_chat}}
+\doxysubsubsection{\texorpdfstring{INPUT\_CHAR\_SIZE}{INPUT\_CHAR\_SIZE}}
+{\footnotesize\ttfamily \#define INPUT\+\_\+\+CHAR\+\_\+\+SIZE~80}
+
+
+
+size of the text buffer when writing strings to the canvas 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__draw__chat_gac2461a1f880fb30adc88490ea47debc2}\label{group__draw__chat_gac2461a1f880fb30adc88490ea47debc2}} 
+\index{draw\_chat@{draw\_chat}!add\_char\_to\_current\_text@{add\_char\_to\_current\_text}}
+\index{add\_char\_to\_current\_text@{add\_char\_to\_current\_text}!draw\_chat@{draw\_chat}}
+\doxysubsubsection{\texorpdfstring{add\_char\_to\_current\_text()}{add\_char\_to\_current\_text()}}
+{\footnotesize\ttfamily void() add\+\_\+char\+\_\+to\+\_\+current\+\_\+text (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Adds a character to the current text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & character to be added \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{group__draw__chat_ga2f3400d74eb3c1e9f287cf24a58d7145}\label{group__draw__chat_ga2f3400d74eb3c1e9f287cf24a58d7145}} 
+\index{draw\_chat@{draw\_chat}!clear\_current\_text@{clear\_current\_text}}
+\index{clear\_current\_text@{clear\_current\_text}!draw\_chat@{draw\_chat}}
+\doxysubsubsection{\texorpdfstring{clear\_current\_text()}{clear\_current\_text()}}
+{\footnotesize\ttfamily void() clear\+\_\+current\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes characters from the current text until it\textquotesingle{}s empty. 
+
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{group__draw__chat_ga57634330ce5d2468a25996bbacfd0ab3}\label{group__draw__chat_ga57634330ce5d2468a25996bbacfd0ab3}} 
+\index{draw\_chat@{draw\_chat}!get\_current\_text@{get\_current\_text}}
+\index{get\_current\_text@{get\_current\_text}!draw\_chat@{draw\_chat}}
+\doxysubsubsection{\texorpdfstring{get\_current\_text()}{get\_current\_text()}}
+{\footnotesize\ttfamily char $\ast$() get\+\_\+current\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current text. 
+
+\begin{DoxyReturn}{Returns}
+text 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{group__draw__chat_ga70e8df51af0f05caa7009ce6c6d564b9}\label{group__draw__chat_ga70e8df51af0f05caa7009ce6c6d564b9}} 
+\index{draw\_chat@{draw\_chat}!remove\_char\_from\_current\_text@{remove\_char\_from\_current\_text}}
+\index{remove\_char\_from\_current\_text@{remove\_char\_from\_current\_text}!draw\_chat@{draw\_chat}}
+\doxysubsubsection{\texorpdfstring{remove\_char\_from\_current\_text()}{remove\_char\_from\_current\_text()}}
+{\footnotesize\ttfamily void() remove\+\_\+char\+\_\+from\+\_\+current\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes the last character to be added to the current text. 
+
+Here is the caller graph for this function\+:
+% FIG 4

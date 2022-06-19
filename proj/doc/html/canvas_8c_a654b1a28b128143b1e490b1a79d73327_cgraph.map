@@ -1,0 +1,7 @@
+<map id="canvas_draw_line_low" name="canvas_draw_line_low">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,173,83"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga3f2490703f76d68ee31a7e93671633da" title="Draws a circle on a pixel buffer." alt="" coords="239,5,363,32"/>
+<area shape="rect" id="node4" href="$group__cursor.html#ga4826d95c25c8d6d0dcd3b07f5ef7cdb3" title="Gets the current style of the cursor." alt="" coords="236,56,365,83"/>
+<area shape="rect" id="node5" href="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b" title="Get cursor thickness." alt="" coords="221,107,380,133"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="428,5,549,32"/>
+</map>

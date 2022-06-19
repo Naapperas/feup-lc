@@ -1,0 +1,26 @@
+\hypertarget{utils_8h_source}{}\doxysection{utils.\+h}
+\label{utils_8h_source}\index{src/utils/utils.h@{src/utils/utils.h}}
+\mbox{\hyperlink{utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifndef UTILS\_H}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#  define UTILS\_H}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{12 \textcolor{comment}{/* masks used to fetch the LSB and MSB of a 16-\/bit integer */}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#  define LSB\_MASK16 0x00FF     }}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#  define LSB\_MASK32 0x000000FF }}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#  define MSB\_MASK16 0xFF00     }}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#  define MSB\_MASK32 0XFF000000 }}
+\DoxyCodeLine{28 int(\mbox{\hyperlink{group__utils_ga81621440b3d65680979425e39aa8c789}{util\_get\_LSB}})(uint16\_t val, uint8\_t *lsb);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{39 int(\mbox{\hyperlink{group__utils_ga6a880076cd2ec468834438b6e0c58836}{util\_get\_MSB}})(uint16\_t val, uint8\_t *msb);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{50 int(\mbox{\hyperlink{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}{util\_sys\_inb}})(\textcolor{keywordtype}{int} port, uint8\_t *value);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{59 uint16\_t(\mbox{\hyperlink{group__utils_gaa97f95e37675f07532b4353ace708671}{to\_bcd}})(uint16\_t val);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

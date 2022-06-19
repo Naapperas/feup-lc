@@ -1,0 +1,59 @@
+\hypertarget{canvas_8h}{}\doxysection{src/game/canvas.h File Reference}
+\label{canvas_8h}\index{src/game/canvas.h@{src/game/canvas.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../devices/kbc/mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../devices/video/graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../devices/video/video\+\_\+gr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../utils/color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cursor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pixel\+\_\+buffer.\+h\char`\"{}}\newline
+Include dependency graph for canvas.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}}~60
+\begin{DoxyCompactList}\small\item\em the margin of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gaa04ece9d00a940c9b1968887f16faeb3}{CANVAS\+\_\+\+WIDTH}}~(\mbox{\hyperlink{group__const_gabf6f66114c31b8f87c80534ca695a00b}{H\+\_\+\+RES}} -\/ \mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}} $\ast$ 2)
+\begin{DoxyCompactList}\small\item\em the width of the canvas relative to the window dimensions \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gac8417e7f15a5262562983c1febe9e35e}{CANVAS\+\_\+\+HEIGHT}}~(708)
+\begin{DoxyCompactList}\small\item\em the height of the canvas relative to the window dimensions \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gaf861f3616f26339d6279a8abbf524faa}{CANVAS\+\_\+\+TOP\+\_\+\+VISIBLE\+\_\+\+LIMIT}}~\mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}}
+\begin{DoxyCompactList}\small\item\em the top limit of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_ga8278102739b698539c1b24885826cdf4}{CANVAS\+\_\+\+BOTTOM\+\_\+\+VISIBLE\+\_\+\+LIMIT}}~(\mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}} + \mbox{\hyperlink{group__canvas_gac8417e7f15a5262562983c1febe9e35e}{CANVAS\+\_\+\+HEIGHT}})
+\begin{DoxyCompactList}\small\item\em the bottom limit of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gaa4a0df1490d3c8da490aa06e3f654388}{CANVAS\+\_\+\+LEFT\+\_\+\+VISIBLE\+\_\+\+LIMIT}}~\mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}}
+\begin{DoxyCompactList}\small\item\em the left limit of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gaba53a3c3946de3d5be5909d0cb626829}{CANVAS\+\_\+\+RIGHT\+\_\+\+VISIBLE\+\_\+\+LIMIT}}~(\mbox{\hyperlink{group__const_gabf6f66114c31b8f87c80534ca695a00b}{H\+\_\+\+RES}} -\/ \mbox{\hyperlink{group__canvas_ga6dfa0ff42a9587394f933c080fa7cb33}{CANVAS\+\_\+\+MARGIN}})
+\begin{DoxyCompactList}\small\item\em the right limit of the canvas \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__canvas_gadf7f1d2e39b646285c48c66f04905d86}{CANVAS\+\_\+\+BYPP}}~1
+\begin{DoxyCompactList}\small\item\em number of bytes that each canvas pixel takes in physical memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__canvas_ga80055034f5f9ceae3b737cc3cdc2ef47}{canvas\+\_\+load}} ()
+\begin{DoxyCompactList}\small\item\em Loads canvas information and allocates the necessary memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$() \mbox{\hyperlink{group__canvas_ga6e396a9fe595370839ca1f2e3cc98acb}{get\+\_\+canvas\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Returns the canvas buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_gab8aca11a163aa9c456d966da7e3004e5}{canvas\+\_\+draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the canvas to the back buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga638de35fdbe6db429ae8b24c98b9cc13}{canvas\+\_\+fill}} (uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Fills the entire screen with the given color and updates the \char`\"{}canvas\+\_\+background\+\_\+color\char`\"{} variable. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga325ed9223a8ace1fb14418c4d9a00795}{canvas\+\_\+clear}} ()
+\begin{DoxyCompactList}\small\item\em Fills the canvas with a white color. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga33567ef82c11af5b0b894616851cc03b}{canvas\+\_\+mouse\+\_\+handler}} (uint8\+\_\+t \+\_\+)
+\begin{DoxyCompactList}\small\item\em Handles mouse events that happen within the canvas section of the screen. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__canvas_gaa4b92ad51f39f4432397dcd16c3a3625}{canvas\+\_\+draw\+\_\+pencil\+\_\+circle}} ()
+\begin{DoxyCompactList}\small\item\em Draws a circle on screen at the given cursor position. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__canvas_ga6b1d3293521f7ea36a4e7bf970304057}{canvas\+\_\+draw\+\_\+pencil\+\_\+square}} ()
+\begin{DoxyCompactList}\small\item\em Draws a square on screen at the given cursor position. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga7a40fac29d1d2399c46be35360319841}{canvas\+\_\+handle\+\_\+line}} ()
+\begin{DoxyCompactList}\small\item\em Handles the drawing of straight lines made by clicking on an initial and final positions. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_gab6d35de38e60c1031a8bc9d70c529f28}{canvas\+\_\+handle\+\_\+bucket}} ()
+\begin{DoxyCompactList}\small\item\em Handles the filling of the canvas with the cursor color. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga087d6760c3afc2795718e3d4f746beab}{canvas\+\_\+flood\+\_\+fill}} (\mbox{\hyperlink{structposition}{position}} curr\+\_\+pos, uint8\+\_\+t color\+\_\+to\+\_\+replace, uint8\+\_\+t color\+\_\+to\+\_\+replace\+\_\+with)
+\begin{DoxyCompactList}\small\item\em Function that is supposed to replace an area of color \char`\"{}color\+\_\+to\+\_\+replace\+\_\+with\char`\"{} with a new color \char`\"{}color\+\_\+to\+\_\+replace\char`\"{}. Utilizes a linked list / queue but is unused at the moment. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__canvas_ga2a8f55e20f4a68fa050db0fffced2bb3}{canvas\+\_\+handle\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Handles how clicks on the canvas while the cursor is in text state should behave. \end{DoxyCompactList}\end{DoxyCompactItemize}

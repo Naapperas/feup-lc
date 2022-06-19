@@ -1,0 +1,9 @@
+<map id="cursor_lb_was_pressed" name="cursor_lb_was_pressed">
+<area shape="rect" id="node1" title="Indicates whether the left button was pressed or not." alt="" coords="921,31,1093,57"/>
+<area shape="rect" id="node2" href="$group__canvas.html#ga7a40fac29d1d2399c46be35360319841" title="Handles the drawing of straight lines made by clicking on an initial and final positions." alt="" coords="722,5,873,32"/>
+<area shape="rect" id="node7" href="$group__canvas.html#ga2a8f55e20f4a68fa050db0fffced2bb3" title="Handles how clicks on the canvas while the cursor is in text state should behave." alt="" coords="721,56,873,83"/>
+<area shape="rect" id="node3" href="$group__canvas.html#ga33567ef82c11af5b0b894616851cc03b" title="Handles mouse events that happen within the canvas section of the screen." alt="" coords="499,31,673,57"/>
+<area shape="rect" id="node4" href="$group__element.html#ga75aa8cfcbee4af0933a79d05e6707679" title="Loads and creates every interactive element present on screen." alt="" coords="323,31,451,57"/>
+<area shape="rect" id="node5" href="$proj_8c.html#a621db57ab86ebe569aa26e70d11c9688" title="Loads the necessary assets." alt="" coords="176,31,275,57"/>
+<area shape="rect" id="node6" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,128,57"/>
+</map>

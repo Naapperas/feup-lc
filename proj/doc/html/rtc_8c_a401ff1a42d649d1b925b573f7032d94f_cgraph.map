@@ -1,0 +1,4 @@
+<map id="read_from_reg" name="read_from_reg">
+<area shape="rect" id="node1" title="reads the value present in the given RTC register" alt="" coords="5,5,123,32"/>
+<area shape="rect" id="node2" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="171,5,269,32"/>
+</map>

@@ -1,0 +1,257 @@
+\hypertarget{group__graphics}{}\doxysection{graphics}
+\label{group__graphics}\index{graphics@{graphics}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__graphics_ga930f38837332d52d5d905332257ee640}{load\+\_\+backbuffer}} ()
+\item 
+\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$() \mbox{\hyperlink{group__graphics_gab3432881d182a4c6455e0cfbaafece78}{get\+\_\+back\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Returns the back buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__graphics_ga49604fff88a75a0bdf9d860b6bfd45a8}{buf\+\_\+draw\+\_\+pixel}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} pos, uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel on a \mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}}. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__graphics_gaa712047397faf1dd3c0fa122a3de0df3}{buf\+\_\+draw\+\_\+line}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} from\+\_\+pos, \mbox{\hyperlink{structposition}{position}} to\+\_\+pos, uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a line on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__graphics_ga12e0a019382481d6af4dfb730d2468c7}{buf\+\_\+draw\+\_\+rectangle}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} pos, uint16\+\_\+t width, uint16\+\_\+t height, uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__graphics_ga3f2490703f76d68ee31a7e93671633da}{buf\+\_\+draw\+\_\+circle}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} pos, uint16\+\_\+t radius, uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a circle on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__graphics_ga46c7629f4db6494a40730b69b99d482f}{buf\+\_\+draw\+\_\+hline}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} pos, uint16\+\_\+t len, uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws an horizontal line on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__graphics_ga217f0eee3bf0366f3ceda240ca6a9e7f}{buf\+\_\+draw\+\_\+vline}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} pos, uint16\+\_\+t len, uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a vertical line on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__graphics_ga34c7bdd63f72bd3f735f7bec8738ddd6}{buf\+\_\+draw\+\_\+xpm}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, const xpm\+\_\+image\+\_\+t xpm\+\_\+info, \mbox{\hyperlink{structposition}{position}} pos)
+\begin{DoxyCompactList}\small\item\em Draws a XPM to the given pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__graphics_gaf1ece22510b6c3de2d3a5d4559028fb9}{buf\+\_\+draw\+\_\+text}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, char $\ast$\mbox{\hyperlink{draw__text_8c_adc81d7685fb07fbe51e23b5cad40c2e7}{text}}, \mbox{\hyperlink{structposition}{position}} pos, \mbox{\hyperlink{group__text_gaf1e0001cfe7b013e77a8c663c6a323cf}{text\+\_\+alignment\+\_\+t}} alignment)
+\begin{DoxyCompactList}\small\item\em draws the given string to the given buffer on the given position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions used for the programming of the graphics 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__graphics_ga3f2490703f76d68ee31a7e93671633da}\label{group__graphics_ga3f2490703f76d68ee31a7e93671633da}} 
+\index{graphics@{graphics}!buf\_draw\_circle@{buf\_draw\_circle}}
+\index{buf\_draw\_circle@{buf\_draw\_circle}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{buf\_draw\_circle()}{buf\_draw\_circle()}}
+{\footnotesize\ttfamily int() buf\+\_\+draw\+\_\+circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{pos,  }\item[{uint16\+\_\+t}]{radius,  }\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a circle on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & coordinates of the center of the circle on screen \\
+\hline
+{\em radius} & radius of the circle \\
+\hline
+{\em color} & color of the circle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{group__graphics_ga46c7629f4db6494a40730b69b99d482f}\label{group__graphics_ga46c7629f4db6494a40730b69b99d482f}} 
+\index{graphics@{graphics}!buf\_draw\_hline@{buf\_draw\_hline}}
+\index{buf\_draw\_hline@{buf\_draw\_hline}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{buf\_draw\_hline()}{buf\_draw\_hline()}}
+{\footnotesize\ttfamily int() buf\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{pos,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws an horizontal line on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & starting position of the line \\
+\hline
+{\em len} & length of the line \\
+\hline
+{\em color} & color of the line\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful, false otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{group__graphics_gaa712047397faf1dd3c0fa122a3de0df3}\label{group__graphics_gaa712047397faf1dd3c0fa122a3de0df3}} 
+\index{graphics@{graphics}!buf\_draw\_line@{buf\_draw\_line}}
+\index{buf\_draw\_line@{buf\_draw\_line}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{buf\_draw\_line()}{buf\_draw\_line()}}
+{\footnotesize\ttfamily int() buf\+\_\+draw\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{from\+\_\+pos,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{to\+\_\+pos,  }\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a line on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & buffer where the line is going to be drawn \\
+\hline
+{\em from\+\_\+pos} & starting position of the line \\
+\hline
+{\em to\+\_\+pos} & final position of the line \\
+\hline
+{\em color} & color of the line\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{group__graphics_ga49604fff88a75a0bdf9d860b6bfd45a8}\label{group__graphics_ga49604fff88a75a0bdf9d860b6bfd45a8}} 
+\index{graphics@{graphics}!buf\_draw\_pixel@{buf\_draw\_pixel}}
+\index{buf\_draw\_pixel@{buf\_draw\_pixel}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{buf\_draw\_pixel()}{buf\_draw\_pixel()}}
+{\footnotesize\ttfamily int() buf\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{pos,  }\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel on a \mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & buffer where the pixel is going to be drawn \\
+\hline
+{\em pos} & position of the pixel on screen \\
+\hline
+{\em color} & color of the pixel\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{group__graphics_ga12e0a019382481d6af4dfb730d2468c7}\label{group__graphics_ga12e0a019382481d6af4dfb730d2468c7}} 
+\index{graphics@{graphics}!buf\_draw\_rectangle@{buf\_draw\_rectangle}}
+\index{buf\_draw\_rectangle@{buf\_draw\_rectangle}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{buf\_draw\_rectangle()}{buf\_draw\_rectangle()}}
+{\footnotesize\ttfamily int() buf\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{pos,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a rectangle on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & upper-\/left corner coordinates of the rectangle on screen \\
+\hline
+{\em width} & width of the rectangle \\
+\hline
+{\em height} & height of the rectangle \\
+\hline
+{\em color} & color of the rectangle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{group__graphics_gaf1ece22510b6c3de2d3a5d4559028fb9}\label{group__graphics_gaf1ece22510b6c3de2d3a5d4559028fb9}} 
+\index{graphics@{graphics}!buf\_draw\_text@{buf\_draw\_text}}
+\index{buf\_draw\_text@{buf\_draw\_text}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{buf\_draw\_text()}{buf\_draw\_text()}}
+{\footnotesize\ttfamily int() buf\+\_\+draw\+\_\+text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{char $\ast$}]{text,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{pos,  }\item[{\mbox{\hyperlink{group__text_gaf1e0001cfe7b013e77a8c663c6a323cf}{text\+\_\+alignment\+\_\+t}}}]{alignment }\end{DoxyParamCaption})}
+
+
+
+draws the given string to the given buffer on the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer to which the text will be drawn \\
+\hline
+{\em text} & the text to draw \\
+\hline
+{\em pos} & the position in which to draw the text \\
+\hline
+{\em alignment} & the alignment of the text relative to the chosen position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{group__graphics_ga217f0eee3bf0366f3ceda240ca6a9e7f}\label{group__graphics_ga217f0eee3bf0366f3ceda240ca6a9e7f}} 
+\index{graphics@{graphics}!buf\_draw\_vline@{buf\_draw\_vline}}
+\index{buf\_draw\_vline@{buf\_draw\_vline}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{buf\_draw\_vline()}{buf\_draw\_vline()}}
+{\footnotesize\ttfamily int() buf\+\_\+draw\+\_\+vline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{pos,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a vertical line on a pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & starting position of the line \\
+\hline
+{\em len} & length of the line \\
+\hline
+{\em color} & color of the line\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{group__graphics_ga34c7bdd63f72bd3f735f7bec8738ddd6}\label{group__graphics_ga34c7bdd63f72bd3f735f7bec8738ddd6}} 
+\index{graphics@{graphics}!buf\_draw\_xpm@{buf\_draw\_xpm}}
+\index{buf\_draw\_xpm@{buf\_draw\_xpm}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{buf\_draw\_xpm()}{buf\_draw\_xpm()}}
+{\footnotesize\ttfamily int() buf\+\_\+draw\+\_\+xpm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const}]{buf,  }\item[{const xpm\+\_\+image\+\_\+t}]{xpm\+\_\+info,  }\item[{\mbox{\hyperlink{structposition}{position}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Draws a XPM to the given pixel buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buffer to which the XMP will be drawn \\
+\hline
+{\em xpm\+\_\+info} & info regarding the XPM to draw \\
+\hline
+{\em pos} & position to draw the given XPM\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{group__graphics_gab3432881d182a4c6455e0cfbaafece78}\label{group__graphics_gab3432881d182a4c6455e0cfbaafece78}} 
+\index{graphics@{graphics}!get\_back\_buffer@{get\_back\_buffer}}
+\index{get\_back\_buffer@{get\_back\_buffer}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{get\_back\_buffer()}{get\_back\_buffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const  $\ast$() get\+\_\+back\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the back buffer. 
+
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{group__graphics_ga930f38837332d52d5d905332257ee640}\label{group__graphics_ga930f38837332d52d5d905332257ee640}} 
+\index{graphics@{graphics}!load\_backbuffer@{load\_backbuffer}}
+\index{load\_backbuffer@{load\_backbuffer}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{load\_backbuffer()}{load\_backbuffer()}}
+{\footnotesize\ttfamily void() load\+\_\+backbuffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 13

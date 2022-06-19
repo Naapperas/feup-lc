@@ -1,0 +1,4 @@
+<map id="buf_draw_circle" name="buf_draw_circle">
+<area shape="rect" id="node1" title="Draws a circle on a pixel buffer." alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="177,5,299,32"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="canvas_draw_pencil_square" name="canvas_draw_pencil_square">
+<area shape="rect" id="node1" title="Draws a square on screen at the given cursor position." alt="" coords="5,99,159,141"/>
+<area shape="rect" id="node2" href="$canvas_8c.html#a81e915729ce5cc907dd3d08d790b3cb9" title=" " alt="" coords="209,56,348,83"/>
+<area shape="rect" id="node9" href="$group__cursor.html#ga0af9b29a32a86441cce1cc594e2ff982" title="Returns the current position of the cursor." alt="" coords="219,107,339,133"/>
+<area shape="rect" id="node10" href="$group__mouse.html#ga0cc322061bf385b4396d89e93b2974b4" title="Get the current mouse packet." alt="" coords="207,157,351,184"/>
+<area shape="rect" id="node3" href="$canvas_8c.html#a00fc737a073d8cd4d2ba07485f881a53" title=" " alt="" coords="399,31,572,57"/>
+<area shape="rect" id="node8" href="$canvas_8c.html#a654b1a28b128143b1e490b1a79d73327" title=" " alt="" coords="401,81,569,108"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga3f2490703f76d68ee31a7e93671633da" title="Draws a circle on a pixel buffer." alt="" coords="637,5,761,32"/>
+<area shape="rect" id="node6" href="$group__cursor.html#ga4826d95c25c8d6d0dcd3b07f5ef7cdb3" title="Gets the current style of the cursor." alt="" coords="635,56,764,83"/>
+<area shape="rect" id="node7" href="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b" title="Get cursor thickness." alt="" coords="620,107,779,133"/>
+<area shape="rect" id="node5" href="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="827,5,948,32"/>
+</map>

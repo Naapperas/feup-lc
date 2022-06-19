@@ -1,0 +1,52 @@
+\hypertarget{canvas_8h_source}{}\doxysection{canvas.\+h}
+\label{canvas_8h_source}\index{src/game/canvas.h@{src/game/canvas.h}}
+\mbox{\hyperlink{canvas_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CANVAS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CANVAS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../devices/kbc/mouse.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../devices/video/graphics.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../devices/video/video\_gr.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../utils/color.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cursor_8h}{cursor.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{pixel__buffer_8h}{pixel\_buffer.h}}"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define CANVAS\_MARGIN 60                         }}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define CANVAS\_WIDTH (H\_RES -\/ CANVAS\_MARGIN * 2) }}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define CANVAS\_HEIGHT (708)                      }}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define CANVAS\_TOP\_VISIBLE\_LIMIT CANVAS\_MARGIN                      }}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define CANVAS\_BOTTOM\_VISIBLE\_LIMIT (CANVAS\_MARGIN + CANVAS\_HEIGHT) }}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define CANVAS\_LEFT\_VISIBLE\_LIMIT CANVAS\_MARGIN                     }}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define CANVAS\_RIGHT\_VISIBLE\_LIMIT (H\_RES -\/ CANVAS\_MARGIN)          }}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define CANVAS\_BYPP 1 }}
+\DoxyCodeLine{34 void(\mbox{\hyperlink{group__canvas_ga80055034f5f9ceae3b737cc3cdc2ef47}{canvas\_load}})();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{41 \mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *(\mbox{\hyperlink{group__canvas_ga6e396a9fe595370839ca1f2e3cc98acb}{get\_canvas\_buffer}}) ();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47 void(\mbox{\hyperlink{group__canvas_gab8aca11a163aa9c456d966da7e3004e5}{canvas\_draw}})();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{54 void(\mbox{\hyperlink{group__canvas_ga638de35fdbe6db429ae8b24c98b9cc13}{canvas\_fill}})(uint8\_t color);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60 void(\mbox{\hyperlink{group__canvas_ga325ed9223a8ace1fb14418c4d9a00795}{canvas\_clear}})();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{67 void(\mbox{\hyperlink{group__canvas_ga33567ef82c11af5b0b894616851cc03b}{canvas\_mouse\_handler}})(uint8\_t \_);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{74 int(\mbox{\hyperlink{group__canvas_gaa4b92ad51f39f4432397dcd16c3a3625}{canvas\_draw\_pencil\_circle}})();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{81 int(\mbox{\hyperlink{group__canvas_ga6b1d3293521f7ea36a4e7bf970304057}{canvas\_draw\_pencil\_square}})();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{87 void(\mbox{\hyperlink{group__canvas_ga7a40fac29d1d2399c46be35360319841}{canvas\_handle\_line}})();}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{93 void(\mbox{\hyperlink{group__canvas_gab6d35de38e60c1031a8bc9d70c529f28}{canvas\_handle\_bucket}})();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{104 void(\mbox{\hyperlink{group__canvas_ga087d6760c3afc2795718e3d4f746beab}{canvas\_flood\_fill}})(\mbox{\hyperlink{structposition}{position}} curr\_pos, uint8\_t color\_to\_replace, uint8\_t color\_to\_replace\_with);}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{110 void(\mbox{\hyperlink{group__canvas_ga2a8f55e20f4a68fa050db0fffced2bb3}{canvas\_handle\_text}})();}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112 }
+\DoxyCodeLine{115 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

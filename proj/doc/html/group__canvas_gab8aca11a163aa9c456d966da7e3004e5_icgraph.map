@@ -1,0 +1,4 @@
+<map id="canvas_draw" name="canvas_draw">
+<area shape="rect" id="node1" title="Draws the canvas to the back buffer." alt="" coords="156,5,263,32"/>
+<area shape="rect" id="node2" href="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54" title="Draws the program assets on screen." alt="" coords="5,5,108,32"/>
+</map>

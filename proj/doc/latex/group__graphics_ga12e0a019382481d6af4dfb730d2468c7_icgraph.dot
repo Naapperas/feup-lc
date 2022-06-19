@@ -1,0 +1,38 @@
+digraph "buf_draw_rectangle"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="buf_draw_rectangle",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Draws a rectangle on a pixel buffer."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="buf_draw_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#gaf1ece22510b6c3de2d3a5d4559028fb9",tooltip="draws the given string to the given buffer on the given position."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="canvas_handle_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__canvas.html#ga2a8f55e20f4a68fa050db0fffced2bb3",tooltip="Handles how clicks on the canvas while the cursor is in text state should behave."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="canvas_mouse_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__canvas.html#ga33567ef82c11af5b0b894616851cc03b",tooltip="Handles mouse events that happen within the canvas section of the screen."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="load_ie_drawing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__element.html#ga75aa8cfcbee4af0933a79d05e6707679",tooltip="Loads and creates every interactive element present on screen."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="load_assets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$proj_8c.html#a621db57ab86ebe569aa26e70d11c9688",tooltip="Loads the necessary assets."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="proj_main_loop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b",tooltip=" "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="draw_assets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54",tooltip="Draws the program assets on screen."];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="process_scancode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__charset.html#ga5cf34e49e0ee978293deca0bd7097852",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="draw_color_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga8a09809fd380fc02ab5992ad80cc350b",tooltip="Draws a color button on a pixel buffer."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="buttons_draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga8d46b5bb0547f68fd65d40c6782054e8",tooltip="Draws the buttons on screen."];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="draw_menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7",tooltip="Draws the menu (background) and calls the function responsible for drawing the buttons."];
+  Node12 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="draw_sel_line_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga14673af5638efb032dac6c0df453489d",tooltip="Draws the button to draw a straight line on a pixel buffer."];
+  Node13 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="draw_sel_square_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga62f6170bf1049dc4eb22778cd53df23b",tooltip="Draws the button to draw a square on a pixel buffer."];
+  Node14 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

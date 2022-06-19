@@ -1,0 +1,48 @@
+\hypertarget{draw__buttons_8h_source}{}\doxysection{draw\+\_\+buttons.\+h}
+\label{draw__buttons_8h_source}\index{src/game/draw\_buttons.h@{src/game/draw\_buttons.h}}
+\mbox{\hyperlink{draw__buttons_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef DRAW\_BUTTONS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define DRAW\_BUTTONS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}../utils/position.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../xpm/buttons/button\_bucket.xpm"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../xpm/buttons/button\_clear\_canvas.xpm"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../xpm/buttons/button\_eraser.xpm"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../xpm/buttons/button\_minus\_size.xpm"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../xpm/buttons/button\_plus\_size.xpm"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}../xpm/buttons/button\_text.xpm"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{element_8h}{element.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{pixel__buffer_8h}{pixel\_buffer.h}}"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define BUTTON\_FRAME\_WIDTH 40  }}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define BUTTON\_FRAME\_HEIGHT 40 }}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define BUTTON\_FRAME\_COLOR 7   }}
+\DoxyCodeLine{31 void(\mbox{\hyperlink{group__draw__buttons_gaa6af89646cd7d59141040cb6d1b907f9}{draw\_button\_frame}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{41 int(\mbox{\hyperlink{group__draw__buttons_ga8a09809fd380fc02ab5992ad80cc350b}{draw\_color\_button}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos, uint8\_t color);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47 void(\mbox{\hyperlink{group__draw__buttons_gae33dca8a3beac80b89738430d3bb1c8d}{load\_button\_xpms}})();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{55 void(\mbox{\hyperlink{group__draw__buttons_ga71307477d443a89392611816abdd709d}{draw\_plus\_button}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{63 void(\mbox{\hyperlink{group__draw__buttons_gaa6435009e8ddd5baa6240bb3d81b19fd}{draw\_minus\_button}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{71 int(\mbox{\hyperlink{group__draw__buttons_ga14673af5638efb032dac6c0df453489d}{draw\_sel\_line\_button}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos);}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{79 int(\mbox{\hyperlink{group__draw__buttons_ga62f6170bf1049dc4eb22778cd53df23b}{draw\_sel\_square\_button}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos);}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{87 int(\mbox{\hyperlink{group__draw__buttons_gafdb30e468c5cd1e9c233b4c97362793f}{draw\_sel\_circle\_button}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{95 void(\mbox{\hyperlink{group__draw__buttons_ga6154e9081a9c711dd0c2fd0a892d6945}{draw\_sel\_eraser\_button}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{103 void(\mbox{\hyperlink{group__draw__buttons_ga11c349438dd852c7d0432983bc0cb02d}{draw\_sel\_text\_button}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{111 void(\mbox{\hyperlink{group__draw__buttons_gae0bc54b9eec329ced28428d60c2e0865}{draw\_clear\_canvas\_button}})(\mbox{\hyperlink{structpixel__buffer}{pixel\_buffer}} \textcolor{keyword}{const} *\textcolor{keyword}{const} buf, \mbox{\hyperlink{structposition}{position}} topleft\_pos);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{118 int(\mbox{\hyperlink{group__draw__buttons_ga8d46b5bb0547f68fd65d40c6782054e8}{buttons\_draw}})();}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

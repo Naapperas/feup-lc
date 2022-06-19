@@ -1,0 +1,4 @@
+<map id="mouse_command_feedback" name="mouse_command_feedback">
+<area shape="rect" id="node1" title="Get mouse command feedback." alt="" coords="5,5,211,32"/>
+<area shape="rect" id="node2" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="259,5,357,32"/>
+</map>

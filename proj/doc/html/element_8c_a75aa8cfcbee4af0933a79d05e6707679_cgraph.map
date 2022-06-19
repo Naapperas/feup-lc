@@ -1,0 +1,35 @@
+<map id="load_ie_drawing" name="load_ie_drawing">
+<area shape="rect" id="node1" title="Loads and creates every interactive element present on screen." alt="" coords="5,661,133,688"/>
+<area shape="rect" id="node2" href="$group__canvas.html#ga638de35fdbe6db429ae8b24c98b9cc13" title="Fills the entire screen with the given color and updates the &quot;canvas_background_color&quot; variable." alt="" coords="687,8,779,34"/>
+<area shape="rect" id="node3" href="$group__canvas.html#ga33567ef82c11af5b0b894616851cc03b" title="Handles mouse events that happen within the canvas section of the screen." alt="" coords="193,509,367,536"/>
+<area shape="rect" id="node28" href="$element_8c.html#a19e8669505eb778441ceeaad46f53572" title=" " alt="" coords="205,636,355,662"/>
+<area shape="rect" id="node30" href="$element_8c.html#af1c625565bd00d61562982e2d030ab81" title=" " alt="" coords="205,686,355,713"/>
+<area shape="rect" id="node32" href="$group__cursor.html#ga70c35d2bf7529b2584d568c203efcddb" title="Decreases the thickness of the cursor." alt="" coords="181,737,379,764"/>
+<area shape="rect" id="node33" href="$group__cursor.html#gaecf69830f5a4343c6a598d1713d07a26" title="Increases the thickness of the cursor." alt="" coords="183,788,377,814"/>
+<area shape="rect" id="node4" href="$group__canvas.html#gaa4b92ad51f39f4432397dcd16c3a3625" title="Draws a circle on screen at the given cursor position." alt="" coords="435,567,588,608"/>
+<area shape="rect" id="node9" href="$group__cursor.html#ga4826d95c25c8d6d0dcd3b07f5ef7cdb3" title="Gets the current style of the cursor." alt="" coords="1105,636,1235,662"/>
+<area shape="rect" id="node14" href="$group__canvas.html#ga6b1d3293521f7ea36a4e7bf970304057" title="Draws a square on screen at the given cursor position." alt="" coords="435,502,588,543"/>
+<area shape="rect" id="node15" href="$group__canvas.html#gab6d35de38e60c1031a8bc9d70c529f28" title="Handles the filling of the canvas with the cursor color." alt="" coords="427,58,596,85"/>
+<area shape="rect" id="node17" href="$group__canvas.html#ga7a40fac29d1d2399c46be35360319841" title="Handles the drawing of straight lines made by clicking on an initial and final positions." alt="" coords="436,346,587,373"/>
+<area shape="rect" id="node23" href="$group__canvas.html#ga2a8f55e20f4a68fa050db0fffced2bb3" title="Handles how clicks on the canvas while the cursor is in text state should behave." alt="" coords="435,418,587,445"/>
+<area shape="rect" id="node5" href="$canvas_8c.html#a81e915729ce5cc907dd3d08d790b3cb9" title=" " alt="" coords="663,509,802,536"/>
+<area shape="rect" id="node12" href="$group__cursor.html#ga0af9b29a32a86441cce1cc594e2ff982" title="Returns the current position of the cursor." alt="" coords="673,560,793,586"/>
+<area shape="rect" id="node13" href="$mouse_8c.html#a4d194f8789b7aadfd3a2a8d61bee9177" title="Get the current mouse packet." alt="" coords="661,610,805,637"/>
+<area shape="rect" id="node6" href="$canvas_8c.html#a00fc737a073d8cd4d2ba07485f881a53" title=" " alt="" coords="869,598,1043,625"/>
+<area shape="rect" id="node11" href="$canvas_8c.html#a654b1a28b128143b1e490b1a79d73327" title=" " alt="" coords="872,548,1040,574"/>
+<area shape="rect" id="node7" href="$graphics_8c.html#a3f2490703f76d68ee31a7e93671633da" title="Draws a circle on a pixel buffer." alt="" coords="1108,585,1232,612"/>
+<area shape="rect" id="node10" href="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b" title="Get cursor thickness." alt="" coords="1091,534,1249,561"/>
+<area shape="rect" id="node8" href="$graphics_8c.html#a49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="1297,585,1419,612"/>
+<area shape="rect" id="node16" href="$group__cursor.html#ga5f8c8d3eed096c6d94a911f9bfa72df4" title="Returns the current color of the cursor." alt="" coords="891,202,1021,229"/>
+<area shape="rect" id="node18" href="$group__cursor.html#ga201b3a410e597535f1ebb22527564fdf" title="Returns the intial position of the line to be drawn." alt="" coords="665,291,800,332"/>
+<area shape="rect" id="node19" href="$group__cursor.html#ga3a1751e66bd2ebcd3d82ef8fbbffa2bc" title="Returns the line counter of the cursor." alt="" coords="644,109,821,136"/>
+<area shape="rect" id="node20" href="$group__cursor.html#ga62e511b022e2f8a98a87230c84cf2100" title="Increases the counter of the line and indicates the number of clicks done by the user." alt="" coords="655,160,810,202"/>
+<area shape="rect" id="node21" href="$group__cursor.html#ga565cbdb0a5f7b4f6ecc1fc2ab09011d7" title="Indicates whether the left button was pressed or not." alt="" coords="647,357,819,384"/>
+<area shape="rect" id="node22" href="$group__cursor.html#ga3f2b51ead9e3ff5d1956cf74a0399da9" title="Sets the initial position of the line to be drawn." alt="" coords="666,226,799,267"/>
+<area shape="rect" id="node24" href="$graphics_8c.html#af1ece22510b6c3de2d3a5d4559028fb9" title="draws the given string to the given buffer on the given position." alt="" coords="675,458,790,485"/>
+<area shape="rect" id="node27" href="$group__cursor.html#gaf77450d0441ac50608634a16cbf4ec1e" title="Getter for the &quot;typing&quot; variable." alt="" coords="678,408,787,434"/>
+<area shape="rect" id="node25" href="$graphics_8c.html#a12e0a019382481d6af4dfb730d2468c7" title="Draws a rectangle on a pixel buffer." alt="" coords="881,446,1031,473"/>
+<area shape="rect" id="node26" href="$text_8c.html#ade215bd9889bb8b69de584385ca0c557" title="Returns the xpm image of the font." alt="" coords="900,497,1012,524"/>
+<area shape="rect" id="node29" href="$group__cursor.html#ga3df0743bf101e3c12fc4f83edaba3d2e" title="Sets the cursor color." alt="" coords="447,712,575,738"/>
+<area shape="rect" id="node31" href="$group__cursor.html#gae935272ce3eabeb1b6824da72b7e879f" title="Set cursor state." alt="" coords="447,762,575,789"/>
+</map>

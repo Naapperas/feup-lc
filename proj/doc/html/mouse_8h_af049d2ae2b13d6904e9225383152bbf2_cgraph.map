@@ -1,0 +1,7 @@
+<map id="kbc_enable_data_report" name="kbc_enable_data_report">
+<area shape="rect" id="node1" title="Enables KBC Mouse data reporting." alt="" coords="5,31,184,57"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a19a82faff0e40829b26501342b08bb81" title="Writes the given command to the mouse." alt="" coords="232,31,431,57"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a783d0f32c217e4857504c449b4a89793" title="Get mouse command feedback." alt="" coords="479,5,684,32"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#a36c05f7ca3ccc807afddd659252d77e8" title="waits for the KBC input buffer to be empty" alt="" coords="497,56,666,83"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="732,31,831,57"/>
+</map>

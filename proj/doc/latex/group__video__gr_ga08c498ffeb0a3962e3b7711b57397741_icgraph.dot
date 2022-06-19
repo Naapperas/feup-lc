@@ -1,0 +1,19 @@
+digraph "vg_draw_pixel"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="vg_draw_pixel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Draws a pixel on a given position."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="_vg_draw_line_high",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$video__gr_8c.html#a9ad89c479170f8c6f615097dc48c5947",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="vg_draw_line",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__video__gr.html#ga6c2fe3a68fb18bca54d7d8b06efe01c0",tooltip="Draws a line on a given position."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="_vg_draw_line_low",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$video__gr_8c.html#a81132604c5b9c517b266a9c20cba3763",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="vg_draw_circle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__video__gr.html#ga437c7acd65b322492a34429afea7fa94",tooltip="Draws a circle on a given position."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="vg_draw_xpm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__video__gr.html#gae3ef37a6eb8d4e6407903ee08fefb3c0",tooltip="Draws an xpm image on a given position."];
+}

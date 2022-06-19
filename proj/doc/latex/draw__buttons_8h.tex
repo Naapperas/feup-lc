@@ -1,0 +1,51 @@
+\hypertarget{draw__buttons_8h}{}\doxysection{src/game/draw\+\_\+buttons.h File Reference}
+\label{draw__buttons_8h}\index{src/game/draw\_buttons.h@{src/game/draw\_buttons.h}}
+{\ttfamily \#include \char`\"{}../utils/position.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../xpm/buttons/button\+\_\+bucket.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../xpm/buttons/button\+\_\+clear\+\_\+canvas.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../xpm/buttons/button\+\_\+eraser.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../xpm/buttons/button\+\_\+minus\+\_\+size.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../xpm/buttons/button\+\_\+plus\+\_\+size.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../xpm/buttons/button\+\_\+text.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}element.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pixel\+\_\+buffer.\+h\char`\"{}}\newline
+Include dependency graph for draw\+\_\+buttons.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__draw__buttons_gae27574b7a4dace214062de8fc12de968}{BUTTON\+\_\+\+FRAME\+\_\+\+WIDTH}}~40
+\begin{DoxyCompactList}\small\item\em the width of the interactive buttons\textquotesingle{} frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__draw__buttons_ga94e3951adf6e4e786bd3d8fc3103ec14}{BUTTON\+\_\+\+FRAME\+\_\+\+HEIGHT}}~40
+\begin{DoxyCompactList}\small\item\em the height of the interactive buttons\textquotesingle{} frame \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__draw__buttons_ga2227a40dfb9ada8f4cae2df4d1a01787}{BUTTON\+\_\+\+FRAME\+\_\+\+COLOR}}~7
+\begin{DoxyCompactList}\small\item\em the color of the interactive buttons\textquotesingle{} frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__draw__buttons_gaa6af89646cd7d59141040cb6d1b907f9}{draw\+\_\+button\+\_\+frame}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws a button frame on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_ga8a09809fd380fc02ab5992ad80cc350b}{draw\+\_\+color\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos, uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a color button on a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_gae33dca8a3beac80b89738430d3bb1c8d}{load\+\_\+button\+\_\+xpms}} ()
+\begin{DoxyCompactList}\small\item\em Loads the button xpms. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_ga71307477d443a89392611816abdd709d}{draw\+\_\+plus\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to increase the thickness of the cursor on a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_gaa6435009e8ddd5baa6240bb3d81b19fd}{draw\+\_\+minus\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to decrease the thickness of the cursor on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_ga14673af5638efb032dac6c0df453489d}{draw\+\_\+sel\+\_\+line\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to draw a straight line on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_ga62f6170bf1049dc4eb22778cd53df23b}{draw\+\_\+sel\+\_\+square\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to draw a square on a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_gafdb30e468c5cd1e9c233b4c97362793f}{draw\+\_\+sel\+\_\+circle\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button to draw a circle on a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_ga6154e9081a9c711dd0c2fd0a892d6945}{draw\+\_\+sel\+\_\+eraser\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button that allows the user to use an eraser on the canvas to a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_ga11c349438dd852c7d0432983bc0cb02d}{draw\+\_\+sel\+\_\+text\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button that allows the user to input text into the canvas to a pixel buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__draw__buttons_gae0bc54b9eec329ced28428d60c2e0865}{draw\+\_\+clear\+\_\+canvas\+\_\+button}} (\mbox{\hyperlink{structpixel__buffer}{pixel\+\_\+buffer}} const $\ast$const buf, \mbox{\hyperlink{structposition}{position}} topleft\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Draws the button that allows the user to clear the canvas to a pixel buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__draw__buttons_ga8d46b5bb0547f68fd65d40c6782054e8}{buttons\+\_\+draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws the buttons on screen. \end{DoxyCompactList}\end{DoxyCompactItemize}

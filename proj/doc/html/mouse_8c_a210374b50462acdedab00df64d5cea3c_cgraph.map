@@ -1,0 +1,6 @@
+<map id="mouse_ih" name="mouse_ih">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,91,83"/>
+<area shape="rect" id="node2" href="$group__mouse.html#gaa15e334757e4523c4ee9906b8afe110e" title="Check if mouse output buffer is full." alt="" coords="139,5,271,32"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="319,31,417,57"/>
+<area shape="rect" id="node4" href="$group__mouse.html#ga25f8882df15e15d7c7e619348b82fceb" title="Convert an unsigned 8&#45;bit value into a signed 16&#45;bit value." alt="" coords="147,107,262,133"/>
+</map>

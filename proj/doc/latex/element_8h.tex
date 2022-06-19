@@ -1,0 +1,37 @@
+\hypertarget{element_8h}{}\doxysection{src/game/element.h File Reference}
+\label{element_8h}\index{src/game/element.h@{src/game/element.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../utils/position.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}canvas.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cursor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw\+\_\+buttons.\+h\char`\"{}}\newline
+Include dependency graph for element.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structinteractive__element}{interactive\+\_\+element}}
+\begin{DoxyCompactList}\small\item\em Structure used to represent an interactive element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__element_gad190514115d97b761e06f602c71650b0}{COLOR\+\_\+\+BUTTON\+\_\+\+PRIORITY}}~3
+\begin{DoxyCompactList}\small\item\em event priority of a color button \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__element_ga7ccecdf583f80ac0718c8ed9e025f0f9}{STYLE\+\_\+\+BUTTON\+\_\+\+PRIORITY}}~3
+\begin{DoxyCompactList}\small\item\em event priority of a style button \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+xpm\+\_\+image\+\_\+t() \mbox{\hyperlink{group__element_gabff989c0f3c9ea14d469dc75a4495fb0}{get\+\_\+button\+\_\+plus}} ()
+\begin{DoxyCompactList}\small\item\em Returns the xpm image of the \textquotesingle{}plus\textquotesingle{} button. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__element_ga75aa8cfcbee4af0933a79d05e6707679}{load\+\_\+ie\+\_\+drawing}} ()
+\begin{DoxyCompactList}\small\item\em Loads and creates every interactive element present on screen. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__element_gae8101644d06b333a92712ffd2569e7e1}{is\+\_\+hovered}} (\mbox{\hyperlink{structinteractive__element}{interactive\+\_\+element}} elem)
+\begin{DoxyCompactList}\small\item\em Indicates whether a given interactive element is being hovered by the cursor or not. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__element_gaaf38b2af1b79d39b1e12ee6cf9c6123f}{get\+\_\+number\+\_\+of\+\_\+drawing\+\_\+ies}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current number of interactive elements present on screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structinteractive__element}{interactive\+\_\+element}} $\ast$() \mbox{\hyperlink{group__element_ga833c1198c28dd920754f979f25c1ca49}{get\+\_\+drawing\+\_\+ies}} ()
+\begin{DoxyCompactList}\small\item\em Returns the container of the interactive elements present on screen. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\hypertarget{i8042_8h_source}{}\doxysection{i8042.\+h}
+\label{i8042_8h_source}\index{src/devices/kbc/i8042.h@{src/devices/kbc/i8042.h}}
+\mbox{\hyperlink{i8042_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../../utils/utils.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{14 \textcolor{comment}{/* kbc registers */}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define KBC\_IN\_BUF\_ARG 0x60 }}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define KBC\_IN\_BUF\_CMD 0x64 }}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define KBC\_OUT\_BUF 0x60    }}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define KBC\_OUT\_BUF\_ST 0x64 }}
+\DoxyCodeLine{21 \textcolor{comment}{/* kbc status register */}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define KBC\_ST\_PARITY BIT(7)  }}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define KBC\_ST\_TIMEOUT BIT(6) }}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define KBC\_ST\_AUX BIT(5)     }}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define KBC\_ST\_INH BIT(4)     }}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define KBC\_ST\_IBF BIT(1)     }}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define KBC\_ST\_OBF BIT(0)     }}
+\DoxyCodeLine{30 \textcolor{comment}{/* kbc command byte structure */}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define KBC\_INT BIT(0)  }}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define KBC\_INT2 BIT(1) }}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define KBC\_DIS BIT(4)  }}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define KBC\_DIS2 BIT(5) }}
+\DoxyCodeLine{37 \textcolor{comment}{/* kbc command bytes */}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define KBC\_RD\_CMD 0x20                }}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define KBC\_WR\_CMD 0x60                }}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#define KBC\_DISABLE\_MOUSE 0xA7         }}
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define KBC\_ENABLE\_MOUSE 0xA8          }}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define KBC\_CHECK\_MOUSE\_INTERFACE 0xA9 }}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define KBC\_WR\_BYTE\_TO\_MOUSE 0xD4      }}
+\DoxyCodeLine{46 \textcolor{comment}{/* kbc keyboard interrupt line */}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#define KBC\_KEYBOARD\_IRQ 1 }}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#define KBC\_MOUSE\_IRQ 12   }}
+\DoxyCodeLine{51 \textcolor{comment}{/* kbc scancode size indicators */}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define KBC\_SCANCODE\_DOUBLE\_BYTE 0xE0 }}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define KBC\_SCANCODE\_TRIPLE\_BYTE 0xE1 }}
+\DoxyCodeLine{56 \textcolor{comment}{/* kbc scancode types */}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#define KBC\_SCANCODE\_BREAK 0 }}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#define KBC\_SCANCODE\_MAKE 1  }}
+\DoxyCodeLine{61 \textcolor{comment}{/* kbc ESC key scancodes */}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#define ESC\_KEY\_MAKE 0x01  }}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#define ESC\_KEY\_BREAK 0x81 }}
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,36 @@
+var cursor_8h =
+[
+    [ "MAX_THICKNESS", "group__cursor.html#ga3add834485af3ac681bb02575caf9ae7", null ],
+    [ "MIN_THICKNESS", "group__cursor.html#ga75982b108852c67f741bc1310a1e5fca", null ],
+    [ "cursor_state_style_t", "group__cursor.html#gade731461adeae88133ba01829b86aff9", null ],
+    [ "cursor_style", "group__cursor.html#ga99618eb300a45f7d23a757c5000b1ccc", [
+      [ "CURSOR_DSTATE_CIRCLE", "group__cursor.html#gga99618eb300a45f7d23a757c5000b1ccca208fa52a1b98383b5461ad92bef82500", null ],
+      [ "CURSOR_DSTATE_SQUARE", "group__cursor.html#gga99618eb300a45f7d23a757c5000b1cccad42acd32426d3e2c4fabe21c0d24d3e6", null ],
+      [ "CURSOR_DSTATE_TEXT", "group__cursor.html#gga99618eb300a45f7d23a757c5000b1cccaaa35fefbc296c732406e6bfa265f71a6", null ],
+      [ "CURSOR_DSTATE_LINE", "group__cursor.html#gga99618eb300a45f7d23a757c5000b1cccaaac92aaf69eb80f2bf3a5e505d7fcbba", null ],
+      [ "CURSOR_DSTATE_ERASER", "group__cursor.html#gga99618eb300a45f7d23a757c5000b1cccaf512370483502caf72f6a819587aa639", null ],
+      [ "CURSOR_DSTATE_BUCKET", "group__cursor.html#gga99618eb300a45f7d23a757c5000b1ccca18e126aed21fca3bef10e6dae2ffb577", null ]
+    ] ],
+    [ "cursor_decrease_thickness", "group__cursor.html#ga70c35d2bf7529b2584d568c203efcddb", null ],
+    [ "cursor_draw", "group__cursor.html#ga4648530c8e1a1b7846ec80cb78781ca5", null ],
+    [ "cursor_get_color", "group__cursor.html#ga5f8c8d3eed096c6d94a911f9bfa72df4", null ],
+    [ "cursor_get_initial_line_position", "group__cursor.html#ga201b3a410e597535f1ebb22527564fdf", null ],
+    [ "cursor_get_line_counter", "group__cursor.html#ga3a1751e66bd2ebcd3d82ef8fbbffa2bc", null ],
+    [ "cursor_get_pos", "group__cursor.html#ga0af9b29a32a86441cce1cc594e2ff982", null ],
+    [ "cursor_get_style", "group__cursor.html#ga4826d95c25c8d6d0dcd3b07f5ef7cdb3", null ],
+    [ "cursor_get_thickness", "group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b", null ],
+    [ "cursor_increase_line_counter", "group__cursor.html#ga62e511b022e2f8a98a87230c84cf2100", null ],
+    [ "cursor_increase_thickness", "group__cursor.html#gaecf69830f5a4343c6a598d1713d07a26", null ],
+    [ "cursor_lb_was_pressed", "group__cursor.html#ga565cbdb0a5f7b4f6ecc1fc2ab09011d7", null ],
+    [ "cursor_load", "group__cursor.html#gafe31cdb51564035453bfebc44333d8e6", null ],
+    [ "cursor_move", "group__cursor.html#ga77008c8ff256136c0a49cb34e950d4c0", null ],
+    [ "cursor_set_color", "group__cursor.html#ga3df0743bf101e3c12fc4f83edaba3d2e", null ],
+    [ "cursor_set_initial_line_position", "group__cursor.html#ga3f2b51ead9e3ff5d1956cf74a0399da9", null ],
+    [ "cursor_set_lb", "group__cursor.html#ga2656ac7c2d78ec8eebbd8ee79e8b2ac4", null ],
+    [ "cursor_set_style", "group__cursor.html#gae935272ce3eabeb1b6824da72b7e879f", null ],
+    [ "cursor_set_thickness", "group__cursor.html#ga269516aee4764c460bfc69b6d0f84f35", null ],
+    [ "get_is_typing", "group__cursor.html#gaf77450d0441ac50608634a16cbf4ec1e", null ],
+    [ "get_text_initial_position", "group__cursor.html#ga0542477ca7ae4c641bbc12e8872a0d12", null ],
+    [ "set_is_typing", "group__cursor.html#ga0d1db46a41844e572bf74a5a269e0eaf", null ],
+    [ "set_text_initial_position", "group__cursor.html#gacd5c344c1e75b3efea4ab56a9078823f", null ]
+];

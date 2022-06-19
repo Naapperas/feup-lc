@@ -1,0 +1,43 @@
+\hypertarget{mouse_8h}{}\doxysection{src/devices/kbc/mouse.h File Reference}
+\label{mouse_8h}\index{src/devices/kbc/mouse.h@{src/devices/kbc/mouse.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../utils/utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}PS2.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for mouse.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__mouse_gafdd08f62e591c36b8bd14ebd40743ef7}{mouse\+\_\+packet\+\_\+t}}~struct packet
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes to mouse interrupts and puts the given bit in bit\+\_\+no \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes mouse interrupts \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_gaa15e334757e4523c4ee9906b8afe110e}{kbc\+\_\+mouse\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Check if mouse output buffer is full. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga692625f0ff4d0490d38137d19be5811e}{lb\+\_\+is\+\_\+pressed}} ()
+\begin{DoxyCompactList}\small\item\em Check if mouse left button is pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__mouse_gafdd08f62e591c36b8bd14ebd40743ef7}{mouse\+\_\+packet\+\_\+t}}() \mbox{\hyperlink{group__mouse_ga0cc322061bf385b4396d89e93b2974b4}{get\+\_\+mouse\+\_\+packet}} ()
+\begin{DoxyCompactList}\small\item\em Get the current mouse packet. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga0d78bea3540ef23412704f4dd2721fce}{reset\+\_\+kbc}} ()
+\begin{DoxyCompactList}\small\item\em Resets the KBC to the default Minix state. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga36c05f7ca3ccc807afddd659252d77e8}{wait\+\_\+for\+\_\+inbuff\+\_\+empty}} ()
+\begin{DoxyCompactList}\small\item\em waits for the KBC input buffer to be empty \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga19a82faff0e40829b26501342b08bb81}{write\+\_\+command\+\_\+to\+\_\+mouse}} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Writes the given command to the mouse. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_gaf049d2ae2b13d6904e9225383152bbf2}{kbc\+\_\+enable\+\_\+data\+\_\+report}} ()
+\begin{DoxyCompactList}\small\item\em Enables KBC Mouse data reporting. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group__mouse_ga783d0f32c217e4857504c449b4a89793}{mouse\+\_\+command\+\_\+feedback}} ()
+\begin{DoxyCompactList}\small\item\em Get mouse command feedback. \end{DoxyCompactList}\item 
+int16\+\_\+t() \mbox{\hyperlink{group__mouse_ga25f8882df15e15d7c7e619348b82fceb}{uint8\+\_\+to\+\_\+int16}} (uint8\+\_\+t uint8\+\_\+val, bool sign)
+\begin{DoxyCompactList}\small\item\em Convert an unsigned 8-\/bit value into a signed 16-\/bit value. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__mouse_ga27312d3b687eb2d30d1e30bfd7b22599}{mouse\+\_\+packet\+\_\+ready}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the mouse packet has been fully processed. \end{DoxyCompactList}\end{DoxyCompactItemize}

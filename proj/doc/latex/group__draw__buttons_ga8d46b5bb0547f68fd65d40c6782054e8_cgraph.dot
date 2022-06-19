@@ -1,0 +1,57 @@
+digraph "buttons_draw"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="buttons_draw",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Draws the buttons on screen."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="draw_clear_canvas_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#gae0bc54b9eec329ced28428d60c2e0865",tooltip="Draws the button that allows the user to clear the canvas to a pixel buffer."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="buf_draw_xpm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga34c7bdd63f72bd3f735f7bec8738ddd6",tooltip="Draws a XPM to the given pixel buffer."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="buf_draw_pixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8",tooltip="Draws a pixel on a pixel_buffer."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="draw_color_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga8a09809fd380fc02ab5992ad80cc350b",tooltip="Draws a color button on a pixel buffer."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="buf_draw_rectangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga12e0a019382481d6af4dfb730d2468c7",tooltip="Draws a rectangle on a pixel buffer."];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="draw_button_frame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#gaa6af89646cd7d59141040cb6d1b907f9",tooltip="Draws a button frame on a pixel buffer."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="buf_draw_hline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga46c7629f4db6494a40730b69b99d482f",tooltip="Draws an horizontal line on a pixel buffer."];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="buf_draw_vline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga217f0eee3bf0366f3ceda240ca6a9e7f",tooltip="Draws a vertical line on a pixel buffer."];
+  Node9 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="draw_minus_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#gaa6435009e8ddd5baa6240bb3d81b19fd",tooltip="Draws the button to decrease the thickness of the cursor on a pixel buffer."];
+  Node10 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="draw_plus_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga71307477d443a89392611816abdd709d",tooltip="Draws the button to increase the thickness of the cursor on a pixel buffer."];
+  Node11 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="draw_sel_bucket_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$draw__buttons_8c.html#a4ceb04b45bd391b844175580d97bfccb",tooltip=" "];
+  Node12 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="draw_sel_circle_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#gafdb30e468c5cd1e9c233b4c97362793f",tooltip="Draws the button to draw a circle on a pixel buffer."];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="buf_draw_circle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga3f2490703f76d68ee31a7e93671633da",tooltip="Draws a circle on a pixel buffer."];
+  Node14 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="draw_sel_eraser_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga6154e9081a9c711dd0c2fd0a892d6945",tooltip="Draws the button that allows the user to use an eraser on the canvas to a pixel buffer."];
+  Node15 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="draw_sel_line_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga14673af5638efb032dac6c0df453489d",tooltip="Draws the button to draw a straight line on a pixel buffer."];
+  Node16 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="draw_sel_square_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga62f6170bf1049dc4eb22778cd53df23b",tooltip="Draws the button to draw a square on a pixel buffer."];
+  Node17 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node17 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="draw_sel_text_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga11c349438dd852c7d0432983bc0cb02d",tooltip="Draws the button that allows the user to input text into the canvas to a pixel buffer."];
+  Node18 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="get_back_buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#gab3432881d182a4c6455e0cfbaafece78",tooltip="Returns the back buffer."];
+}

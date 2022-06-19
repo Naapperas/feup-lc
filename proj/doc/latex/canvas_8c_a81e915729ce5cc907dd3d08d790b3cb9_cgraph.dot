@@ -1,0 +1,23 @@
+digraph "canvas_draw_line"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="canvas_draw_line",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="canvas_draw_line_high",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$canvas_8c.html#a00fc737a073d8cd4d2ba07485f881a53",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="buf_draw_circle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga3f2490703f76d68ee31a7e93671633da",tooltip="Draws a circle on a pixel buffer."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="buf_draw_pixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8",tooltip="Draws a pixel on a pixel_buffer."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="cursor_get_style",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga4826d95c25c8d6d0dcd3b07f5ef7cdb3",tooltip="Gets the current style of the cursor."];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="cursor_get_thickness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b",tooltip="Get cursor thickness."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="canvas_draw_line_low",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$canvas_8c.html#a654b1a28b128143b1e490b1a79d73327",tooltip=" "];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+}

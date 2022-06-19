@@ -1,0 +1,29 @@
+\hypertarget{utils_8h}{}\doxysection{src/utils/utils.h File Reference}
+\label{utils_8h}\index{src/utils/utils.h@{src/utils/utils.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for utils.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__utils_ga2e72a56d8afa7c1749c44c220edecbbf}{LSB\+\_\+\+MASK16}}~0x00\+FF
+\begin{DoxyCompactList}\small\item\em a mask used to get the least significant byte of a 16 bit variable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__utils_ga88cb717ce68d842573088b025d3d6729}{LSB\+\_\+\+MASK32}}~0x000000\+FF
+\begin{DoxyCompactList}\small\item\em a mask used to get the least significant byte of a 32 bit variable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__utils_ga34d3f0d271fdbdb433766b4baf095218}{MSB\+\_\+\+MASK16}}~0x\+FF00
+\begin{DoxyCompactList}\small\item\em a mask used to get the most significant byte of a 16 bit variable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__utils_ga4f5bd8f9a40f83d5489183d14f884fcf}{MSB\+\_\+\+MASK32}}~0\+XFF000000
+\begin{DoxyCompactList}\small\item\em a mask used to get the most significant byte of a 32 bit variable \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__utils_ga81621440b3d65680979425e39aa8c789}{util\+\_\+get\+\_\+\+LSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$lsb)
+\begin{DoxyCompactList}\small\item\em Gets the least significant byte of a 16 bit variable. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__utils_ga6a880076cd2ec468834438b6e0c58836}{util\+\_\+get\+\_\+\+MSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$msb)
+\begin{DoxyCompactList}\small\item\em Gets the most significant byte of a 16 bit variable. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}{util\+\_\+sys\+\_\+inb}} (int port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Performs sys\+\_\+inb on a temporary 32 bit variable and returns it in on an 8 bit format. \end{DoxyCompactList}\item 
+uint16\+\_\+t() \mbox{\hyperlink{group__utils_gaa97f95e37675f07532b4353ace708671}{to\+\_\+bcd}} (uint16\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Represents a 16 bit value in a BCD format. Should be handled with care so as to not occur overflow. \end{DoxyCompactList}\end{DoxyCompactItemize}

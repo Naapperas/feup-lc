@@ -1,0 +1,8 @@
+<map id="timer_set_frequency" name="timer_set_frequency">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,161,108"/>
+<area shape="rect" id="node2" href="$timer_8c.html#a703c60b40c8c49607d6ecb6fef82d27a" title=" " alt="" coords="209,5,329,32"/>
+<area shape="rect" id="node4" href="$group__utils.html#gaa97f95e37675f07532b4353ace708671" title="converts an unsigned 16 bit value to bcd" alt="" coords="237,56,302,83"/>
+<area shape="rect" id="node5" href="$group__utils.html#ga81621440b3d65680979425e39aa8c789" title="Gets the least significant byte of a 16 bit variable." alt="" coords="218,107,321,133"/>
+<area shape="rect" id="node6" href="$group__utils.html#ga6a880076cd2ec468834438b6e0c58836" title="Gets the most significant byte of a 16 bit variable." alt="" coords="216,157,323,184"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="377,5,476,32"/>
+</map>

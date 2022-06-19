@@ -1,0 +1,30 @@
+digraph "buf_draw_vline"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="buf_draw_vline",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Draws a vertical line on a pixel buffer."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="draw_button_frame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#gaa6af89646cd7d59141040cb6d1b907f9",tooltip="Draws a button frame on a pixel buffer."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="draw_color_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga8a09809fd380fc02ab5992ad80cc350b",tooltip="Draws a color button on a pixel buffer."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="buttons_draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga8d46b5bb0547f68fd65d40c6782054e8",tooltip="Draws the buttons on screen."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="draw_menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_i.html#ga8b436345808e86cfdb278061a65a0fe7",tooltip="Draws the menu (background) and calls the function responsible for drawing the buttons."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="draw_assets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$proj_8c.html#a850e4280fdbac0d3b47a94e871905e54",tooltip="Draws the program assets on screen."];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="draw_sel_circle_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#gafdb30e468c5cd1e9c233b4c97362793f",tooltip="Draws the button to draw a circle on a pixel buffer."];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="draw_sel_eraser_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga6154e9081a9c711dd0c2fd0a892d6945",tooltip="Draws the button that allows the user to use an eraser on the canvas to a pixel buffer."];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="draw_sel_line_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga14673af5638efb032dac6c0df453489d",tooltip="Draws the button to draw a straight line on a pixel buffer."];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="draw_sel_square_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__buttons.html#ga62f6170bf1049dc4eb22778cd53df23b",tooltip="Draws the button to draw a square on a pixel buffer."];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

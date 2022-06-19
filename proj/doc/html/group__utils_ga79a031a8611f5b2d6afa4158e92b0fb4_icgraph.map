@@ -1,0 +1,19 @@
+<map id="util_sys_inb" name="util_sys_inb">
+<area shape="rect" id="node1" title="Performs sys_inb on a temporary 32 bit variable and returns it in on an 8 bit format." alt="" coords="903,208,1001,235"/>
+<area shape="rect" id="node2" href="$group__kbc.html#gad1a9123fa6adccb9ffed9c6bf6462be2" title="Reenable keyboard interrupts." alt="" coords="692,5,812,32"/>
+<area shape="rect" id="node3" href="$kbc_8c.html#aea970a154161a35f6894898a092ed70a" title=" " alt="" coords="720,56,784,83"/>
+<area shape="rect" id="node4" href="$group__mouse.html#gaa15e334757e4523c4ee9906b8afe110e" title="Check if mouse output buffer is full." alt="" coords="686,107,818,133"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title=" " alt="" coords="459,132,545,159"/>
+<area shape="rect" id="node6" href="$group__kbc.html#ga5d49f0d32349d79f4746dcb41edc32c6" title="Check if keyboard output buffer is full." alt="" coords="691,208,813,235"/>
+<area shape="rect" id="node7" href="$group__mouse.html#ga783d0f32c217e4857504c449b4a89793" title="Get mouse command feedback." alt="" coords="649,259,855,285"/>
+<area shape="rect" id="node12" href="$group__rtc.html#ga401ff1a42d649d1b925b573f7032d94f" title="reads the value present in the given RTC register" alt="" coords="693,360,811,387"/>
+<area shape="rect" id="node15" href="$timer_8c.html#a703c60b40c8c49607d6ecb6fef82d27a" title=" " alt="" coords="692,411,812,437"/>
+<area shape="rect" id="node17" href="$group__mouse.html#ga36c05f7ca3ccc807afddd659252d77e8" title="waits for the KBC input buffer to be empty" alt="" coords="667,309,837,336"/>
+<area shape="rect" id="node8" href="$group__mouse.html#ga19a82faff0e40829b26501342b08bb81" title="Writes the given command to the mouse." alt="" coords="403,259,601,285"/>
+<area shape="rect" id="node9" href="$group__mouse.html#gaf049d2ae2b13d6904e9225383152bbf2" title="Enables KBC Mouse data reporting." alt="" coords="176,221,355,248"/>
+<area shape="rect" id="node11" href="$group__mouse.html#ga0d78bea3540ef23412704f4dd2721fce" title="Resets the KBC to the default Minix state." alt="" coords="223,272,308,299"/>
+<area shape="rect" id="node10" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,221,128,248"/>
+<area shape="rect" id="node13" href="$rtc_8c.html#a9f92f313c3714cb364715862d8737cd4" title=" " alt="" coords="431,309,573,336"/>
+<area shape="rect" id="node14" href="$group__rtc.html#gab4aa45a2195a25a1c74c377654347870" title="interrupt handler for the RTC" alt="" coords="206,335,325,361"/>
+<area shape="rect" id="node16" href="$timer_8c.html#af2c04fa8e97ffa748fd3f612886a92a7" title=" " alt="" coords="424,411,580,437"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="buf_draw_line" name="buf_draw_line">
+<area shape="rect" id="node1" title="Draws a line on a pixel buffer." alt="" coords="5,31,119,57"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a7963ee306366c47d14e682ee65f5b979" title=" " alt="" coords="167,5,321,32"/>
+<area shape="rect" id="node4" href="$graphics_8c.html#a34010e32d49c51ed10a2202caaf2a21e" title=" " alt="" coords="169,56,319,83"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="369,31,491,57"/>
+</map>

@@ -1,0 +1,76 @@
+\hypertarget{cursor_8h_source}{}\doxysection{cursor.\+h}
+\label{cursor_8h_source}\index{src/game/cursor.h@{src/game/cursor.h}}
+\mbox{\hyperlink{cursor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CURSOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CURSOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <lcom/video\_gr.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../devices/video/video\_gr.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../utils/color.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}../utils/const.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}../utils/position.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{element_8h}{element.h}}"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define MIN\_THICKNESS 1  }}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define MAX\_THICKNESS 24 }}
+\DoxyCodeLine{27 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \mbox{\hyperlink{group__cursor_ga99618eb300a45f7d23a757c5000b1ccc}{cursor\_style}} \{}
+\DoxyCodeLine{28   \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1ccca208fa52a1b98383b5461ad92bef82500}{CURSOR\_DSTATE\_CIRCLE}},}
+\DoxyCodeLine{29   \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1cccad42acd32426d3e2c4fabe21c0d24d3e6}{CURSOR\_DSTATE\_SQUARE}},}
+\DoxyCodeLine{30   \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaaa35fefbc296c732406e6bfa265f71a6}{CURSOR\_DSTATE\_TEXT}},}
+\DoxyCodeLine{31   \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaaac92aaf69eb80f2bf3a5e505d7fcbba}{CURSOR\_DSTATE\_LINE}},}
+\DoxyCodeLine{32   \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1cccaf512370483502caf72f6a819587aa639}{CURSOR\_DSTATE\_ERASER}},}
+\DoxyCodeLine{33   \mbox{\hyperlink{group__cursor_gga99618eb300a45f7d23a757c5000b1ccca18e126aed21fca3bef10e6dae2ffb577}{CURSOR\_DSTATE\_BUCKET}}}
+\DoxyCodeLine{34 \} \mbox{\hyperlink{group__cursor_gade731461adeae88133ba01829b86aff9}{cursor\_state\_style\_t}};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40 void(\mbox{\hyperlink{group__cursor_gafe31cdb51564035453bfebc44333d8e6}{cursor\_load}})();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{48 void(\mbox{\hyperlink{group__cursor_ga77008c8ff256136c0a49cb34e950d4c0}{cursor\_move}})(int16\_t delta\_x, int16\_t delta\_y);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{55 \mbox{\hyperlink{structposition}{position}}(\mbox{\hyperlink{group__cursor_ga0af9b29a32a86441cce1cc594e2ff982}{cursor\_get\_pos}})();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{62 \mbox{\hyperlink{group__cursor_gade731461adeae88133ba01829b86aff9}{cursor\_state\_style\_t}}(\mbox{\hyperlink{group__cursor_ga4826d95c25c8d6d0dcd3b07f5ef7cdb3}{cursor\_get\_style}})();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{69 void(\mbox{\hyperlink{group__cursor_gae935272ce3eabeb1b6824da72b7e879f}{cursor\_set\_style}})(uint8\_t style);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{76 uint8\_t(\mbox{\hyperlink{group__cursor_gab3f0eafdff5a3a2edb2d2637ddfd7f4b}{cursor\_get\_thickness}})();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{83 void(\mbox{\hyperlink{group__cursor_ga269516aee4764c460bfc69b6d0f84f35}{cursor\_set\_thickness}})(uint8\_t thickness);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{90 void(\mbox{\hyperlink{group__cursor_gaecf69830f5a4343c6a598d1713d07a26}{cursor\_increase\_thickness}})(uint8\_t \_);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{97 void(\mbox{\hyperlink{group__cursor_ga70c35d2bf7529b2584d568c203efcddb}{cursor\_decrease\_thickness}})(uint8\_t \_);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{103 void(\mbox{\hyperlink{group__cursor_ga4648530c8e1a1b7846ec80cb78781ca5}{cursor\_draw}})();}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105 }
+\DoxyCodeLine{111 void(\mbox{\hyperlink{group__cursor_ga2656ac7c2d78ec8eebbd8ee79e8b2ac4}{cursor\_set\_lb}})(\textcolor{keywordtype}{bool} lb);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{118 bool(\mbox{\hyperlink{group__cursor_ga565cbdb0a5f7b4f6ecc1fc2ab09011d7}{cursor\_lb\_was\_pressed}})();}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{125 uint8\_t(\mbox{\hyperlink{group__cursor_ga5f8c8d3eed096c6d94a911f9bfa72df4}{cursor\_get\_color}})();}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{132 void(\mbox{\hyperlink{group__cursor_ga3df0743bf101e3c12fc4f83edaba3d2e}{cursor\_set\_color}})(uint8\_t color);}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{139 uint8\_t(\mbox{\hyperlink{group__cursor_ga3a1751e66bd2ebcd3d82ef8fbbffa2bc}{cursor\_get\_line\_counter}})();}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{146 \mbox{\hyperlink{structposition}{position}}(\mbox{\hyperlink{group__cursor_ga201b3a410e597535f1ebb22527564fdf}{cursor\_get\_initial\_line\_position}})();}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{153 void(\mbox{\hyperlink{group__cursor_ga3f2b51ead9e3ff5d1956cf74a0399da9}{cursor\_set\_initial\_line\_position}})(\mbox{\hyperlink{structposition}{position}} pos);}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{159 void(\mbox{\hyperlink{group__cursor_ga62e511b022e2f8a98a87230c84cf2100}{cursor\_increase\_line\_counter}})();}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{166 \mbox{\hyperlink{structposition}{position}}(\mbox{\hyperlink{group__cursor_ga0542477ca7ae4c641bbc12e8872a0d12}{get\_text\_initial\_position}})();}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{173 bool(\mbox{\hyperlink{group__cursor_gaf77450d0441ac50608634a16cbf4ec1e}{get\_is\_typing}})();}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{180 void(\mbox{\hyperlink{group__cursor_ga0d1db46a41844e572bf74a5a269e0eaf}{set\_is\_typing}})(\textcolor{keywordtype}{bool} new\_is\_typing);}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{187 void(\mbox{\hyperlink{group__cursor_gacd5c344c1e75b3efea4ab56a9078823f}{set\_text\_initial\_position}})(\mbox{\hyperlink{structposition}{position}} pos);}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{191 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

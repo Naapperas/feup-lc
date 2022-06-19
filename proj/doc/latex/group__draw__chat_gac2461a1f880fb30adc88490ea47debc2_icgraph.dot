@@ -1,0 +1,10 @@
+digraph "add_char_to_current_text"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="add_char_to_current_text",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Adds a character to the current text."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="process_scancode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__charset.html#ga5cf34e49e0ee978293deca0bd7097852",tooltip=" "];
+}

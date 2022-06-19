@@ -1,0 +1,115 @@
+\hypertarget{charset_8c}{}\doxysection{src/game/charset.c File Reference}
+\label{charset_8c}\index{src/game/charset.c@{src/game/charset.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../devices/kbc/i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}charset.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw\+\_\+text.\+h\char`\"{}}\newline
+Include dependency graph for charset.\+c\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{charset_8c_a7867fe76c722f5f4353e5da405fa9703}{ENTER\+\_\+\+MAKECODE}}~0x1c
+\begin{DoxyCompactList}\small\item\em the makecode of the enter key ~\newline
+ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{charset_8c_a7fa6fb03cc407b0e65f131521e6995ee}{TAB\+\_\+\+MAKECODE}}~0x0f
+\begin{DoxyCompactList}\small\item\em the makecode of the tab key ~\newline
+ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{charset_8c_abe3400f0c8fee381badd93ba99b3671a}{CTRL\+\_\+\+MAKECODE}}~0x1d
+\begin{DoxyCompactList}\small\item\em the makecode of the ctrl key ~\newline
+ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{charset_8c_a7d1f3136bb298b76aef4ba0c7668c4db}{LEFT\+\_\+\+SHIFT\+\_\+\+MAKECODE}}~0x2a
+\begin{DoxyCompactList}\small\item\em the makecode of the left-\/shift key ~\newline
+ \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{charset_8c_af450c1889e38f12cd6a9dec693130c23}{RIGHT\+\_\+\+SHIFT\+\_\+\+MAKECODE}}~0x36
+\begin{DoxyCompactList}\small\item\em the makecode of the right-\/shift key \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{charset_8c_aa5fad8ccfdfa33fdc5c560fd3cb357d7}{BACKSPACE\+\_\+\+MAKECODE}}~0x0e
+\begin{DoxyCompactList}\small\item\em the makecode of the backspace key ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__charset_ga5cf34e49e0ee978293deca0bd7097852}{process\+\_\+scancode}} (uint8\+\_\+t $\ast$scancode, int \mbox{\hyperlink{kbc_8c_a7cc98c0518e4b373d202b209415b1d43}{scancode\+\_\+size}}, int \mbox{\hyperlink{kbc_8c_a32d9cc695134cbfdfcc71eb566a072d5}{scancode\+\_\+type}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{charset_8c_ac2e4db5390e23d0c85ed20726b2dea8d}{default\+\_\+charset}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{charset_8c_aa5fad8ccfdfa33fdc5c560fd3cb357d7}\label{charset_8c_aa5fad8ccfdfa33fdc5c560fd3cb357d7}} 
+\index{charset.c@{charset.c}!BACKSPACE\_MAKECODE@{BACKSPACE\_MAKECODE}}
+\index{BACKSPACE\_MAKECODE@{BACKSPACE\_MAKECODE}!charset.c@{charset.c}}
+\doxysubsubsection{\texorpdfstring{BACKSPACE\_MAKECODE}{BACKSPACE\_MAKECODE}}
+{\footnotesize\ttfamily \#define BACKSPACE\+\_\+\+MAKECODE~0x0e}
+
+
+
+the makecode of the backspace key ~\newline
+ 
+
+the charset supported by the program \mbox{\Hypertarget{charset_8c_abe3400f0c8fee381badd93ba99b3671a}\label{charset_8c_abe3400f0c8fee381badd93ba99b3671a}} 
+\index{charset.c@{charset.c}!CTRL\_MAKECODE@{CTRL\_MAKECODE}}
+\index{CTRL\_MAKECODE@{CTRL\_MAKECODE}!charset.c@{charset.c}}
+\doxysubsubsection{\texorpdfstring{CTRL\_MAKECODE}{CTRL\_MAKECODE}}
+{\footnotesize\ttfamily \#define CTRL\+\_\+\+MAKECODE~0x1d}
+
+
+
+the makecode of the ctrl key ~\newline
+ 
+
+\mbox{\Hypertarget{charset_8c_a7867fe76c722f5f4353e5da405fa9703}\label{charset_8c_a7867fe76c722f5f4353e5da405fa9703}} 
+\index{charset.c@{charset.c}!ENTER\_MAKECODE@{ENTER\_MAKECODE}}
+\index{ENTER\_MAKECODE@{ENTER\_MAKECODE}!charset.c@{charset.c}}
+\doxysubsubsection{\texorpdfstring{ENTER\_MAKECODE}{ENTER\_MAKECODE}}
+{\footnotesize\ttfamily \#define ENTER\+\_\+\+MAKECODE~0x1c}
+
+
+
+the makecode of the enter key ~\newline
+ 
+
+\mbox{\Hypertarget{charset_8c_a7d1f3136bb298b76aef4ba0c7668c4db}\label{charset_8c_a7d1f3136bb298b76aef4ba0c7668c4db}} 
+\index{charset.c@{charset.c}!LEFT\_SHIFT\_MAKECODE@{LEFT\_SHIFT\_MAKECODE}}
+\index{LEFT\_SHIFT\_MAKECODE@{LEFT\_SHIFT\_MAKECODE}!charset.c@{charset.c}}
+\doxysubsubsection{\texorpdfstring{LEFT\_SHIFT\_MAKECODE}{LEFT\_SHIFT\_MAKECODE}}
+{\footnotesize\ttfamily \#define LEFT\+\_\+\+SHIFT\+\_\+\+MAKECODE~0x2a}
+
+
+
+the makecode of the left-\/shift key ~\newline
+ 
+
+\mbox{\Hypertarget{charset_8c_af450c1889e38f12cd6a9dec693130c23}\label{charset_8c_af450c1889e38f12cd6a9dec693130c23}} 
+\index{charset.c@{charset.c}!RIGHT\_SHIFT\_MAKECODE@{RIGHT\_SHIFT\_MAKECODE}}
+\index{RIGHT\_SHIFT\_MAKECODE@{RIGHT\_SHIFT\_MAKECODE}!charset.c@{charset.c}}
+\doxysubsubsection{\texorpdfstring{RIGHT\_SHIFT\_MAKECODE}{RIGHT\_SHIFT\_MAKECODE}}
+{\footnotesize\ttfamily \#define RIGHT\+\_\+\+SHIFT\+\_\+\+MAKECODE~0x36}
+
+
+
+the makecode of the right-\/shift key 
+
+\mbox{\Hypertarget{charset_8c_a7fa6fb03cc407b0e65f131521e6995ee}\label{charset_8c_a7fa6fb03cc407b0e65f131521e6995ee}} 
+\index{charset.c@{charset.c}!TAB\_MAKECODE@{TAB\_MAKECODE}}
+\index{TAB\_MAKECODE@{TAB\_MAKECODE}!charset.c@{charset.c}}
+\doxysubsubsection{\texorpdfstring{TAB\_MAKECODE}{TAB\_MAKECODE}}
+{\footnotesize\ttfamily \#define TAB\+\_\+\+MAKECODE~0x0f}
+
+
+
+the makecode of the tab key ~\newline
+ 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{charset_8c_ac2e4db5390e23d0c85ed20726b2dea8d}\label{charset_8c_ac2e4db5390e23d0c85ed20726b2dea8d}} 
+\index{charset.c@{charset.c}!default\_charset@{default\_charset}}
+\index{default\_charset@{default\_charset}!charset.c@{charset.c}}
+\doxysubsubsection{\texorpdfstring{default\_charset}{default\_charset}}
+{\footnotesize\ttfamily char default\+\_\+charset\mbox{[}$\,$\mbox{]}}
+

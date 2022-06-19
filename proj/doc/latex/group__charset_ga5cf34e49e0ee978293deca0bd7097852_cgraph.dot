@@ -1,0 +1,33 @@
+digraph "process_scancode"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="process_scancode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="add_char_to_current_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__chat.html#gac2461a1f880fb30adc88490ea47debc2",tooltip="Adds a character to the current text."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="buf_draw_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#gaf1ece22510b6c3de2d3a5d4559028fb9",tooltip="draws the given string to the given buffer on the given position."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="buf_draw_rectangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__graphics.html#ga12e0a019382481d6af4dfb730d2468c7",tooltip="Draws a rectangle on a pixel buffer."];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="cursor_get_color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga5f8c8d3eed096c6d94a911f9bfa72df4",tooltip="Returns the current color of the cursor."];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="cursor_get_thickness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#gab3f0eafdff5a3a2edb2d2637ddfd7f4b",tooltip="Get cursor thickness."];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="get_font_xpm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__text.html#gade215bd9889bb8b69de584385ca0c557",tooltip="Returns the xpm image of the font."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="clear_current_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__chat.html#ga2f3400d74eb3c1e9f287cf24a58d7145",tooltip="Removes characters from the current text until it's empty."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="remove_char_from_current_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__chat.html#ga70e8df51af0f05caa7009ce6c6d564b9",tooltip="Removes the last character to be added to the current text."];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="get_canvas_buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__canvas.html#ga6e396a9fe595370839ca1f2e3cc98acb",tooltip="Returns the canvas buffer."];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="get_current_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__draw__chat.html#ga57634330ce5d2468a25996bbacfd0ab3",tooltip="Returns the current text."];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="get_text_initial_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga0542477ca7ae4c641bbc12e8872a0d12",tooltip="Returns the initial position of where the text should be printedthe text."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="set_is_typing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cursor.html#ga0d1db46a41844e572bf74a5a269e0eaf",tooltip="Setter for the \"typing\" variable."];
+}

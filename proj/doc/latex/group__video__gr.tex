@@ -1,0 +1,177 @@
+\hypertarget{group__video__gr}{}\doxysection{video\+\_\+gr}
+\label{group__video__gr}\index{video\_gr@{video\_gr}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__video__gr_ga08c498ffeb0a3962e3b7711b57397741}{vg\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel on a given position. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__video__gr_ga437c7acd65b322492a34429afea7fa94}{vg\+\_\+draw\+\_\+circle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t radius, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a circle on a given position. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__video__gr_ga6c2fe3a68fb18bca54d7d8b06efe01c0}{vg\+\_\+draw\+\_\+line}} (uint16\+\_\+t from\+\_\+x, uint16\+\_\+t from\+\_\+y, uint16\+\_\+t to\+\_\+x, uint16\+\_\+t to\+\_\+y, int color)
+\begin{DoxyCompactList}\small\item\em Draws a line on a given position. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__video__gr_gae3ef37a6eb8d4e6407903ee08fefb3c0}{vg\+\_\+draw\+\_\+xpm}} (const xpm\+\_\+image\+\_\+t xpm\+\_\+info, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Draws an xpm image on a given position. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t() \mbox{\hyperlink{group__video__gr_ga96de03c74c888257683f5f4beec5791d}{vg\+\_\+load\+\_\+xpm}} (const xpm\+\_\+map\+\_\+t map)
+\begin{DoxyCompactList}\small\item\em Loads an xpm map and returns an xpm image containing relevant information. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__video__gr_ga3498fd300d0c64ba3ba0503c62cb9af5}{clear\+\_\+screen}} (uint8\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Fills the screen with a given color. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__video__gr_gaa7ee55b2d2d8553889a583f4a1c4787f}{flip}} ()
+\begin{DoxyCompactList}\small\item\em Switches the back buffer with the front buffer. \end{DoxyCompactList}\item 
+void $\ast$() \mbox{\hyperlink{group__video__gr_gacb7c3d2ca42ef29ee0f3e7523ebb2d14}{vg\+\_\+get\+\_\+back\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Returns the back buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions used for the programming of the video graphics card 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__video__gr_ga3498fd300d0c64ba3ba0503c62cb9af5}\label{group__video__gr_ga3498fd300d0c64ba3ba0503c62cb9af5}} 
+\index{video\_gr@{video\_gr}!clear\_screen@{clear\_screen}}
+\index{clear\_screen@{clear\_screen}!video\_gr@{video\_gr}}
+\doxysubsubsection{\texorpdfstring{clear\_screen()}{clear\_screen()}}
+{\footnotesize\ttfamily void() clear\+\_\+screen (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Fills the screen with a given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & color to fill the screen with \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{group__video__gr_gaa7ee55b2d2d8553889a583f4a1c4787f}\label{group__video__gr_gaa7ee55b2d2d8553889a583f4a1c4787f}} 
+\index{video\_gr@{video\_gr}!flip@{flip}}
+\index{flip@{flip}!video\_gr@{video\_gr}}
+\doxysubsubsection{\texorpdfstring{flip()}{flip()}}
+{\footnotesize\ttfamily void() flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Switches the back buffer with the front buffer. 
+
+\mbox{\Hypertarget{group__video__gr_ga437c7acd65b322492a34429afea7fa94}\label{group__video__gr_ga437c7acd65b322492a34429afea7fa94}} 
+\index{video\_gr@{video\_gr}!vg\_draw\_circle@{vg\_draw\_circle}}
+\index{vg\_draw\_circle@{vg\_draw\_circle}!video\_gr@{video\_gr}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_circle()}{vg\_draw\_circle()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+circle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{radius,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a circle on a given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the center of the circle \\
+\hline
+{\em y} & y coordinate of the center of the circle \\
+\hline
+{\em radius} & radius of the circle \\
+\hline
+{\em color} & color of the circle \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{group__video__gr_ga6c2fe3a68fb18bca54d7d8b06efe01c0}\label{group__video__gr_ga6c2fe3a68fb18bca54d7d8b06efe01c0}} 
+\index{video\_gr@{video\_gr}!vg\_draw\_line@{vg\_draw\_line}}
+\index{vg\_draw\_line@{vg\_draw\_line}!video\_gr@{video\_gr}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_line()}{vg\_draw\_line()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+line (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{from\+\_\+x,  }\item[{uint16\+\_\+t}]{from\+\_\+y,  }\item[{uint16\+\_\+t}]{to\+\_\+x,  }\item[{uint16\+\_\+t}]{to\+\_\+y,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a line on a given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+\_\+x} & starting position x coordinate \\
+\hline
+{\em from\+\_\+y} & starting position y coordinate \\
+\hline
+{\em to\+\_\+x} & final position x coordinate \\
+\hline
+{\em to\+\_\+y} & final position y coordinate \\
+\hline
+{\em color} & color of the line \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{group__video__gr_ga08c498ffeb0a3962e3b7711b57397741}\label{group__video__gr_ga08c498ffeb0a3962e3b7711b57397741}} 
+\index{video\_gr@{video\_gr}!vg\_draw\_pixel@{vg\_draw\_pixel}}
+\index{vg\_draw\_pixel@{vg\_draw\_pixel}!video\_gr@{video\_gr}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel on a given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the pixel \\
+\hline
+{\em y} & y coordinate of the pixel \\
+\hline
+{\em color} & color of the pixel \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{group__video__gr_gae3ef37a6eb8d4e6407903ee08fefb3c0}\label{group__video__gr_gae3ef37a6eb8d4e6407903ee08fefb3c0}} 
+\index{video\_gr@{video\_gr}!vg\_draw\_xpm@{vg\_draw\_xpm}}
+\index{vg\_draw\_xpm@{vg\_draw\_xpm}!video\_gr@{video\_gr}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_xpm()}{vg\_draw\_xpm()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+xpm (\begin{DoxyParamCaption}\item[{const xpm\+\_\+image\+\_\+t}]{xpm\+\_\+info,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Draws an xpm image on a given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm\+\_\+info} & xpm image to be drawn \\
+\hline
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{group__video__gr_gacb7c3d2ca42ef29ee0f3e7523ebb2d14}\label{group__video__gr_gacb7c3d2ca42ef29ee0f3e7523ebb2d14}} 
+\index{video\_gr@{video\_gr}!vg\_get\_back\_buffer@{vg\_get\_back\_buffer}}
+\index{vg\_get\_back\_buffer@{vg\_get\_back\_buffer}!video\_gr@{video\_gr}}
+\doxysubsubsection{\texorpdfstring{vg\_get\_back\_buffer()}{vg\_get\_back\_buffer()}}
+{\footnotesize\ttfamily void $\ast$() vg\+\_\+get\+\_\+back\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the back buffer. 
+
+\begin{DoxyReturn}{Returns}
+back\+\_\+buffer 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{group__video__gr_ga96de03c74c888257683f5f4beec5791d}\label{group__video__gr_ga96de03c74c888257683f5f4beec5791d}} 
+\index{video\_gr@{video\_gr}!vg\_load\_xpm@{vg\_load\_xpm}}
+\index{vg\_load\_xpm@{vg\_load\_xpm}!video\_gr@{video\_gr}}
+\doxysubsubsection{\texorpdfstring{vg\_load\_xpm()}{vg\_load\_xpm()}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t() vg\+\_\+load\+\_\+xpm (\begin{DoxyParamCaption}\item[{const xpm\+\_\+map\+\_\+t}]{map }\end{DoxyParamCaption})}
+
+
+
+Loads an xpm map and returns an xpm image containing relevant information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & xpm map to be loaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+xpm\+\_\+image 
+\end{DoxyReturn}

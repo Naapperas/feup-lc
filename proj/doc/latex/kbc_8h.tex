@@ -1,0 +1,32 @@
+\hypertarget{kbc_8h}{}\doxysection{src/devices/kbc/kbc.h File Reference}
+\label{kbc_8h}\index{src/devices/kbc/kbc.h@{src/devices/kbc/kbc.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for kbc.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__kbc_ga1a522aa19bcb695a9df30032a893bee3}{DELAY\+\_\+\+US}}~20000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__kbc_ga02884ada1971dbade466081413210b18}{kbc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes to keyboard interrupts and puts the given bit in bit\+\_\+no \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga1102381e6a9e876e05dd78c58ccb5673}{kbc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes mouse interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga5d49f0d32349d79f4746dcb41edc32c6}{kbc\+\_\+outbuf\+\_\+full}} ()
+\begin{DoxyCompactList}\small\item\em Check if keyboard output buffer is full. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__kbc_gad1a9123fa6adccb9ffed9c6bf6462be2}{kbc\+\_\+enable\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Reenable keyboard interrupts. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__kbc_ga3562ffbd4da6a82063fb08bc1b3476fd}{keyboard\+\_\+ready}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the keyboard scancode is ready to process. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__kbc_ga5fec9823dc00d0eaa85e1789c3da0e82}{mark\+\_\+scancode\+\_\+processed}} ()
+\begin{DoxyCompactList}\small\item\em Marks the current keyboard scancode as processed. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga765690bfea17f01031409d68e9a9e2df}{get\+\_\+scancode\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current keyboard scancode size. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga4d32d8dd8bbee36ee6409f6cb3e3f37a}{get\+\_\+scancode\+\_\+type}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current keyboard scancode type. \end{DoxyCompactList}\end{DoxyCompactItemize}

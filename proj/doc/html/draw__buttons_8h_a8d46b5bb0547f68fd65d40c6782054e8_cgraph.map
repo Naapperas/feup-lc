@@ -1,0 +1,21 @@
+<map id="buttons_draw" name="buttons_draw">
+<area shape="rect" id="node1" title="Draws the buttons on screen." alt="" coords="5,259,116,285"/>
+<area shape="rect" id="node2" href="$draw__buttons_8c.html#ae0bc54b9eec329ced28428d60c2e0865" title="Draws the button that allows the user to clear the canvas to a pixel buffer." alt="" coords="164,157,359,184"/>
+<area shape="rect" id="node5" href="$draw__buttons_8c.html#a8a09809fd380fc02ab5992ad80cc350b" title="Draws a color button on a pixel buffer." alt="" coords="190,360,333,387"/>
+<area shape="rect" id="node10" href="$draw__buttons_8c.html#aa6435009e8ddd5baa6240bb3d81b19fd" title="Draws the button to decrease the thickness of the cursor on a pixel buffer." alt="" coords="186,208,337,235"/>
+<area shape="rect" id="node11" href="$draw__buttons_8c.html#a71307477d443a89392611816abdd709d" title="Draws the button to increase the thickness of the cursor on a pixel buffer." alt="" coords="193,5,330,32"/>
+<area shape="rect" id="node12" href="$draw__buttons_8c.html#a4ceb04b45bd391b844175580d97bfccb" title=" " alt="" coords="172,56,351,83"/>
+<area shape="rect" id="node13" href="$draw__buttons_8c.html#afdb30e468c5cd1e9c233b4c97362793f" title="Draws the button to draw a circle on a pixel buffer." alt="" coords="176,309,347,336"/>
+<area shape="rect" id="node15" href="$draw__buttons_8c.html#a6154e9081a9c711dd0c2fd0a892d6945" title="Draws the button that allows the user to use an eraser on the canvas to a pixel buffer." alt="" coords="173,259,350,285"/>
+<area shape="rect" id="node16" href="$draw__buttons_8c.html#a14673af5638efb032dac6c0df453489d" title="Draws the button to draw a straight line on a pixel buffer." alt="" coords="181,411,341,437"/>
+<area shape="rect" id="node17" href="$draw__buttons_8c.html#a62f6170bf1049dc4eb22778cd53df23b" title="Draws the button to draw a square on a pixel buffer." alt="" coords="171,461,351,488"/>
+<area shape="rect" id="node18" href="$draw__buttons_8c.html#a11c349438dd852c7d0432983bc0cb02d" title="Draws the button that allows the user to input text into the canvas to a pixel buffer." alt="" coords="180,107,343,133"/>
+<area shape="rect" id="node19" href="$graphics_8c.html#ab3432881d182a4c6455e0cfbaafece78" title="Returns the back buffer." alt="" coords="198,512,325,539"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a34c7bdd63f72bd3f735f7bec8738ddd6" title="Draws a XPM to the given pixel buffer." alt="" coords="423,157,541,184"/>
+<area shape="rect" id="node4" href="$graphics_8c.html#a49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="777,272,899,299"/>
+<area shape="rect" id="node6" href="$graphics_8c.html#a12e0a019382481d6af4dfb730d2468c7" title="Draws a rectangle on a pixel buffer." alt="" coords="407,411,557,437"/>
+<area shape="rect" id="node7" href="$draw__buttons_8c.html#aa6af89646cd7d59141040cb6d1b907f9" title="Draws a button frame on a pixel buffer." alt="" coords="407,360,557,387"/>
+<area shape="rect" id="node8" href="$graphics_8c.html#a46c7629f4db6494a40730b69b99d482f" title="Draws an horizontal line on a pixel buffer." alt="" coords="607,373,728,400"/>
+<area shape="rect" id="node9" href="$graphics_8c.html#a217f0eee3bf0366f3ceda240ca6a9e7f" title="Draws a vertical line on a pixel buffer." alt="" coords="607,323,728,349"/>
+<area shape="rect" id="node14" href="$graphics_8c.html#a3f2490703f76d68ee31a7e93671633da" title="Draws a circle on a pixel buffer." alt="" coords="605,272,729,299"/>
+</map>

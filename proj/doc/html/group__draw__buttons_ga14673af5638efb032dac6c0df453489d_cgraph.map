@@ -1,0 +1,8 @@
+<map id="draw_sel_line_button" name="draw_sel_line_button">
+<area shape="rect" id="node1" title="Draws the button to draw a straight line on a pixel buffer." alt="" coords="5,31,165,57"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga12e0a019382481d6af4dfb730d2468c7" title="Draws a rectangle on a pixel buffer." alt="" coords="213,5,364,32"/>
+<area shape="rect" id="node3" href="$group__draw__buttons.html#gaa6af89646cd7d59141040cb6d1b907f9" title="Draws a button frame on a pixel buffer." alt="" coords="214,56,363,83"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga46c7629f4db6494a40730b69b99d482f" title="Draws an horizontal line on a pixel buffer." alt="" coords="412,31,533,57"/>
+<area shape="rect" id="node5" href="$group__graphics.html#ga217f0eee3bf0366f3ceda240ca6a9e7f" title="Draws a vertical line on a pixel buffer." alt="" coords="412,81,533,108"/>
+<area shape="rect" id="node6" href="$group__graphics.html#ga49604fff88a75a0bdf9d860b6bfd45a8" title="Draws a pixel on a pixel_buffer." alt="" coords="581,81,703,108"/>
+</map>

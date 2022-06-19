@@ -1,0 +1,144 @@
+\hypertarget{group__kbc}{}\doxysection{kbc}
+\label{group__kbc}\index{kbc@{kbc}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__kbc_ga1a522aa19bcb695a9df30032a893bee3}{DELAY\+\_\+\+US}}~20000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__kbc_ga02884ada1971dbade466081413210b18}{kbc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes to keyboard interrupts and puts the given bit in bit\+\_\+no \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga1102381e6a9e876e05dd78c58ccb5673}{kbc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes mouse interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga5d49f0d32349d79f4746dcb41edc32c6}{kbc\+\_\+outbuf\+\_\+full}} ()
+\begin{DoxyCompactList}\small\item\em Check if keyboard output buffer is full. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__kbc_gad1a9123fa6adccb9ffed9c6bf6462be2}{kbc\+\_\+enable\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Reenable keyboard interrupts. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{group__kbc_ga3562ffbd4da6a82063fb08bc1b3476fd}{keyboard\+\_\+ready}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the keyboard scancode is ready to process. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__kbc_ga5fec9823dc00d0eaa85e1789c3da0e82}{mark\+\_\+scancode\+\_\+processed}} ()
+\begin{DoxyCompactList}\small\item\em Marks the current keyboard scancode as processed. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga765690bfea17f01031409d68e9a9e2df}{get\+\_\+scancode\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current keyboard scancode size. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga4d32d8dd8bbee36ee6409f6cb3e3f37a}{get\+\_\+scancode\+\_\+type}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current keyboard scancode type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions used for the programming of the KBC 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__kbc_ga1a522aa19bcb695a9df30032a893bee3}\label{group__kbc_ga1a522aa19bcb695a9df30032a893bee3}} 
+\index{kbc@{kbc}!DELAY\_US@{DELAY\_US}}
+\index{DELAY\_US@{DELAY\_US}!kbc@{kbc}}
+\doxysubsubsection{\texorpdfstring{DELAY\_US}{DELAY\_US}}
+{\footnotesize\ttfamily \#define DELAY\+\_\+\+US~20000}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__kbc_ga765690bfea17f01031409d68e9a9e2df}\label{group__kbc_ga765690bfea17f01031409d68e9a9e2df}} 
+\index{kbc@{kbc}!get\_scancode\_size@{get\_scancode\_size}}
+\index{get\_scancode\_size@{get\_scancode\_size}!kbc@{kbc}}
+\doxysubsubsection{\texorpdfstring{get\_scancode\_size()}{get\_scancode\_size()}}
+{\footnotesize\ttfamily int() get\+\_\+scancode\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current keyboard scancode size. 
+
+\begin{DoxyReturn}{Returns}
+keyboard scancode size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__kbc_ga4d32d8dd8bbee36ee6409f6cb3e3f37a}\label{group__kbc_ga4d32d8dd8bbee36ee6409f6cb3e3f37a}} 
+\index{kbc@{kbc}!get\_scancode\_type@{get\_scancode\_type}}
+\index{get\_scancode\_type@{get\_scancode\_type}!kbc@{kbc}}
+\doxysubsubsection{\texorpdfstring{get\_scancode\_type()}{get\_scancode\_type()}}
+{\footnotesize\ttfamily int() get\+\_\+scancode\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current keyboard scancode type. 
+
+\begin{DoxyReturn}{Returns}
+keyboard scancode type(MAKE/\+BREAK) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__kbc_gad1a9123fa6adccb9ffed9c6bf6462be2}\label{group__kbc_gad1a9123fa6adccb9ffed9c6bf6462be2}} 
+\index{kbc@{kbc}!kbc\_enable\_int@{kbc\_enable\_int}}
+\index{kbc\_enable\_int@{kbc\_enable\_int}!kbc@{kbc}}
+\doxysubsubsection{\texorpdfstring{kbc\_enable\_int()}{kbc\_enable\_int()}}
+{\footnotesize\ttfamily void() kbc\+\_\+enable\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reenable keyboard interrupts. 
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{group__kbc_ga5d49f0d32349d79f4746dcb41edc32c6}\label{group__kbc_ga5d49f0d32349d79f4746dcb41edc32c6}} 
+\index{kbc@{kbc}!kbc\_outbuf\_full@{kbc\_outbuf\_full}}
+\index{kbc\_outbuf\_full@{kbc\_outbuf\_full}!kbc@{kbc}}
+\doxysubsubsection{\texorpdfstring{kbc\_outbuf\_full()}{kbc\_outbuf\_full()}}
+{\footnotesize\ttfamily int() kbc\+\_\+outbuf\+\_\+full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if keyboard output buffer is full. 
+
+\begin{DoxyReturn}{Returns}
+true if keyboard output buffer is full, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{group__kbc_ga02884ada1971dbade466081413210b18}\label{group__kbc_ga02884ada1971dbade466081413210b18}} 
+\index{kbc@{kbc}!kbc\_subscribe\_int@{kbc\_subscribe\_int}}
+\index{kbc\_subscribe\_int@{kbc\_subscribe\_int}!kbc@{kbc}}
+\doxysubsubsection{\texorpdfstring{kbc\_subscribe\_int()}{kbc\_subscribe\_int()}}
+{\footnotesize\ttfamily int() kbc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes to keyboard interrupts and puts the given bit in bit\+\_\+no 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bit\+\_\+no} & Bit number of the keyboard interrupt messages \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{group__kbc_ga1102381e6a9e876e05dd78c58ccb5673}\label{group__kbc_ga1102381e6a9e876e05dd78c58ccb5673}} 
+\index{kbc@{kbc}!kbc\_unsubscribe\_int@{kbc\_unsubscribe\_int}}
+\index{kbc\_unsubscribe\_int@{kbc\_unsubscribe\_int}!kbc@{kbc}}
+\doxysubsubsection{\texorpdfstring{kbc\_unsubscribe\_int()}{kbc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() kbc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes mouse interrupts 
+
+\mbox{\Hypertarget{group__kbc_ga3562ffbd4da6a82063fb08bc1b3476fd}\label{group__kbc_ga3562ffbd4da6a82063fb08bc1b3476fd}} 
+\index{kbc@{kbc}!keyboard\_ready@{keyboard\_ready}}
+\index{keyboard\_ready@{keyboard\_ready}!kbc@{kbc}}
+\doxysubsubsection{\texorpdfstring{keyboard\_ready()}{keyboard\_ready()}}
+{\footnotesize\ttfamily bool() keyboard\+\_\+ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the keyboard scancode is ready to process. 
+
+\begin{DoxyReturn}{Returns}
+true if keyboard is ready to process, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__kbc_ga5fec9823dc00d0eaa85e1789c3da0e82}\label{group__kbc_ga5fec9823dc00d0eaa85e1789c3da0e82}} 
+\index{kbc@{kbc}!mark\_scancode\_processed@{mark\_scancode\_processed}}
+\index{mark\_scancode\_processed@{mark\_scancode\_processed}!kbc@{kbc}}
+\doxysubsubsection{\texorpdfstring{mark\_scancode\_processed()}{mark\_scancode\_processed()}}
+{\footnotesize\ttfamily void() mark\+\_\+scancode\+\_\+processed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Marks the current keyboard scancode as processed. 
+

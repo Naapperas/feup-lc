@@ -1,0 +1,110 @@
+\hypertarget{proj_8c}{}\doxysection{src/proj.c File Reference}
+\label{proj_8c}\index{src/proj.c@{src/proj.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}devices/kbc/kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/kbc/mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/rtc/rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/timer/timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/video/vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/video/video\+\_\+gr.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/timer.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/video\+\_\+gr.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils/color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils/utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game/canvas.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game/charset.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game/cursor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game/draw\+\_\+clock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game/element.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game/text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game/ui.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}xpm/cursor.\+xpm\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for proj.\+c\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{proj_8c_ac92ca5ab87034a348decad7ee8d4bd1b}{FPS}}~60
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void() \mbox{\hyperlink{proj_8c_a621db57ab86ebe569aa26e70d11c9688}{load\+\_\+assets}} ()
+\begin{DoxyCompactList}\small\item\em Loads the necessary assets. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{proj_8c_a850e4280fdbac0d3b47a94e871905e54}{draw\+\_\+assets}} ()
+\begin{DoxyCompactList}\small\item\em Draws the program assets on screen. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}{proj\+\_\+main\+\_\+loop}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_aa6778bcea436e75bf1ff9d93853768e4}{scancodes}}
+\begin{DoxyCompactList}\small\item\em array of bytes that make up the scancode \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{proj_8c_ac92ca5ab87034a348decad7ee8d4bd1b}\label{proj_8c_ac92ca5ab87034a348decad7ee8d4bd1b}} 
+\index{proj.c@{proj.c}!FPS@{FPS}}
+\index{FPS@{FPS}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{FPS}{FPS}}
+{\footnotesize\ttfamily \#define FPS~60}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{proj_8c_a850e4280fdbac0d3b47a94e871905e54}\label{proj_8c_a850e4280fdbac0d3b47a94e871905e54}} 
+\index{proj.c@{proj.c}!draw\_assets@{draw\_assets}}
+\index{draw\_assets@{draw\_assets}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{draw\_assets()}{draw\_assets()}}
+{\footnotesize\ttfamily void() draw\+\_\+assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the program assets on screen. 
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{proj_8c_a621db57ab86ebe569aa26e70d11c9688}\label{proj_8c_a621db57ab86ebe569aa26e70d11c9688}} 
+\index{proj.c@{proj.c}!load\_assets@{load\_assets}}
+\index{load\_assets@{load\_assets}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{load\_assets()}{load\_assets()}}
+{\footnotesize\ttfamily void() load\+\_\+assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the necessary assets. 
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{proj.c@{proj.c}!main@{main}}
+\index{main@{main}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}\label{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}} 
+\index{proj.c@{proj.c}!proj\_main\_loop@{proj\_main\_loop}}
+\index{proj\_main\_loop@{proj\_main\_loop}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{proj\_main\_loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily int() proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{proj_8c_aa6778bcea436e75bf1ff9d93853768e4}\label{proj_8c_aa6778bcea436e75bf1ff9d93853768e4}} 
+\index{proj.c@{proj.c}!scancodes@{scancodes}}
+\index{scancodes@{scancodes}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{scancodes}{scancodes}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ scancodes\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+array of bytes that make up the scancode 
+
